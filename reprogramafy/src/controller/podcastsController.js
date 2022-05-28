@@ -26,6 +26,8 @@ const getTopics = (request, response) => {
 }
 
 const addPods = (request, response) => {
+    try {
+        
     let nameRequest = request.body.name
     let podcasterRequest = request.body.podcaster
     let topicRequest = request.body.topic
@@ -44,10 +46,50 @@ const addPods = (request, response) => {
         message: "Novo podcast cadastrado",
         newPodcast
     }])
+
+}catch (err){
+    console.log (err)
+    response.status(500).send({
+        message: "erro no servidor"})
+}}
+
+const atualizarPods = (request, response) => {
+    const idRequest = request.params.id
+    const starsRequest = request.body.stars
+    starsFilter = podcasts.find((podcast) => podcast.id == idRequest)
+    
+    if (starsFilter) {
+        starsFilter.stars = starsRequest
+        response.status(200).json([{
+            message: "Classificação atualizada com sucesso, honey", 
+            podcasts
+        }])
+    }else{
+        response.status(404).json([{
+            message: "Não foi modificado"
+        }])
+    }
+}
+
+const deletarPods = (request, response ) => {
+
+    const idRequest = request.params.id
+    const indexPods = podcasts.findIndex(podcast => podcast.id == idRequest)
+      
+    podcasts.splice(indexPods, 1) 
+
+    response.status(200).json([{
+        "mensagem" : "O podcast foi deletado",
+        "deletado" : idRequest,
+        podcasts
+    }])
+
 }
 
 module.exports = {
     getAllPods,
     getTopics,
-    addPods
+    addPods,
+    atualizarPods,
+    deletarPods
 }
