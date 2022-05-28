@@ -213,7 +213,7 @@ Depois de criar a rota lá no nosso controler, vamos testar se está funcionando
 Para criar um novo musicas na nossa listagem, precisaremos escrever uma rota de POST. Para isso no nosso arquivo de rotas de musicas (*routes/musicasRoutes.js*), iremos incluir a seguinte rota:
 
 ```musicasRoutes.js
-router.post("/adiciona", controller.createMusic)
+router.post("/musicas", controller.createMusic)
 ```
 Nosso controller ainda não possui a função createMusic que nossa rota está chamando. Então no arquivo *controllers/musicasController.js* deveremos implementar a função com a lógica desejada.
 
@@ -223,7 +223,7 @@ Dando algum erro, devolveremos o status 500 com a mensagem de erro. Caso dê cer
 
 ### Testando a rota POST via Postman
 
-Para testar via Postman, a rota POST que cria uma nova musica na listagem musicas, deveremos clicar em New > Request. Com a nova requisição aberta, deveremos escolher na combobox o verbo HTTP *POST* e digitar *http://localhost:1313/playlist/adiciona*. Deveremos então, passar a informação da nova musica que iremos adicionar. Para isso deveremos clicar em *body* e clicar em *raw*. Logo após trocar a combobox "text" para *JSON*. Isso significa que estamos definindo que iremos enviar um JSON para nossa API quando enviarmos a requisição. Deveremos então informar o seguinte JSON:
+Para testar via Postman, a rota POST que cria uma nova musica na listagem musicas, deveremos clicar em New > Request. Com a nova requisição aberta, deveremos escolher na combobox o verbo HTTP *POST* e digitar *http://localhost:1313/playlist/musicas*. Deveremos então, passar a informação da nova musica que iremos adicionar. Para isso deveremos clicar em *body* e clicar em *raw*. Logo após trocar a combobox "text" para *JSON*. Isso significa que estamos definindo que iremos enviar um JSON para nossa API quando enviarmos a requisição. Deveremos então informar o seguinte JSON:
 
 ```
 {
@@ -275,13 +275,13 @@ Ao clicar no botão *send*, se você passou o id de uma musica que existe na lis
 Precisamos criar uma rota para alterar apenas o status de favoritado da nossa musica. Deveremos então implementar uma rota de PATCH que deverá permitir realizar essa alteração. Para isso, no nosso arquivo de rotas de musicas (*routes/musicasRoutes.js*), deveremos incluir a seguinte rota:
 
 ```musicasRoutes.js
-router.patch("/musica/:id/favorited", controller.updateFavoritedStatus)
+router.patch("/musica/:id/favoritada", controller.updateFavoritedStatus)
 ```
-Nessa rota informamos que será passado um valor de parâmetro na nossa rota que será o parâmetro id (ex: *http://localhost:1313/playlist/musica/4/favorited* ). Deveremos ir então no arquivo *controllers/musicasController.js* para implementar a função *updateFavoritedStatus*, que ainda não existe.
+Nessa rota informamos que será passado um valor de parâmetro na nossa rota que será o parâmetro id (ex: *http://localhost:1313/playlist/musica/4/favoritada* ). Deveremos ir então no arquivo *controllers/musicasController.js* para implementar a função *updateFavoritedStatus*, que ainda não existe.
 
 ### Testando a rota PATCH via Postman
 
-Depois de criar o código, para testar, via Postman, a rota PATCH que altera o status de favorito da musica, deveremos clicar em New > Request. Com a nova requisição aberta, deveremos escolher na combobox o verbo HTTP *PATCH* e digitar *http://localhost:1313/playlist/musica/4/favorited* (escolhi o id 4 mas poderia ter escolhido outro id qualquer existente na lista). Deveremos então, passar a informação de que a musica foi favoritada ou não para enviar junto na requisição. Para isso deveremos clicar em *body* e clicar em *raw*. Logo após trocar a combobox "text" para *JSON*. Deveremos então informar o seguinte JSON:
+Depois de criar o código, para testar, via Postman, a rota PATCH que altera o status de favorito da musica, deveremos clicar em New > Request. Com a nova requisição aberta, deveremos escolher na combobox o verbo HTTP *PATCH* e digitar *http://localhost:1313/playlist/musica/4/favoritada* (escolhi o id 4 mas poderia ter escolhido outro id qualquer existente na lista). Deveremos então, passar a informação de que a musica foi favoritada ou não para enviar junto na requisição. Para isso deveremos clicar em *body* e clicar em *raw*. Logo após trocar a combobox "text" para *JSON*. Deveremos então informar o seguinte JSON:
 
 ```
 {
