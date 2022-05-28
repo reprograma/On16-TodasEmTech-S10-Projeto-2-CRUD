@@ -71,18 +71,26 @@ const atualizarPods = (request, response) => {
     }
 }
 
-const deletarPods = (request, response ) => {
+const deletePodcast = (request, response) => {
 
     const idRequest = request.params.id
-    const indexPods = podcasts.findIndex(podcast => podcast.id == idRequest)
-      
-    podcasts.splice(indexPods, 1) 
 
-    response.status(200).json([{
-        "mensagem" : "O podcast foi deletado",
-        "deletado" : idRequest,
-        podcasts
-    }])
+    const indexPods = podcasts.findIndex(podcast => podcast.id == idRequest)
+
+    if(indexPods != -1){
+        podcasts.splice(indexPods, 1) 
+
+        response.status(200).json([{
+            "mensagem" : "O podcast foi deletado",
+            "deletado" : idRequest,
+            podcasts
+        }])
+
+    }else{
+        response.status(404).json([{
+            message: "O podcast não foi encontrado"
+        }])
+    }
 
 }
 
@@ -91,5 +99,5 @@ module.exports = {
     getTopics,
     addPods,
     atualizarPods,
-    deletarPods
+    deletePodcast
 }
