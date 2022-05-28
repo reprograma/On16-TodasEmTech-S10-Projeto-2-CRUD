@@ -21,13 +21,33 @@ const getTopics = (request, response) => {
         response.status(200).send(topicFilter)
     } else {
         response.status(404).send([{
-            Message: "não encontrado"}])
+            Message: "Tópico não encontrado"}])
     }
 }
 
+const addPods = (request, response) => {
+    let nameRequest = request.body.name
+    let podcasterRequest = request.body.podcaster
+    let topicRequest = request.body.topic
+    let starsRequest = request.body.stars
 
+    let newPodcast = {
+        id: Math.floor(Date.now() * Math.random()).toString(36),
+        name: nameRequest,
+        podcaster: podcasterRequest,
+        topic: topicRequest,
+        stars: starsRequest
+    }
+
+    podcasts.push(newPodcast)
+    response.status(201).json([{
+        message: "Novo podcast cadastrado",
+        newPodcast
+    }])
+}
 
 module.exports = {
     getAllPods,
     getTopics,
+    addPods
 }
