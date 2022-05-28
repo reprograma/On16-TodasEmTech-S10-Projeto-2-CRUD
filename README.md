@@ -3,7 +3,7 @@
     <p align="center">Reprograma - Semana 10 (Projeto Guiado)<p>
 </h1>
 
-Oieeeeee! Sejam bem-vindas a Semana 10 de projetinho! Meu nome é Mayhhara Morais e vou acompanhar vocês nesse projeto.
+Olaaaaaaa! Sejam bem-vindas a Semana 10 de projetinho! Meu nome é Mayhhara Morais e vou acompanhar vocês nesse projeto.
 
 # Vamos começar!
 
