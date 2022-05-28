@@ -1,13 +1,13 @@
-const express = require("express")
+const express = require("express") //Importar o express
 
-const musicasRoutes = require("./routes/musicasRoutes")
+const app = express() //Executar o express
+
+app.use(express.json()) //Usar o body parser
+
+// const musicasRoutes = require("./routes/musicasRoutes")
 const podcastsRoutes = require("./routes/podcastsRoutes")
 
-const app = express() 
 
-app.use(express.json()) 
-
-app.use("/playlist", musicasRoutes)
 app.use("/podlist", podcastsRoutes)
 
 module.exports = app 

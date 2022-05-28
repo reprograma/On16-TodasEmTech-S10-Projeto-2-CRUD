@@ -1,8 +1,7 @@
 const app = require("./src/app") 
 
-//configurando a porta
-const PORT = 3000 
+const PORT = 8080 
 
 app.listen( PORT, () => {
-	console.log(`Olá, estou na porta ${PORT}`)
+	console.log(`O servidor está na porta ${PORT}`)
 	})
