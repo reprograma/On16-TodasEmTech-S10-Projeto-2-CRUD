@@ -1,113 +1,118 @@
 [
     {
         "id": 1,
-        "title": "Boyfriend",
-        "launchYear": "2019",
+        "title": "Pode Dale",
+        "launchYear": "2022",
         "favorited": true,
         "artists": [
-            "Ariana Grande",
-            "Social House"
+            "Kaya Conky",
+            "Batooke Native"
         ]
     },
     {
         "id": 2,
-        "title": "Flawless",
-        "launchYear": "2014",
+        "title": "Replay",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Beyonce",
-            "Nicki Minaj"
+            "Lady Gaga",
+            "Dorian Electra"
         ]
     },
     {
         "id": 3,
-        "title": "Underere",
-        "launchYear": "2016",
+        "title": "Number One",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Ines Brasil"
+            "Pabllo Vittar",
+            "Rennan da Penha"
         ]
     },
     {
         "id": 4,
-        "title": "Parabens",
-        "launchYear": "2020",
+        "title": "Enemy",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Pablo Vittar",
-            "Psirico"
+            "Imagine Dragons",
+            "JID"
         ]
     },
     {
         "id": 5,
-        "title": "November Rain",
-        "launchYear": "1991",
+        "title": "Brujas",
+        "launchYear": "2017",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Princess Nokia"
         ]
     },
     {
         "id": 6,
-        "title": "Na sua estante",
-        "launchYear": "2005",
+        "title": "Slumber Party",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Pitty"
+            "Ashnikko",
+            "Princess Nokia"
         ]
     },
     {
         "id": 7,
-        "title": "Bodak Yellow",
-        "launchYear": "2018",
+        "title": "Pisando Fofo",
+        "launchYear": "2022",
         "favorited": true,
         "artists": [
-            "Cardi B"
+            "Gloria Groove",
+            "Tasha & Tracie"
         ]
     },
     {
         "id": 8,
-        "title": "Nothing else matters",
-        "launchYear": "1991",
+        "title": "Follow Me",
+        "launchYear": "2022",
         "favorited": true,
         "artists": [
-            "Metallica"
+            "Pabllo Vittar",
+            "Rina Sawayama"
         ]
     },
     {
         "id": 9,
-        "title": "Zero",
-        "launchYear": "2015",
+        "title": "Dynasty",
+        "launchYear": "2020",
+        "favorited": true,
+        "artists": [
+            "Rina Sawayama"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Sereia A",
+        "launchYear": "2017",
+        "favorited": true,
+        "artists": [
+            "Linn da Quebrada",
+            "Liniker"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Baby 95",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
             "Liniker"
         ]
     },
     {
-        "id": 10,
-        "title": "Peligrosa",
-        "launchYear": "2022",
-        "favorited": true,
-        "artists": [
-            "Urias"
-        ]
-    },
-    {
-        "id": 11,
-        "title": "Dangerous woman",
-        "launchYear": "2016",
-        "favorited": true,
-        "artists": [
-            "Ariana Grande"
-        ]
-    },
-    {
         "id": 12,
-        "title": "Sorry",
-        "launchYear": "2016",
+        "title": "Haunted",
+        "launchYear": "2003",
         "favorited": true,
         "artists": [
-            "Beyonce"
+            "Evanescense"
         ]
     },
     {
@@ -118,62 +123,70 @@
         "artists": [
             "Luisa Sonza",
             "Anitta",
-            "Pablo Vittar"
+            "Pabllo Vittar"
         ]
     },
     {
         "id": 14,
-        "title": "Number one",
-        "launchYear": "2020",
+        "title": "Dominatrix",
+        "launchYear": "2018",
         "favorited": true,
         "artists": [
-            "Pablo Vittar"
+            "Karol Conka",
+            "Boss in Drama"
         ]
     },
     {
         "id": 15,
-        "title": "Patience",
-        "launchYear": "1991",
+        "title": "Cafe da Manha",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Luisa Sonza",
+            "Ludmilla"
         ]
     },
     {
         "id": 16,
-        "title": "Varias queixas",
-        "launchYear": "2019",
+        "title": "Lud Session",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Gilsons"
+            "Ludmilla",
+            "Gloria Groove"
         ]
     },
     {
         "id": 17,
-        "title": "Please me",
-        "launchYear": "2019",
+        "title": "Rave de Favela",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Cardi B",
-            "Bruno Mars"
+            "Anitta",
+            "Mc Lan",
+            "Major Lazer",
+            "Beam"
         ]
     },
     {
         "id": 18,
-        "title": "Mel",
-        "launchYear": "2021",
+        "title": "Cachorraz Kamikaze",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Liniker"
+            "Tasha & Tracie",
+            "Ashira"
         ]
     },
     {
         "id": 19,
-        "title": "Tanto faz",
+        "title": "Maserati",
         "launchYear": "2022",
         "favorited": true,
         "artists": [
-            "Urias"
+            "Urias",
+            "Monna Brutal",
+            "Ebony"
         ]
     }
 ]

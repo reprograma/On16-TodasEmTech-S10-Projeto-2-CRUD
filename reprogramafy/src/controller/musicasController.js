@@ -21,7 +21,7 @@ const getMusic = (request, response) => {
   } else {
     response.status(404).send([
       {
-        message: "Artista não encontrado",
+        message: "Musica não encontrada",
       },
     ]);
   }
@@ -105,15 +105,13 @@ const deleteMusic = (request, response) => {
       {
         message: "A musica selecionada foi deletada",
         "musica deletada": idRequest,
-        music,
-      },
-    ]);
+        music
+      }]);
   } else {
     response.status(404).send([
       {
         message: "Musica não deletada",
-      },
-    ]);
+      }])
   }
 };
 

@@ -68,9 +68,31 @@ const atualizarPods = (request, response) => {
     }
 }
 
+const deletePods = (request, response) => {
+    const idRequest = request.params.id;
+    const indicePods = pods.findIndex((podcast) => podcast.id == idRequest);
+  
+    pods.splice(indicePods, 1);
+  
+    if (indicePods) {
+      response.status(200).json([
+        {
+          message: "O podcast selecionado foi deletado",
+          "podcast deletado": idRequest,
+          pods
+        }]);
+    } else {
+      response.status(404).send([
+        {
+          message: "Podcast não deletado",
+        }])
+    }
+  };
+
 module.exports = {
   getAllPods,
   getTopics,
   addPods,
-  atualizarPods
+  atualizarPods,
+  deletePods
 };

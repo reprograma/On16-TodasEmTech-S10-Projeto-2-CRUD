@@ -11,6 +11,6 @@ router.get("/biblioteca", controller.getAllPods);
 router.get("/biblioteca/tema", controller.getTopics)
 router.post("/adicionar", controller.addPods)
 router.patch("/atualizar/:id", controller.atualizarPods)
-/*router.delete("/delete/:id", controller.deletePods)*/
+router.delete("/deletar/:id", controller.deletePods)
 
 module.exports = router;

@@ -36,4 +36,21 @@
     "podcaster": "Gabriela Santos",
     "topic": "feminismo",
     "stars": 5
-}]
+},
+
+{
+    "id": 6,
+    "name": "Santissima Trindade das Perucas",
+    "podcaster": "Duda Dello Russo",
+    "topic": "humor",
+    "stars": 5
+},
+
+{
+    "id": 7,
+    "name": "Chicotadas",
+    "podcaster": "Ada",
+    "topic": "sexualidade",
+    "stars": 5
+}
+]
