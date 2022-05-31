@@ -1,6 +1,6 @@
 // Criando nossas rotas
 
-const controller = require('../controller/musicasController') // chama o controller de podcasts
+const controller = require('../controller/musicasController') // chama o controller de musicas
 
 const express = require('express') // chamando o express
 
