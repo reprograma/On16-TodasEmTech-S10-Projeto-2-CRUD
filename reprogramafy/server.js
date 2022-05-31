@@ -2,7 +2,7 @@
 
 const app = require('./src/app') // Chamando o arquivo app.js
 
-const PORT = 1313 // Configuro a porta
+const PORT = 1313 // Configurando a porta
 
 
 // Iniciando server
