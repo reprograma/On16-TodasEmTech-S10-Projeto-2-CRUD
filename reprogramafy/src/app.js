@@ -11,4 +11,4 @@ const podRotas = require('./routes/podcastsRoutes') // Importe da continuação 
 app.use("/podcast", podRotas) // Criando rota raiz "/podcast"
 
 
-module.export = app // Exportando para usar o server.js
+module.exports = app // Exportando para usar o server.js
