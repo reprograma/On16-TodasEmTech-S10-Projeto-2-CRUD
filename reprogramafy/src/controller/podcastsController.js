@@ -8,7 +8,7 @@ const {
 } = require('../app')
 const podcasts = require('../models/podcasts.json')
 
-// Retorna todos os podcasts
+// Lógica da rota GET para retornar a lista de todos podcasts
 const getAllPods = (request, response) => {
     try {
         response.status(200).json([{
@@ -21,6 +21,8 @@ const getAllPods = (request, response) => {
     }
 }
 
+
+// Lógica da rota GET para retornar a lista de podcasts por tópico
 const getTopics = (request, response) => {
     const topicRequest = request.query.topic
     const topicFilter = podcasts.filter(podcasts => podcasts.topic.includes(topicRequest))
@@ -33,6 +35,7 @@ const getTopics = (request, response) => {
     }
 }
 
+// Lógica da rota POST para cadastrar um novo podcast
 const addPods = (request, response) => {
     try {
         let nameRequest = request.body.name
@@ -60,6 +63,29 @@ const addPods = (request, response) => {
     }
 }
 
+// Lógica da rota DELETE para deletar um podcast específico por id
+
+const deletePods = (request, response) => {
+    try {
+        const idRequest = request.params.id
+        const indicePods = podcasts.findIndex(podcasts => podcasts.id == idRequest)
+
+        podcasts.splice(indicePods, 1)
+
+        response.status(200).json([{
+            "message": "Podcast deletado com sucesso!",
+            "deletado": idRequest,
+            podcasts
+        }])
+    } catch (err) {
+        console.log(err)
+        response.status(404).send([{
+            "message": "Erro interno ao deletar"
+        }])
+    }
+}
+
+// Lógica da rota PATCH para alterar a nota de um podcast
 const atualizarPods = (request, response) => {
     const idRequest = request.params.id
     const starsRequest = request.body.stars
@@ -78,18 +104,10 @@ const atualizarPods = (request, response) => {
     }
 }
 
-
-
-
-
-
-
-
-
-
 module.exports = {
     getAllPods,
     getTopics,
     addPods,
+    deletePods,
     atualizarPods
 }
