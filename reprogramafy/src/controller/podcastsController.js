@@ -54,8 +54,8 @@ const addPodcast = (request, response) => {
 
 const updatePodcast = (request, response) => {
 
-    const idRequest = request.params.id
-    const starsRequest = request.body.stars
+    let idRequest = request.params.id
+    let starsRequest = request.body.stars
     starsFilter = podcasts.find((pod) => pod.id == idRequest)
 
     if (starsFilter){
@@ -73,21 +73,19 @@ const updatePodcast = (request, response) => {
 
 const deletePodcast = (request, response) => {
 
-    const idRequest = request.params.id
-    const indexPodcast = podcasts.findIndex(pod => pod.id == idRequest)
+    let idRequest = request.params.id
+    let indexPodcast = podcasts.findIndex(pod => pod.id == idRequest)
 
-    podcasts.splice(indexPodcast, 1)
-    
-    if( indexPodcast == 0 ){
+    if( indexPodcast != -1 ){
+
+        podcasts.splice(indexPodcast, 1)
         response.status(200).json([{
             message: "Podcast deletado",
-            indexPodcast,
             podcasts
         }])
     }else{
         response.status(404).json({ 
             message: "O podcast não foi deletado",
-            indexPodcast 
         })
     }
 }
