@@ -82,16 +82,20 @@ const updateMusic = (request, response) => {
 
   let indexEncontrado = music.findIndex((musica) => musica.id == idRequest);
 
- if (music.splice(indexEncontrado, 1, musicRequest)){
-  response.status(200).json([{
-      message: "Musica atualizada com sucesso",
-      music,
-    }])
- }else{
-  response.status(404).send([{
-      message: "Artista não encontrado"
-      }])
-    }
+  if (music.splice(indexEncontrado, 1, musicRequest)) {
+    response.status(200).json([
+      {
+        message: "Musica atualizada com sucesso",
+        music,
+      },
+    ]);
+  } else {
+    response.status(404).send([
+      {
+        message: "Artista não encontrado",
+      },
+    ]);
+  }
 };
 
 const deleteMusic = (request, response) => {
@@ -105,13 +109,15 @@ const deleteMusic = (request, response) => {
       {
         message: "A musica selecionada foi deletada",
         "musica deletada": idRequest,
-        music
-      }]);
+        music,
+      },
+    ]);
   } else {
     response.status(404).send([
       {
         message: "Musica não deletada",
-      }])
+      },
+    ]);
   }
 };
 
@@ -122,10 +128,12 @@ const updateFav = (request, response) => {
 
   if (favoritedFilter) {
     favoritedFilter.favorited = favoritedRequest;
-    response.status(200).json([{
+    response.status(200).json([
+      {
         message: "Musica atualizada com sucesso",
         music,
-      }]);
+      },
+    ]);
   } else {
     response.status(404).json([
       {
@@ -142,5 +150,5 @@ module.exports = {
   addMusic,
   updateMusic,
   deleteMusic,
-  updateFav
-}
+  updateFav,
+};
