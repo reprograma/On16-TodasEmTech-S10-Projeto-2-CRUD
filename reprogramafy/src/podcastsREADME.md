@@ -1,6 +1,6 @@
-<h1 align="center"> :notes: Musics :notes: </h1> <br>
+<h1 align="center"> :notes: Podcasts :notes: </h1> <br>
 
-### :zap: *Postman e terminal* :zap:
+###  *Postman* :microphone:
 <br>
 
 

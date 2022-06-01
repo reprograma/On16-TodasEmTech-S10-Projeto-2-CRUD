@@ -1,4 +1,4 @@
-<h1 align="center"> :notes: Musics :notes: </h1> <br>
+<h1 align="center"> Musics :notes: </h1> <br>
 
 ### :zap: *Postman*
 <br>

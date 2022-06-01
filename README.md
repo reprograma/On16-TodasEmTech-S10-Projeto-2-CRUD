@@ -47,7 +47,7 @@ Montar uma API com playlist de musica, onde pode favoritar as musicas favoritas 
 | DELETE | Remover música                         |
 | PATCH  | Favoritar/desfavoritar música          |
 
-[Musics Print Postman](https://github.com/camisarp/ProjetoBuscarLivros_S5_Reprograma/tree/main/controllers)
+[Musics Print Postman](https://github.com/camisarp/On16-TodasEmTech-S10-Projeto-2-CRUD/blob/camisarp/reprogramafy/src/musicasREADME.md)
 
 ----
 
@@ -89,7 +89,7 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 | DELETE | Remover podcast                        |
 | PATCH  | Alterar a nota de um podcast           |
 
-[Podcasts Print Postman](https://github.com/camisarp/ProjetoBuscarLivros_S5_Reprograma/tree/main/controllers)
+[Podcasts Print Postman](https://github.com/camisarp/On16-TodasEmTech-S10-Projeto-2-CRUD/blob/camisarp/reprogramafy/src/podcastsREADME.md)
 
 ----
 
