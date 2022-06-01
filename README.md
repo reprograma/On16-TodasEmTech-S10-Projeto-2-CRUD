@@ -125,9 +125,9 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 
 :heavy_check_mark: Criação de 3 pastas no “src”
 
-- [x] controllers - para armazenar a lógica de controle da nossa api
-- [x] models - para armazenar os nosso modelos (ex: nossas músicas)
-- [x] routes - para armazenar as rotas
+- [x] controllers - para armazenar a lógica de controle da api;
+- [x] models - para armazenar os nosso modelos;
+- [x] routes - para armazenar as rotas.
  
 ```
 📁reprogramafy

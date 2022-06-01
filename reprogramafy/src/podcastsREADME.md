@@ -3,7 +3,7 @@
 > [controller](src/../reprogramafy/src/controller/../../../controller/podcastsController.js)  | 
 [models](src/../reprogramafy/src/models/../../../models/podcasts.json)  | 
 [routes](src/../reprogramafy/src/routes/../../../routes/podcastsRoutes.js) |
-[app.js](src/../reprogramafy/src/../../app.js) |
+[app](src/../reprogramafy/src/../../app.js) |
 [server](src/../reprogramafy/../../server.js)
 
 <br>
