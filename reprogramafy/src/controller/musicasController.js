@@ -12,6 +12,20 @@ const getAllSongs = (request, response) => {
     }
 }
 
+const getMusic = (request, response) => {
+    const idRequest = request.params.id
+    const musicFind = musicJson.find(music => music.id == idRequest)
+
+    if (musicFind) {
+        response.status(200).send(musicFind)
+    } else {
+        response.status(404).send([{
+            message: "Música não encontrada"
+        }])
+    }
+}
+
 module.exports = {
-    getAllSongs
+    getAllSongs,
+    getMusic
 }
