@@ -12,31 +12,31 @@
 <br>
 
 
-- [ ]  **`GET`** Rota listar os podcasts | `localhost:1313/podcast/library` ;
+- [x]  **`GET`** Rota listar os podcasts | `localhost:1313/podcast/library` ;
 
 <p>
   <img width="300" src="https://user-images.githubusercontent.com/84551213/171434415-5bb8b5f8-7230-403e-9eee-f5e04c5b2459.png" />
 <br>
  
- - [ ]  **`GET`** Rota listar os podcasts por tópico | `localhost:1313/podcast/library/topic?topic=tecnologia`;
+ - [x]  **`GET`** Rota listar os podcasts por tópico | `localhost:1313/podcast/library/topic?topic=tecnologia`;
 
 <p>
   <img width="300" src="https://user-images.githubusercontent.com/84551213/171436972-e51c6c58-e16b-4489-8879-e7997528fe73.png" />
 <br>
  
-- [ ]  **`POST`** Rota adicionar uma nova música | `localhost:1313/podcast/add`;
+- [x]  **`POST`** Rota adicionar uma nova música | `localhost:1313/podcast/add`;
 
 <p>
   <img width="300" src="https://user-images.githubusercontent.com/84551213/171434429-84d1273a-f235-4d92-a6b1-487a7b61d28f.png" />
 <br>
  
-- [ ]  **`DELETE`** Rota remover uma música da lista | `localhost:1313/podcast/delete/2`;
+- [x]  **`DELETE`** Rota remover uma música da lista | `localhost:1313/podcast/delete/2`;
 
 <p>
   <img width="300" src="https://user-images.githubusercontent.com/84551213/171434408-b508349c-c8bc-409b-a57f-db0d2180f871.png" />
 <br>
 
-- [ ]  **`PATCH`** Rota favoritar/desfavoritar uma música | `localhost:1313/podcast/update/1`;
+- [x]  **`PATCH`** Rota favoritar/desfavoritar uma música | `localhost:1313/podcast/update/1`;
 
 <p>
   <img width="300" src="https://user-images.githubusercontent.com/84551213/171434427-9699f8dc-ff60-4482-968d-545b744a73ea.png" />
@@ -45,7 +45,7 @@
 ### :slot_machine: *Terminal* 
 <br>
 
-- [ ]  **`Terminal`** Tem que aparecer essa mensagem do `console.log`.
+- [x]  **`Terminal`** Tem que aparecer essa mensagem do `console.log`.
 
 <p>
   <img width="300" src="https://user-images.githubusercontent.com/84551213/171425835-453b4670-0a55-4962-a964-bafd01c2c0a8.png" />

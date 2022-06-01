@@ -105,6 +105,7 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 | Instale as dependências atualizadas   | npm install |
 | Crie o .gitignore     | node_modules |
 
+<br>
 
 ### :zap: `Tecnologias`
 </br>
@@ -117,7 +118,8 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 | express |  Framework gerencia requisições de diferentes verbos HTTP em diferentes URLs|
 | nodemon |  Biblioteca reinicia automaticamente o servidor. |
 
-  
+<br>
+
 ### :triangular_ruler: `Arquitetura` 
 </br>
 
