@@ -1,6 +1,6 @@
 const playMusics = require("../models/musicas.json");
 
-const getAllTheSongs = (req, res) => {
+const getAllTheMusic = (req, res) => {
   try {
     res.status(200).json([
       {
@@ -15,13 +15,13 @@ const getAllTheSongs = (req, res) => {
 
 const getJustOneMusic = (req, res) => {
   const musicRequest = req.params.id;
-  const musicFilter = playMusics.find((music) => music.id == musicRequest);
+  const musicFind = playMusics.find((music) => music.id == musicRequest);
 
-  if (musicFilter) {
+  if (musicFind) {
     res.status(200).send([
       {
         message: "Musica encontrada!",
-        playMusics: musicFilter,
+        playMusics: musicFind,
       },
     ]);
   } else {
@@ -34,9 +34,10 @@ const getJustOneMusic = (req, res) => {
 };
 
 const getMusicByArtist = (req, res) => {
-  let artistsRequest = req.query.artists;
+  const artistsRequest = req.query.artists;
 
-  let artistsFilter = playMusics.filter((music) => music.artists.includes(artistsRequest)
+  const artistsFilter = playMusics.filter((music) =>
+    music.artists.includes(artistsRequest)
   );
 
   if (artistsFilter.length > 0) {
@@ -55,13 +56,13 @@ const getMusicByArtist = (req, res) => {
 
 const addMusic = (req, res) => {
   try {
-    let titleRequest = req.body.title;
-    let launchYearRequest = req.body.launchYear;
-    let favoritedRequest = req.body.favorited;
-    let artistsRequest = req.body.artists;
+    const titleRequest = req.body.title;
+    const launchYearRequest = req.body.launchYear;
+    const favoritedRequest = req.body.favorited;
+    const artistsRequest = req.body.artists;
 
     let newMusic = {
-      id: Math.floor(Date.now() * Math.random()).toString(30),
+      id: Math.floor(Math.random() * (30 - 19) + 20),
       title: titleRequest,
       launchYear: launchYearRequest,
       favorited: favoritedRequest,
@@ -86,9 +87,9 @@ const addMusic = (req, res) => {
 
 const replaceMusic = (req, res) => {
   const idRequest = req.params.id;
-  let musicRequest = req.body;
+  const musicRequest = req.body;
 
-  let indexFound = playMusics.findIndex((music) => music.id == idRequest);
+  const indexFound = playMusics.findIndex((music) => music.id == idRequest);
 
   playMusics.splice(indexFound, 1, musicRequest);
 
@@ -147,14 +148,14 @@ const updateMusic = (req, res) => {
   } else {
     res.status(404).json([
       {
-        message: "Essa música não foi favoritada/desfavoritada!",
+        message: "Essa música não foi favoritada|desfavoritada!",
       },
     ]);
   }
 };
 
 module.exports = {
-  getAllTheSongs,
+  getAllTheMusic,
   getJustOneMusic,
   getMusicByArtist,
   addMusic,

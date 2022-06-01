@@ -1,10 +1,10 @@
 const podcasts = require("../models/podcasts.json");
 
-// retorna todos os pods
 const getAllPods = (req, res) => {
   try {
     res.status(200).json([
       {
+        message: "Lista de podcasts encontrado!",
         Podcasts: podcasts,
       },
     ]);
@@ -16,18 +16,23 @@ const getAllPods = (req, res) => {
 const getPodByTopic = (req, res) => {
   let topicRequest = req.query.topic;
 
-  let topicFiltro = podcasts.filter((musica) =>
+  let topicFilter = podcasts.filter((musica) =>
     musica.topic.includes(topicRequest)
   );
 
-  if (topicFiltro.length > 0) {
-    res.status(200).send(topicFiltro);
+  if (topicFilter.length > 0) {
+    topicRequest.topic = topicRequest;
+    res.status(200).send([
+      {
+        message: "Tópico encontrado!",
+        Podcasts: podcasts,
+      },
+    ]);
   } else {
-    res.status(404).send({ message: "Tópico não encontrado" });
+    res.status(404).send({ message: "Tópico não encontrado!" });
   }
 };
 
-//const Reps ={name, bla bla bla} = req.body
 const addPods = (req, res) => {
   try {
     let nameReq = req.body.name;
@@ -36,7 +41,7 @@ const addPods = (req, res) => {
     let starsReq = req.body.stars;
 
     let newPodcast = {
-      id: Math.floor(Date.now() * Math.random()).toString(36),
+      id: Math.floor(Math.random() * (10 - 5) + 6),
       name: nameReq,
       podcaster: podReq,
       topic: topicReq,
@@ -46,7 +51,7 @@ const addPods = (req, res) => {
     res.status(201).json([
       {
         message: "Novo podcast cadastrado!",
-        newPodcast,
+        Podcasts: newPodcast,
       },
     ]);
   } catch (err) {
@@ -70,8 +75,8 @@ const deletePodcast = (req, res) => {
     res.status(200).json([
       {
         message: "Esse podcast foi deletado!",
-        "musica deletada": idRequest,
-        playMusics: podcasts,
+        "Podcast deletado": idRequest,
+        Podcasts: podcasts,
       },
     ]);
   } else {
@@ -83,7 +88,7 @@ const deletePodcast = (req, res) => {
   }
 };
 
-const atualizarPods = (req, res) => {
+const updatePods = (req, res) => {
   const idReq = req.params.id;
   const starsReq = req.body.stars;
   starsFilter = podcasts.find((podcast) => podcast.id == idReq);
@@ -93,13 +98,13 @@ const atualizarPods = (req, res) => {
     res.status(200).json([
       {
         message: "Classicação atualizada com sucesso, honey!",
-        podcasts,
+        Podcasts: podcasts,
       },
     ]);
   } else {
     res.status(404).json([
       {
-        message: "Não foi modificado garotah sonsa!",
+        message: "Não foi modificado a classificação!",
       },
     ]);
   }
@@ -109,5 +114,5 @@ module.exports = {
   getPodByTopic,
   addPods,
   deletePodcast,
-  atualizarPods,
+  updatePods,
 };

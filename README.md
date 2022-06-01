@@ -1,6 +1,6 @@
 <h1 align="center">  Projeto Guiado II :rocket: </h1>
 <h3 align="center">  Turma On16 Todas em Tech - Back-end | S10  </h3>
-<h5 align="center">  Prof. Mayhhara Morais  </h5> <br>
+<br>
 
 # :rainbow: Projeto API Nodejs "{reprograma}fy" :vulcan_salute:
 
@@ -47,7 +47,7 @@ Montar uma API com playlist de musica, onde pode favoritar as musicas favoritas 
 | DELETE | Remover música                         |
 | PATCH  | Favoritar/desfavoritar música          |
 
-[Musics Print Postman](https://github.com/camisarp/On16-TodasEmTech-S10-Projeto-2-CRUD/blob/camisarp/reprogramafy/src/musicasREADME.md)
+[Musics prints Postman | terminal](src/../reprogramafy/src/musicasREADME.md)
 
 ----
 
@@ -89,7 +89,7 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 | DELETE | Remover podcast                        |
 | PATCH  | Alterar a nota de um podcast           |
 
-[Podcasts Print Postman](https://github.com/camisarp/On16-TodasEmTech-S10-Projeto-2-CRUD/blob/camisarp/reprogramafy/src/podcastsREADME.md)
+[Podcasts prints Postman | terminal](src/../reprogramafy/src/podcastsREADME.md)
 
 ----
 
@@ -155,4 +155,13 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84551213/171315925-9e44d438-7b33-4301-b420-7f5da30a7531.gif" width= "400px"/>
+</p>
+
+<p align="center">
+Desenvolvido por Camila Ribeiro, com o apoio da Prof. Mayhhara Morais. :purple_heart:
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/84551213/171416454-ab93ab7f-e5a0-4276-81ec-4f5cb79dff31.png" alt="logo da reprograma" border="0" width = "200" />
+
 </p>

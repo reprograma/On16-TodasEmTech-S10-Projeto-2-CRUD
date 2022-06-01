@@ -1,14 +1,13 @@
-const express = require('express')
+const express = require("express");
 
-const app = express()
+const app = express();
 
-app.use(express.json())
+app.use(express.json());
 
+const musicRoutes = require("./routes/musicasRoutes");
+const podRoutes = require("./routes/podcastsRoutes");
 
-const podRoutes = require('./routes/podcastsRoutes')
-const musicRoutes = require('./routes/musicasRoutes')
+app.use("/playlist", musicRoutes);
+app.use("/podcast", podRoutes);
 
-app.use('/podcast', podRoutes)
-app.use('/playlist', musicRoutes)
-
-module.exports = app
+module.exports = app;
