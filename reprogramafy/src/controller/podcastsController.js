@@ -71,7 +71,7 @@ const deletePodcast = (req, res) => {
 
   podcasts.splice(indexFound, 1, idRequest);
 
-  if (indexFound) {
+  if (indexFound > -1) {
     res.status(200).json([
       {
         message: "Esse podcast foi deletado!",

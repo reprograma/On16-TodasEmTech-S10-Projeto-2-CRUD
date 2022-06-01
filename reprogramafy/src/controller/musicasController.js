@@ -112,18 +112,17 @@ const deleteMusic = (req, res) => {
 
   const indexFound = playMusics.findIndex((musica) => musica.id == idRequest);
 
-  playMusics.splice(indexFound, 1, idRequest);
+  playMusics.splice(indexFound, 1);
 
-  if (indexFound) {
+  if (indexFound > -1) {
     res.status(200).json([
       {
         message: "Essa musica foi deletada!",
-        "musica deletada": idRequest,
+        deletad: idRequest,
         playMusics: playMusics,
-      },
-    ]);
+      }]);
   } else {
-    res.status(404).send([
+    res.status(404).json([
       {
         message: "Essa música não foi deletada!",
       },
