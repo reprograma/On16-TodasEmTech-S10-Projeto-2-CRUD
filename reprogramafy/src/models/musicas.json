@@ -1,179 +1,392 @@
 [
     {
         "id": 1,
-        "title": "Boyfriend",
-        "launchYear": "2019",
+        "title": "Wrong Side of Heaven",
+        "launchYear": "2013",
         "favorited": true,
         "artists": [
-            "Ariana Grande",
-            "Social House"
+            "Five Finger Death Punch"
         ]
     },
     {
         "id": 2,
-        "title": "Flawless",
-        "launchYear": "2014",
+        "title": "A Little Bit Off",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Beyonce",
-            "Nicki Minaj"
+            "Five Finger Death Punch"
         ]
     },
     {
         "id": 3,
-        "title": "Underere",
-        "launchYear": "2016",
+        "title": "Second & Sebring",
+        "launchYear": "2010",
         "favorited": true,
         "artists": [
-            "Ines Brasil"
+            "Of Mice & Men"
         ]
     },
     {
         "id": 4,
-        "title": "Parabens",
-        "launchYear": "2020",
+        "title": "Oh No",
+        "launchYear": "2015",
         "favorited": true,
         "artists": [
-            "Pablo Vittar",
-            "Psirico"
+            "Bring Me the Horizon"
         ]
     },
     {
         "id": 5,
-        "title": "November Rain",
-        "launchYear": "1991",
+        "title": "Rejection Role",
+        "launchYear": "2003",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Soilwork"
         ]
     },
     {
         "id": 6,
-        "title": "Na sua estante",
-        "launchYear": "2005",
+        "title": "Kingdom for a Heart",
+        "launchYear": "1999",
         "favorited": true,
         "artists": [
-            "Pitty"
+            "Sonata Arctica"
         ]
     },
     {
         "id": 7,
-        "title": "Bodak Yellow",
-        "launchYear": "2018",
+        "title": "Through the Fire and Flames",
+        "launchYear": "2005",
         "favorited": true,
         "artists": [
-            "Cardi B"
+            "DragonForce"
         ]
     },
     {
         "id": 8,
-        "title": "Nothing else matters",
-        "launchYear": "1991",
+        "title": "Hunting High and Low",
+        "launchYear": "2000",
         "favorited": true,
         "artists": [
-            "Metallica"
+            "Stratovarius"
         ]
     },
     {
         "id": 9,
-        "title": "Zero",
-        "launchYear": "2015",
+        "title": "The Ageless Whisper",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Liniker"
+            "Soilwork"
         ]
     },
     {
         "id": 10,
-        "title": "Peligrosa",
-        "launchYear": "2022",
+        "title": "Bleeder Despoiler",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Urias"
+            "Soilwork"
         ]
     },
     {
         "id": 11,
-        "title": "Dangerous woman",
-        "launchYear": "2016",
+        "title": "Arrival",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Ariana Grande"
+            "Soilwork"
         ]
     },
     {
         "id": 12,
-        "title": "Sorry",
-        "launchYear": "2016",
+        "title": "Stålfågel",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Beyonce"
+            "Soilwork"
         ]
     },
     {
         "id": 13,
-        "title": "Modo turbo",
-        "launchYear": "2021",
+        "title": "Follow You",
+        "launchYear": "2015",
         "favorited": true,
         "artists": [
-            "Luisa Sonza",
-            "Anitta",
-            "Pablo Vittar"
+            "Bring Me the Horizon"
         ]
     },
     {
         "id": 14,
-        "title": "Number one",
-        "launchYear": "2020",
+        "title": "Go to Hell, for Heaven's Sake",
+        "launchYear": "2013",
         "favorited": true,
         "artists": [
-            "Pablo Vittar"
+            "Bring Me the Horizon"
         ]
     },
     {
         "id": 15,
-        "title": "Patience",
-        "launchYear": "1991",
+        "title": "Throne",
+        "launchYear": "2015",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Bring Me the Horizon"
         ]
     },
     {
         "id": 16,
-        "title": "Varias queixas",
-        "launchYear": "2019",
+        "title": "Drown",
+        "launchYear": "2015",
         "favorited": true,
         "artists": [
-            "Gilsons"
+            "Bring Me the Horizon"
         ]
     },
     {
         "id": 17,
-        "title": "Please me",
-        "launchYear": "2019",
+        "title": "Shadow Moses",
+        "launchYear": "2013",
         "favorited": true,
         "artists": [
-            "Cardi B",
-            "Bruno Mars"
+            "Bring Me the Horizon"
         ]
     },
     {
         "id": 18,
-        "title": "Mel",
-        "launchYear": "2021",
+        "title": "I-E-A-I-A-I-O",
+        "launchYear": "2002",
         "favorited": true,
         "artists": [
-            "Liniker"
+            "System of a Down"
         ]
     },
     {
         "id": 19,
-        "title": "Tanto faz",
-        "launchYear": "2022",
+        "title": "Chop Suey!",
+        "launchYear": "2001",
         "favorited": true,
         "artists": [
-            "Urias"
+            "System of a Down"
+        ]
+    },
+    {
+        "id": 20,
+        "title": "Lost in Hollywood",
+        "launchYear": "2005",
+        "favorited": true,
+        "artists": [
+            "System of a Down"
+        ]
+    },
+    {
+        "id": 21,
+        "title": "Unbreakable",
+        "launchYear": "2013",
+        "favorited": true,
+        "artists": [
+            "Stratovarius"
+        ]
+    },
+    {
+        "id": 22,
+        "title": "MANTRA",
+        "launchYear": "2019",
+        "favorited": true,
+        "artists": [
+            "Bring Me the Horizon"
+        ]
+    },
+    {
+        "id": 23,
+        "title": "Symphony Of Destruction",
+        "launchYear": "1992",
+        "favorited": true,
+        "artists": [
+            "Megadeth"
+        ]
+    },
+    {
+        "id": 24,
+        "title": "Foreclosure of a Dream",
+        "launchYear": "1992",
+        "favorited": true,
+        "artists": [
+            "Megadeth"
+        ]
+    },
+    {
+        "id": 25,
+        "title": "Old Heart Falls",
+        "launchYear": "2016",
+        "favorited": true,
+        "artists": [
+            "Katatonia"
+        ]
+    },
+    {
+        "id": 26,
+        "title": "Ambiramus",
+        "launchYear": "2019",
+        "favorited": true,
+        "artists": [
+            "Eluveitie"
+        ]
+    },
+    {
+        "id": 27,
+        "title": "Moving On",
+        "launchYear": "2014",
+        "favorited": true,
+        "artists": [
+            "Asking Alexandria"
+        ]
+    },
+    {
+        "id": 28,
+        "title": "Alone in a Room",
+        "launchYear": "2017",
+        "favorited": true,
+        "artists": [
+            "Asking Alexandria"
+        ]
+    },
+    {
+        "id": 29,
+        "title": "wonderful life",
+        "launchYear": "2019",
+        "favorited": true,
+        "artists": [
+            "Bring Me the Horizon",
+            "Dani Filth"
+        ]
+    },
+    {
+        "id": 30,
+        "title": "Never Gonna Learn",
+        "launchYear": "2021",
+        "favorited": true,
+        "artists": [
+            "Asking Alexandria"
+        ]
+    },
+    {
+        "id": 31,
+        "title": "Alone Again",
+        "launchYear": "2021",
+        "favorited": true,
+        "artists": [
+            "Asking Alexandria"
+        ]
+    },
+    {
+        "id": 32,
+        "title": "The Black",
+        "launchYear": "2016",
+        "favorited": true,
+        "artists": [
+            "Asking Alexandria"
+        ]
+    },
+    {
+        "id": 33,
+        "title": "FullMoon",
+        "launchYear": "1999",
+        "favorited": true,
+        "artists": [
+            "Sonata Arctica"
+        ]
+    },
+    {
+        "id": 34,
+        "title": "The Story Ain’t Over",
+        "launchYear": "2008",
+        "favorited": true,
+        "artists": [
+            "Avantasia",
+            "Bob Catley",
+            "Amanda Somerville"
+        ]
+    },
+    {
+        "id": 35,
+        "title": "Windowpane",
+        "launchYear": "2003",
+        "favorited": true,
+        "artists": [
+            "Opeth"
+        ]
+    },
+    {
+        "id": 36,
+        "title": "To Bid You Farewell",
+        "launchYear": "1996",
+        "favorited": true,
+        "artists": [
+            "Opeth"
+        ]
+    },
+    {
+        "id": 37,
+        "title": "Farewell",
+        "launchYear": "2001",
+        "favorited": true,
+        "artists": [
+            "Avantasia"
+        ]
+    },
+    {
+        "id": 38,
+        "title": "Promises",
+        "launchYear": "2001",
+        "favorited": true,
+        "artists": [
+            "Megadeth"
+        ]
+    },
+    {
+        "id": 39,
+        "title": "Hallowed Be Thy Name",
+        "launchYear": "1982",
+        "favorited": true,
+        "artists": [
+            "Iron Maiden"
+        ]
+    },
+    {
+        "id": 40,
+        "title": "Fairy Tale",
+        "launchYear": "2002",
+        "favorited": true,
+        "artists": [
+            "Shaman"
+        ]
+    },
+    {
+        "id": 41,
+        "title": "Rime Of The Ancient Mariner",
+        "launchYear": "1984",
+        "favorited": true,
+        "artists": [
+            "Iron Maiden"
+        ]
+    },
+    {
+        "id": 42,
+        "title": "Stranded",
+        "launchYear": "2016",
+        "favorited": true,
+        "artists": [
+            "Gojira"
+        ]
+    },
+    {
+        "id": 43,
+        "title": "Silvera",
+        "launchYear": "2016",
+        "favorited": true,
+        "artists": [
+            "Gojira"
         ]
     }
 ]
