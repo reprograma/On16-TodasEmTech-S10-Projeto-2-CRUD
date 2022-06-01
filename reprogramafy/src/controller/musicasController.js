@@ -11,3 +11,7 @@ const getAllSongs = (request, response) => {
         })
     }
 }
+
+module.exports = {
+    getAllSongs
+}
