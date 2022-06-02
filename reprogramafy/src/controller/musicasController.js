@@ -71,16 +71,22 @@ const addSong = (request, response) =>{
 }
 
 const updateSong = (request, response) =>{
-    const idRequest = request.params.id
+    try{
+        const idRequest = request.params.id
     let atualizaRequest = request.body
 
     let indexEncontrado = musicJson.find(musica => musica.id == idRequest)
     musicJson.splice(indexEncontrado, 1, atualizaRequest)
 
-    response.status(200).json([{
+    response.status(201).json([{
         message: "Música Atualizada",
         musicJson
     }])
+    } catch (err){
+        response.status(500).send([{
+            message: "Erro Interno ao Cadastrar"
+        }])
+    }
 }
 
 module.exports = {
