@@ -10,6 +10,6 @@ router.get('/buscarmusica/:id', controller.getMusic)
 router.post('/cadastrar', controller.addSong)
 router.put('/atualizar/:id', controller.updateSong)
 router.delete('/deletar/:id', controller.deleteSong)
-//router.patch('favorita/:id', controller.updatefavorited)
+router.patch('/favoritar/:id', controller.updatefavorited)
 
 module.exports = router
