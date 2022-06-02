@@ -4,16 +4,17 @@
 </h1>
 
 <!--ts-->
-- [Apresentação](#apresentação)
-- [Instalações necessárias para o teste no Postman](#instalações-necessárias-para-o-teste-no-postman)
+- [{Reprograma}fy](#reprogramafy)
+- [Instalações necessárias para os testes no Postman](#instalações-necessárias-para-os-testes-no-postman)
   - [Iniciando a API Node.js](#iniciando-a-api-nodejs)
   - [Instalando o Express](#instalando-o-express)
-  - [Nodemon](#nodemon)
+  - [Instalando o Nodemon](#instalando-o-nodemon)
   - [Scripts package.json](#scripts-packagejson)
   - [Criando o arquivo .gitignore](#criando-o-arquivo-gitignore)
-- [Músicas](#músicas)
-- [Postman](#postman)
-- [Podcast](#podcast)
+- [{Reprograma}fy Músicas](#reprogramafy-músicas)
+- [Postman {Reprograma}fy Música](#postman-reprogramafy-música)
+- [{Reprograma}fy Podcast](#reprogramafy-podcast)
+- [Postman {Reprograma}fy Podcast](#postman-reprogramafy-podcast)
 - [Autora](#autora)
 
 <!--te-->
@@ -24,13 +25,13 @@
 <img src="img/capa-projeto.png" alt="logo reprogramafy" width="500">
 
 
-## Apresentação
+## {Reprograma}fy
 
-Parabéns, você foi escolhida para testar um novo produto que deverá ser lançado em breve. Na nossa playlist poderemos favoritar nossas músicas e ver quais artistas tocam a música. Além disso, poderemos inserir novas músicas ou remover da nossa playlist as que não queremos mais. Não curte músicas? Tem espaço pra podcast também!! No nosso {reprograma}fy você poderá listar todos os podcasts e também filtra-los por tópico. Somado a isso, pode também inserir novos podcasts ou remover algum já existente, além de conseguir avaliá-lo.
+Parabéns, você foi escolhida para testar um novo produto que deverá ser lançado em breve. Na nossa {Reprograma}fy poderemos favoritar nossas músicas e ver quais artistas tocam a música. Além disso, poderemos inserir novas músicas ou remover da nossa playlist as que não queremos mais. Não curte músicas? Tem espaço pra podcast também!! No nosso {reprograma}fy você poderá listar todos os podcasts e também filtra-los por tópico. Somado a isso, pode também inserir novos podcasts ou remover algum já existente, além de conseguir avaliá-lo.
 <br>
 
 
-## Instalações necessárias para o teste no Postman
+## Instalações necessárias para os testes no Postman
 
 ### Iniciando a API Node.js
 
@@ -46,7 +47,7 @@ Feito isso, precisaremos instalar o Express no nosso projeto, que é um framewor
 
 Ao rodar a instalação do express, uma *pasta node_modules* com os pacotes do meu projeto será criada. Se reparar, dentro dessa pasta teremos uma pasta chamada “express”. Toda vez que você rodar o comando ``` npm install``` essa pasta node_modules será atualizada com as últimas atualizações conforme o que estiver configurado no arquivo *package.json*.
 
-### Nodemon
+### Instalando o Nodemon
 
 Caso você esteja com o servidor rodando e tente alterar algum arquivo, para que o servidor capte essas alterações será necessário reiniciá-lo manualmente. Porém é bem chato ficar fazendo isso. Para evitar esse tipo de problema, podemos utilizar o *nodemon* para inicializar nosso servidor. Para utilizá-lo, deveremos primeiramente instalá-lo rodando o comando ```npm install nodemon --save```. Com o nodemon instalado, para rodar nosso servidor o utilizando, deveremos utilizar o comando ```nodemon server.js```. Com isso nosso servidor será inicializado com o nodemon e você poderá editar seus arquivos sem precisar reiniciá-lo.
 
@@ -67,7 +68,7 @@ Dessa forma para inicializar o servidor, basta digitar ```npm start``` no termin
 Devemos criar na raíz do "reprogramafy" o arquivo *.gitignore* e escrever nele ```node_modules/``` para o git nao trackear essa pasta para commit.
 
 
-## Músicas
+## {Reprograma}fy Músicas
 
 - [x] poder listar todas as músicas da playlist do usuário
 - [x] poder listar apenas uma música específica
@@ -90,26 +91,26 @@ Sendo assim precisaremos criar 7 rotas para músicas:
 | PATCH  | Favoritar/desfavoritar música          |
 
 
-## Postman
+## Postman {Reprograma}fy Música
 
 <br>
 
-- [x]  **`GET`** Rota listar todas as músicas da playlist do usuário | `localhost:1313/playlist/musics`;
+- [x]  **`GET`** Rota listar todas as músicas da playlist do usuário | `localhost:1313/playlist/music`;
 
- - [x]  **`GET`** Rota listar apenas uma música específica | `localhost:1313/playlist/musics/18`;
+ - [x]  **`GET`** Rota listar apenas uma música específica | `localhost:1313/playlist/music/1`;
 
- - [x]  **`GET`** Rota listar  músicas de um artista específico | `localhost:1313/playlist/search/artists?artists=Pablo Vittar`;
+ - [x]  **`GET`** Rota listar  músicas de um artista específico | `localhost:1313/playlist/search/artist?artists=Ariana Grande`;
 
 - [x]  **`POST`** Rota adicionar uma nova música | `localhost:1313/playlist/add`;
 
-- [x]  **`PUT`** Rota alterar informações da música | `localhost:1313/playlist/change/19`;
+- [x]  **`PUT`** Rota alterar informações da música | `localhost:1313/playlist/alterar/3`;
 
-- [x]  **`DELETE`** Rota remover uma música da lista | `localhost:1313/playlist/delete/16`;
+- [x]  **`DELETE`** Rota remover uma música da lista | `localhost:1313/playlist/deletar/5`;
 
-- [x]  **`PATCH`** favoritar/desfavoritar uma música | `localhost:1313/playlist/update/2`;
+- [x]  **`PATCH`** favoritar/desfavoritar uma música | `localhost:1313/playlist/favoritar/9`;
 
 
-## Podcast
+## {Reprograma}fy Podcast
 
 - [x] poder listar os podcasts
 - [x] poder listar os podcasts por tópico
@@ -126,6 +127,10 @@ Sendo assim precisaremos criar 5 rotas para podcasts:
 | GET    | Listar podcast por tópico              |
 | DELETE | Remover podcast                        |
 | PATCH  | Alterar a nota de um podcast           |
+
+
+## Postman {Reprograma}fy Podcast
+
 
 
 ## Autora
