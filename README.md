@@ -152,7 +152,7 @@ Sendo assim precisaremos criar 5 rotas para podcasts:
 
 
 <p align="center">
-Desenvolvido  🪐 por  <img alt="in version" src="https://img.shields.io/badge/-Andreza_Pipolo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jambs/"> com o apoio da {reprograma}
+Desenvolvido por  <img alt="in version" src="https://img.shields.io/badge/-Andreza_Pipolo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jambs/"> com o apoio da {reprograma}
 </p> <p align="center"> </p>
 
 
