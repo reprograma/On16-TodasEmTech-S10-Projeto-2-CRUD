@@ -1,21 +1,21 @@
 <h1 align="center">
     <br>
-    <p align="center">Reprograma - Semana 10 (Projeto Guiado II)<p>
+    <p align="center">Reprograma - Semana 10 (Projeto Guiado II)<p> 
 </h1>
 
-<h3 align="center">  Turma On16 Todas em Tech - Back-end | S10 :Woman Student: </h3> 
+<h3 align="center">  Turma On16 Todas em Tech - Back-end | S10  </h3> 
 
 <br>
-# Projeto API "{reprograma}fy" :Hand with Index Finger and Thumb Crossed:
+# Projeto API "{reprograma}fy" 
 </br>
 
 ### API Pronta!
 
-> ## Musics 	:notes:
+> ## Musics  :🎼:
 
 Uma API onde se encontra uma playlist de música, sendo viável favoritá-las. É possível inserir novas músicas ou removê-las. Podemos filtrar nossas músicas por artista ou id!
 
-### :game_die: `Dados`
+### 💻: `Dados`
 
 ```
 {
@@ -29,7 +29,7 @@ Uma API onde se encontra uma playlist de música, sendo viável favoritá-las. �
 }
 ```
 
-### :warning: `Requisitos` :warning:
+### `Requisitos`
 </br>
 
 - [x] listar todas as músicas da playlist do usuário
@@ -63,7 +63,7 @@ Uma API onde se encontra uma playlist de música, sendo viável favoritá-las. �
 Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-los por tópico. Também pode inserir novos podcasts ou remover algum já existente, além de conseguir avaliá-lo.
 <br>
 
-### :game_die: `Dados`
+### 💻: `Dados`
 
 ```
 {
@@ -75,7 +75,7 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 }
 ```
 
-### :warning: `Requisitos` :warning:
+###  `Requisitos` 
 </br>
 
 - [x] listar os podcasts
@@ -100,7 +100,7 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 
 <br>
 
-> ## :mage_woman: Iniciando a API Nodejs
+> ## 👩‍🎓: Iniciando a API Nodejs
 </br>
 
 | Passo | Comando/informação       |
@@ -112,7 +112,7 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 
 <br>
 
-### :zap: `Tecnologias`
+### ☑️: `Tecnologias`
 </br>
 
 | Ferramenta | Descrição |
@@ -125,7 +125,7 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 
 <br>
 
-### :triangular_ruler: `Arquitetura` 
+### 🏛️: `Arquitetura` 
 </br>
 
 :heavy_check_mark: Criação de 3 pastas no “src”
