@@ -150,12 +150,17 @@ Sendo assim precisaremos criar 5 rotas para podcasts:
  <br/>
 </a>
 
+<html>
+<body>
 <center>
 
 Desenvolvido com 🪐 por [![Linkedin Badge](https://img.shields.io/badge/-Andrezapipolo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andrezapipolo)](https://www.linkedin.com/in/andrezapipolo/) com o apoio da {reprograma}
 
-
 </center>
+</body>
+</html>
+
+
 
 
 
