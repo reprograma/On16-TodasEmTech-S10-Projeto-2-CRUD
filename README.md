@@ -5,12 +5,14 @@
 
 <!--ts-->
 - [Apresentação](#apresentação)
-- [Instalações Necessárias para o teste no Postman](#instalações-necessárias-para-o-teste-no-postman)
+- [Instalações necessárias para o teste no Postman](#instalações-necessárias-para-o-teste-no-postman)
   - [Iniciando a API Node.js](#iniciando-a-api-nodejs)
   - [Instalando o Express](#instalando-o-express)
   - [Nodemon](#nodemon)
   - [Scripts package.json](#scripts-packagejson)
   - [Criando o arquivo .gitignore](#criando-o-arquivo-gitignore)
+- [Músicas](#músicas)
+- [Podcast](#podcast)
 - [Postman Músic](#postman-músic)
   - [Testando a rota POST via Postman](#testando-a-rota-post-via-postman)
   - [Testando a rota PUT via Postman](#testando-a-rota-put-via-postman)
@@ -34,7 +36,7 @@ Parabéns, você foi escolhida para testar um novo produto que deverá ser lanç
 <br>
 
 
-## Instalações Necessárias para o teste no Postman
+## Instalações necessárias para o teste no Postman
 
 ### Iniciando a API Node.js
 
@@ -71,7 +73,7 @@ Dessa forma para inicializar o servidor, basta digitar ```npm start``` no termin
 Devemos criar na raíz do "reprogramafy" o arquivo *.gitignore* e escrever nele ```node_modules/``` para o git nao trackear essa pasta para commit.
 
 
-O novo produto de músicas deverá:
+## Músicas
 
 - [x] poder listar todas as músicas da playlist do usuário
 - [x] poder listar apenas uma música específica
@@ -94,7 +96,7 @@ Sendo assim precisaremos criar 7 rotas para músicas:
 | PATCH  | Favoritar/desfavoritar música          |
 
 
-O novo produto de podcasts deverá:
+## Podcast
 
 - [x] poder listar os podcasts
 - [x] poder listar os podcasts por tópico
