@@ -22,7 +22,9 @@
 <br>
 <br>
 
+<p align="center">
 <img src="img/capa-projeto.png" alt="logo reprogramafy" width="500">
+</p> <p align="center"> </p>
 
 
 ## 〽️ {Reprograma}fy
