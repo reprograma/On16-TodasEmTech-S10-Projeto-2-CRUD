@@ -12,9 +12,9 @@
   - [🧩 Scripts package.json](#-scripts-packagejson)
   - [🧩 Criando o arquivo .gitignore](#-criando-o-arquivo-gitignore)
 - [🎧 {Reprograma}fy Músicas](#-reprogramafy-músicas)
-- [📎 Postman {Reprograma}fy Música](#-postman-reprogramafy-música)
+- [🔗 Postman {Reprograma}fy Música](#-postman-reprogramafy-música)
 - [🎤 {Reprograma}fy Podcast](#-reprogramafy-podcast)
-- [📎 Postman {Reprograma}fy Podcast](#-postman-reprogramafy-podcast)
+- [🔗 Postman {Reprograma}fy Podcast](#-postman-reprogramafy-podcast)
 - [Autora](#autora)
 
 <!--te-->
@@ -91,7 +91,7 @@ Sendo assim precisaremos criar 7 rotas para músicas:
 | PATCH  | Favoritar/desfavoritar música          |
 
 
-## 📎 Postman {Reprograma}fy Música
+## 🔗 Postman {Reprograma}fy Música
 
 
 **`GET`** Rota listar todas as músicas da playlist do usuário | `localhost:1313/playlist/music`;
@@ -128,7 +128,7 @@ Sendo assim precisaremos criar 5 rotas para podcasts:
 | PATCH  | Alterar a nota de um podcast           |
 
 
-## 📎 Postman {Reprograma}fy Podcast
+## 🔗 Postman {Reprograma}fy Podcast
 
 **`GET`** Rota listar os podcasts | `localhost:1313/podcast/library` ;
 
