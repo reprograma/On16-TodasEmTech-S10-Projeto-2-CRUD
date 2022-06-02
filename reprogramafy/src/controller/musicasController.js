@@ -65,7 +65,7 @@ const addSong = (request, response) =>{
         })
     } catch (err) {
         response.status(500).send({
-            message: "Erro Interno ao Cadastrar"
+            message: "Erro ao Cadastrar"
         })
     }
 }
@@ -84,7 +84,7 @@ const updateSong = (request, response) =>{
     })
     } catch (err){
         response.status(500).send({
-            message: "Erro Interno ao Cadastrar"
+            message: "Erro ao Cadastrar"
         })
     }
 }
@@ -103,7 +103,7 @@ const deleteSong = (request, response) => {
         })
     } catch (err){
         response.status(400).send({
-            message: "Erro Interno ao deletar música"
+            message: "Erro ao deletar música"
         })
     }
 }
