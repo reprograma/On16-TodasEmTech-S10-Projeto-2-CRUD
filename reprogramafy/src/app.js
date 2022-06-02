@@ -1,18 +1,20 @@
 // centralizando o conteudo da aplicacao
-// rota raiz
-const express = require("express") //importando o express
 
-//importe da continuacao das rotas de filmes
+//importando o express
+const express = require("express") 
+
+//importe da continuacao das rotas
 const musicasRoutes = require("./routes/musicasRoutes")
 const podcastsRoutes = require("./routes/podcastsRoutes")
 
+// executo o express
+const app = express() 
 
-const app = express() // executo o express
-
-app.use(express.json()) // uso o bodyparser
+// uso o bodyparser para manipular os dados do json
+app.use(express.json()) 
 
 // criar uma rota raiz
-app.use("/playlist", musicasRoutes)
+app.use("/reprofy", musicasRoutes)
 app.use("/podlist", podcastsRoutes)
 
 

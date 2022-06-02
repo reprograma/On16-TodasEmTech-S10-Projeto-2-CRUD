@@ -1,8 +1,13 @@
-const app = require("./src/app") //chamando o arquivo app
+// acessando app.js
+const app = require("./src/app") 
+// estabelecendo a porta com variável
+const PORT = 1313 
 
-const PORT = 1313 //PORTA
-
-//iniciando o servidor
-app.listen(PORT , ()=>{
-    console.log(`eaiiii, to na porta ${PORT}`)
+// iniciando o servidor
+app.listen(PORT, () => 
+{
+    console.log(`
+    ------------Hola!----------------
+    =================================
+     bienvenida al puerta ${PORT}!`)
 })
