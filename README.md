@@ -72,13 +72,13 @@ Devemos criar na raíz do "reprogramafy" o arquivo *.gitignore* e escrever nele 
 
 ## 🎧 {Reprograma}fy Músicas
 
-- ✅ poder listar todas as músicas da playlist do usuário
-- ✅ poder listar apenas uma música específica
-- ✅ poder listar  músicas de um artista específico
-- ✅ poder adicionar uma nova música
-- ✅ poder remover uma música da lista
-- ✅ poder alterar informações da música
-- ✅ poder favoritar/desfavoritar uma música
+✅ poder listar todas as músicas da playlist do usuário
+✅ poder listar apenas uma música específica
+✅ poder listar  músicas de um artista específico
+✅ poder adicionar uma nova música
+✅ poder remover uma música da lista
+✅ poder alterar informações da música
+✅ poder favoritar/desfavoritar uma música
 
 Sendo assim precisaremos criar 7 rotas para músicas:
 
@@ -113,11 +113,11 @@ Sendo assim precisaremos criar 7 rotas para músicas:
 
 ## 🎤 {Reprograma}fy Podcast
 
-- ✅ poder listar os podcasts
-- ✅ poder listar os podcasts por tópico
-- ✅ poder adicionar um podcast
-- ✅ poder remover um podcast da lista
-- ✅ poder alterar a nota do podcast
+✅ poder listar os podcasts
+✅ poder listar os podcasts por tópico
+✅ poder adicionar um podcast
+✅ poder remover um podcast da lista
+✅ poder alterar a nota do podcast
 
 Sendo assim precisaremos criar 5 rotas para podcasts:
 
