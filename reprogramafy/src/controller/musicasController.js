@@ -108,12 +108,32 @@ const deleteSong = (request, response) => {
     }
 }
 
+const updatefavorited = (request, response) => {
+    const idRequest = request.params.id
+    const favoritedRequest = request.body.favorited
+
+    favoritedFilter = musicJson.find(music => music.id == idRequest)
+
+    if(favoritedFilter) {
+        favoritedFilter.favorited = favoritedRequest
+        response.status(200).json([{
+            message: "Alterada com sucesso",
+            "Musica Alterada": idRequest,
+            musicJson
+        }])
+    } else {
+        response.status(404).json([{
+            message: "Não foi possível alterar"
+        }])
+    }
+}
+
 module.exports = {
     getAllSongs,
     getMusic,
     getArtista,
     addSong,
     updateSong,
-    deleteSong
-    // updatefavorited
+    deleteSong,
+    updatefavorited
 }
