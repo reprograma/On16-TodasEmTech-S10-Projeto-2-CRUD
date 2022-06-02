@@ -12,6 +12,7 @@
   - [Scripts package.json](#scripts-packagejson)
   - [Criando o arquivo .gitignore](#criando-o-arquivo-gitignore)
 - [Músicas](#músicas)
+- [Postman](#postman)
 - [Podcast](#podcast)
 - [Autora](#autora)
 
@@ -87,6 +88,25 @@ Sendo assim precisaremos criar 7 rotas para músicas:
 | DELETE | Remover música                         |
 | PUT    | Alterar informações da música          |
 | PATCH  | Favoritar/desfavoritar música          |
+
+
+## Postman
+
+<br>
+
+- [x]  **`GET`** Rota listar todas as músicas da playlist do usuário | `localhost:1313/playlist/musics`;
+
+ - [x]  **`GET`** Rota listar apenas uma música específica | `localhost:1313/playlist/musics/18`;
+
+ - [x]  **`GET`** Rota listar  músicas de um artista específico | `localhost:1313/playlist/search/artists?artists=Pablo Vittar`;
+
+- [x]  **`POST`** Rota adicionar uma nova música | `localhost:1313/playlist/add`;
+
+- [x]  **`PUT`** Rota alterar informações da música | `localhost:1313/playlist/change/19`;
+
+- [x]  **`DELETE`** Rota remover uma música da lista | `localhost:1313/playlist/delete/16`;
+
+- [x]  **`PATCH`** favoritar/desfavoritar uma música | `localhost:1313/playlist/update/2`;
 
 
 ## Podcast
