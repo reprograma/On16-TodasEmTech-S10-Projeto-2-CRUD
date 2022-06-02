@@ -1,20 +1,20 @@
 <h1 align="center">
     <br>
-    <p align="center">Projeto API Nodejs {reprograma}fy<p>
+    <p align="center">〽️ Projeto API Nodejs {reprograma}fy 〽️<p>
 </h1>
 
 <!--ts-->
-- [{Reprograma}fy](#reprogramafy)
+- [〽️ {Reprograma}fy](#️-reprogramafy)
 - [📣 Instalações necessárias para os testes no Postman](#-instalações-necessárias-para-os-testes-no-postman)
   - [🧩 Iniciando a API Node.js](#-iniciando-a-api-nodejs)
   - [🧩 Instalando o Express](#-instalando-o-express)
   - [🧩 Instalando o Nodemon](#-instalando-o-nodemon)
   - [🧩 Scripts package.json](#-scripts-packagejson)
   - [🧩 Criando o arquivo .gitignore](#-criando-o-arquivo-gitignore)
-- [{Reprograma}fy Músicas](#reprogramafy-músicas)
-- [Postman {Reprograma}fy Música](#postman-reprogramafy-música)
+- [🧑‍🎤 {Reprograma}fy Músicas](#-reprogramafy-músicas)
+- [📎 Postman {Reprograma}fy Música](#-postman-reprogramafy-música)
 - [🎤 {Reprograma}fy Podcast](#-reprogramafy-podcast)
-- [Postman {Reprograma}fy Podcast](#postman-reprogramafy-podcast)
+- [📎 Postman {Reprograma}fy Podcast](#-postman-reprogramafy-podcast)
 - [Autora](#autora)
 
 <!--te-->
@@ -25,7 +25,7 @@
 <img src="img/capa-projeto.png" alt="logo reprogramafy" width="500">
 
 
-## {Reprograma}fy
+## 〽️ {Reprograma}fy
 
 Parabéns, você foi escolhida para testar um novo produto que deverá ser lançado em breve. Na nossa {Reprograma}fy poderemos favoritar nossas músicas e ver quais artistas tocam a música. Além disso, poderemos inserir novas músicas ou remover da nossa playlist as que não queremos mais. Não curte músicas? Tem espaço pra podcast também!! No nosso {reprograma}fy você poderá listar todos os podcasts e também filtra-los por tópico. Somado a isso, pode também inserir novos podcasts ou remover algum já existente, além de conseguir avaliá-lo.
 <br>
@@ -68,7 +68,7 @@ Dessa forma para inicializar o servidor, basta digitar ```npm start``` no termin
 Devemos criar na raíz do "reprogramafy" o arquivo *.gitignore* e escrever nele ```node_modules/``` para o git nao trackear essa pasta para commit.
 
 
-## {Reprograma}fy Músicas
+## 🧑‍🎤 {Reprograma}fy Músicas
 
 - ✅ poder listar todas as músicas da playlist do usuário
 - ✅ poder listar apenas uma música específica
@@ -91,7 +91,7 @@ Sendo assim precisaremos criar 7 rotas para músicas:
 | PATCH  | Favoritar/desfavoritar música          |
 
 
-## Postman {Reprograma}fy Música
+## 📎 Postman {Reprograma}fy Música
 
 
 **`GET`** Rota listar todas as músicas da playlist do usuário | `localhost:1313/playlist/music`;
@@ -128,7 +128,7 @@ Sendo assim precisaremos criar 5 rotas para podcasts:
 | PATCH  | Alterar a nota de um podcast           |
 
 
-## Postman {Reprograma}fy Podcast
+## 📎 Postman {Reprograma}fy Podcast
 
 **`GET`** Rota listar os podcasts | `localhost:1313/podcast/library` ;
 
