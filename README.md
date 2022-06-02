@@ -15,7 +15,7 @@
 - [🔗 Postman {Reprograma}fy Música](#-postman-reprogramafy-música)
 - [🎤 {Reprograma}fy Podcast](#-reprogramafy-podcast)
 - [🔗 Postman {Reprograma}fy Podcast](#-postman-reprogramafy-podcast)
-- [Autora](#autora)
+- [🎄 Autora](#-autora)
 
 <!--te-->
 
@@ -144,7 +144,7 @@ Sendo assim precisaremos criar 5 rotas para podcasts:
 
 
 
-## Autora
+## 🎄 Autora
 
 <p align="center">
 <a>
