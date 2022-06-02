@@ -161,7 +161,7 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 ----
 
 <p align="center">
-  <img src="https://media.giphy.com/media/ZBoHqyxmhv85ff3qOI/giphy.gif" width= "400px"/>
+  <img src="https://media.giphy.com/media/ZBoHqyxmhv85ff3qOI/giphy-downsized.gif" />
 </p>
 
 <p align="center">
