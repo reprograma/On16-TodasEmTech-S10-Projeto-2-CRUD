@@ -94,19 +94,19 @@ Sendo assim precisaremos criar 7 rotas para músicas:
 ## Postman {Reprograma}fy Música
 
 
-🗸  **`GET`** Rota listar todas as músicas da playlist do usuário | `localhost:1313/playlist/music`;
+**`GET`** Rota listar todas as músicas da playlist do usuário | `localhost:1313/playlist/music`;
 
-🗸  **`GET`** Rota listar apenas uma música específica | `localhost:1313/playlist/music/1`;
+**`GET`** Rota listar apenas uma música específica | `localhost:1313/playlist/music/1`;
 
-🗸  **`GET`** Rota listar  músicas de um artista específico | `localhost:1313/playlist/search/artist?artists=Ariana Grande`;
+**`GET`** Rota listar  músicas de um artista específico | `localhost:1313/playlist/search/artist?artists=Ariana Grande`;
 
-🗸  **`POST`** Rota adicionar uma nova música | `localhost:1313/playlist/add`;
+**`POST`** Rota adicionar uma nova música | `localhost:1313/playlist/add`;
 
-🗸  **`PUT`** Rota alterar informações da música | `localhost:1313/playlist/alterar/3`;
+**`PUT`** Rota alterar informações da música | `localhost:1313/playlist/alterar/3`;
 
-🗸  **`DELETE`** Rota remover uma música da lista | `localhost:1313/playlist/deletar/5`;
+**`DELETE`** Rota remover uma música da lista | `localhost:1313/playlist/deletar/5`;
 
-🗸  **`PATCH`** favoritar/desfavoritar uma música | `localhost:1313/playlist/favoritar/9`;
+**`PATCH`** favoritar/desfavoritar uma música | `localhost:1313/playlist/favoritar/9`;
 
 
 ## 🎤 {Reprograma}fy Podcast
@@ -130,15 +130,15 @@ Sendo assim precisaremos criar 5 rotas para podcasts:
 
 ## Postman {Reprograma}fy Podcast
 
- 🗸  **`GET`** Rota listar os podcasts | `localhost:1313/podcast/library` ;
+**`GET`** Rota listar os podcasts | `localhost:1313/podcast/library` ;
 
- 🗸  **`GET`** Rota listar os podcasts por tópico | `localhost:1313/podcast/library/topic?topic=tecnologia`;
+**`GET`** Rota listar os podcasts por tópico | `localhost:1313/podcast/library/topic?topic=tecnologia`;
 
-🗸  **`POST`** Rota adicionar uma nova música | `localhost:1313/podcast/add`;
+**`POST`** Rota adicionar uma nova música | `localhost:1313/podcast/add`;
 
-🗸  **`DELETE`** Rota remover uma música da lista | `localhost:1313/podcast/delete/2`;
+**`DELETE`** Rota remover uma música da lista | `localhost:1313/podcast/delete/2`;
 
-🗸  **`PATCH`** Rota favoritar/desfavoritar uma música | `localhost:1313/podcast/update/1`;
+**`PATCH`** Rota favoritar/desfavoritar uma música | `localhost:1313/podcast/update/1`;
 
 
 
