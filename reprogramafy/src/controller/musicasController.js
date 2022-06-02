@@ -2,9 +2,9 @@ const musicJson = require('../models/musicas.json')
 
 const getAllSongs = (request, response) => {
     try{
-        response.status(200).json([{
+        response.status(200).json({
             "musicas": musicJson
-        }])
+        })
     } catch (err){
         response.status(500).send({
             message: 'Erro no servidor'
@@ -19,9 +19,9 @@ const getMusic = (request, response) => {
     if (musicFind) {
         response.status(200).send(musicFind)
     } else {
-        response.status(404).send([{
+        response.status(404).send({
             message: "Música não encontrada"
-        }])
+        })
     }
 }
 
@@ -36,9 +36,9 @@ const getArtista = (request, response) => {
     if(musicEncontrada.length > 0){
         response.status(200).send(musicEncontrada)
     } else {
-        response.status(404).send([{
+        response.status(404).send({
             message: "Artista não encontrado"
-        }])
+        })
     }
 }
 
@@ -59,14 +59,14 @@ const addSong = (request, response) =>{
 
         musicJson.push(newSong)
 
-        response.status(201).json([{
+        response.status(201).json({
             message: "Nova Música cadastrada",
             newSong
-        }])
+        })
     } catch (err) {
-        response.status(500).send([{
+        response.status(500).send({
             message: "Erro Interno ao Cadastrar"
-        }])
+        })
     }
 }
 
@@ -78,14 +78,14 @@ const updateSong = (request, response) =>{
     let indexEncontrado = musicJson.find(musica => musica.id == idRequest)
     musicJson.splice(indexEncontrado, 1, atualizaRequest)
 
-    response.status(201).json([{
+    response.status(201).json({
         message: "Música Atualizada",
         musicJson
-    }])
+    })
     } catch (err){
-        response.status(500).send([{
+        response.status(500).send({
             message: "Erro Interno ao Cadastrar"
-        }])
+        })
     }
 }
 
@@ -96,15 +96,15 @@ const deleteSong = (request, response) => {
 
         musicJson.splice(deleteMusica, 1)
 
-        response.status(200).json([{
+        response.status(204).json({
             "message": "Música deletada com Sucesso",
             "Deletada": idRequest,
             musicJson
-        }])
+        })
     } catch (err){
-        response.status(500).send([{
+        response.status(400).send({
             message: "Erro Interno ao deletar música"
-        }])
+        })
     }
 }
 
@@ -116,15 +116,15 @@ const updatefavorited = (request, response) => {
 
     if(favoritedFilter) {
         favoritedFilter.favorited = favoritedRequest
-        response.status(200).json([{
+        response.status(200).json({
             message: "Alterada com sucesso",
             "Musica Alterada": idRequest,
             musicJson
-        }])
+        })
     } else {
-        response.status(404).json([{
+        response.status(404).json({
             message: "Não foi possível alterar"
-        }])
+        })
     }
 }
 
