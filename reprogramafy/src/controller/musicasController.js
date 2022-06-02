@@ -89,12 +89,31 @@ const updateSong = (request, response) =>{
     }
 }
 
+const deleteSong = (request, response) => {
+    try{
+        const idRequest = request.params.id
+        const deleteMusica = musicJson.findIndex(music => music.id == idRequest)
+
+        musicJson.splice(deleteMusica, 1)
+
+        response.status(200).json([{
+            "message": "Música deletada com Sucesso",
+            "Deletada": idRequest,
+            musicJson
+        }])
+    } catch (err){
+        response.status(500).send([{
+            message: "Erro Interno ao deletar música"
+        }])
+    }
+}
+
 module.exports = {
     getAllSongs,
     getMusic,
     getArtista,
     addSong,
-    updateSong
-    // deleteSong,
+    updateSong,
+    deleteSong
     // updatefavorited
 }
