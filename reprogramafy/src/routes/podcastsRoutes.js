@@ -1,16 +1,16 @@
-// chamar o controller de podcat
-const controller = require('../controller/podcastsController')
-// chamando express
-const express = require ('express')
-// funcão que chama as rotas de express
-const router = express.Router()
+const controller = require("../controller/podcastsController");
 
-// router. metodo http (rota, função)
+const express = require("express");
 
-router.get('/biblioteca', controller.getAllPods)
+// funcao de rotas de express
+const router = express.Router();
 
+// router. metodo http (rota, funcao)
 
-// exportar para ser usadno no app.js
+router.get("/biblioteca", controller.getAllPods);
+router.get("/biblioteca/tema", controller.getTopics);
+router.post("/adicionar", controller.addPods);
+router.patch("/atualizar/:id", controller.atualizarPods);
+router.delete("/deletar/:id", controller.deletePods);
 
-
-module.exports = router
+module.exports = router;
