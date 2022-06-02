@@ -28,7 +28,7 @@ const getPodByTopic = (req, res) => {
       res.status(404).send({ message: 'Tópico não encontrado' })
     }
   } catch (err) {
-    response.status(500).send({ message: 'Erro no server' })
+    res.status(500).send({ message: 'Erro no server' })
   }
 }
 
@@ -61,7 +61,7 @@ const createPod = (req, res) => {
   }
 }
 
-const updateStars = (req, res) => {
+const updatePods = (req, res) => {
   try {
     const idRequest = req.params.id
     const starsRequest = req.body.stars
@@ -89,12 +89,33 @@ const updateStars = (req, res) => {
   }
 }
 
-// TODO const deletePod = (req, res) =>
+const deletePod = (req, res) => {
+  const idRequest = req.params.id;
+  const indexFound = pods.findIndex((pods) => pods.id == idRequest);
+
+  pods.splice(indexFound, 1, idRequest);
+
+  if (indexFound > -1) {
+    res.status(200).json([
+      {
+        message: "Esse podcast foi deletado!",
+        "Podcast deletado": idRequest,
+        Podcasts: pods,
+      },
+    ]);
+  } else {
+    res.status(404).send([
+      {
+        message: "Esse podcast não foi deletado!",
+      },
+    ]);
+  }
+};
 
 module.exports = {
   getAllPods,
   getPodByTopic,
   createPod,
-  updateStars,
-  // TODO deletePod,
+  updatePods,
+  deletePod
 }

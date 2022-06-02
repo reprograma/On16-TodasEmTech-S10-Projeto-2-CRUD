@@ -132,15 +132,15 @@ Sendo assim precisaremos criar 5 rotas para podcasts:
 
 ## 🔗 Postman {Reprograma}fy Podcast
 
-**`GET`** Rota listar os podcasts | `localhost:1313/podcast/library` ;
+**`GET`** Rota listar os podcasts | `localhost:1313/podlist/pods` ;
 
-**`GET`** Rota listar os podcasts por tópico | `localhost:1313/podcast/library/topic?topic=tecnologia`;
+**`GET`** Rota listar os podcasts por tópico | `localhost:1313/podlist/pods/topic?topic=feminismo`;
 
-**`POST`** Rota adicionar uma nova música | `localhost:1313/podcast/add`;
+**`POST`** Rota adicionar uma nova música | `localhost:1313/podlist/pods`;
 
-**`DELETE`** Rota remover uma música da lista | `localhost:1313/podcast/delete/2`;
+**`DELETE`** Rota remover uma música da lista | `localhost:1313/podlist/delete/3`;
 
-**`PATCH`** Rota favoritar/desfavoritar uma música | `localhost:1313/podcast/update/1`;
+**`PATCH`** Rota favoritar/desfavoritar uma música | `localhost:1313/podlist/update/3`;
 
 
 
