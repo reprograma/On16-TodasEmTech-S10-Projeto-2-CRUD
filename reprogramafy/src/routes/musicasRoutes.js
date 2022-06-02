@@ -9,7 +9,7 @@ router.get('/artista', controller.getArtista)
 router.get('/buscarmusica/:id', controller.getMusic)
 router.post('/cadastrar', controller.addSong)
 router.put('/atualizar/:id', controller.updateSong)
-//router.delete('deletar/:id', controller.deleteSong)
+router.delete('/deletar/:id', controller.deleteSong)
 //router.patch('favorita/:id', controller.updatefavorited)
 
 module.exports = router
