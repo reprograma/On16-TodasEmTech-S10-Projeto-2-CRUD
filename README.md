@@ -144,6 +144,8 @@ Sendo assim precisaremos criar 5 rotas para podcasts:
 
 ## Autora
 
+[![Linkedin Badge](https://img.shields.io/badge/-andrezapipolo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andrezapipolo//)](https://www.linkedin.com/in/andrezapipolo/)
+
 
 <p align="center">
 Desenvolvido com 🪐 por Andreza Pipolo com o apoio da {reprograma}
