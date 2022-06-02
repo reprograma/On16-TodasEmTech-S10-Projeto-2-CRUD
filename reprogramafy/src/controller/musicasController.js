@@ -25,7 +25,56 @@ const getMusic = (request, response) => {
     }
 }
 
+const getArtista = (request, response) => {
+    let artistaRequest = request.query.artists.toLowerCase()
+   
+    let musicEncontrada = musicJson.filter(musica => {
+        artistasLowerCase = musica.artists.map(artista => artista.toLowerCase())
+        return artistasLowerCase.includes(artistaRequest)
+    })
+
+    if(musicEncontrada.length > 0){
+        response.status(200).send(musicEncontrada)
+    } else {
+        response.status(404).send([{
+            message: "Artista não encontrado"
+        }])
+    }
+}
+
+const addSong = (request, response) =>{
+    try{
+        let titleRequest = request.body.title
+        let anoRequest = request.body.launchYear
+        let favoritedRequest = request.body.favorited
+        let artistsRequest = request.body.artists
+
+        let newSong = {
+            id: Math.floor(Date.now() * Math.random()).toString(36),
+            title: titleRequest,
+            launchYear: anoRequest,
+            favorited: favoritedRequest,
+            artists: artistsRequest
+        }
+
+        musicJson.push(newSong)
+
+        response.status(201).json([{
+            message: "Nova Música cadastrada",
+            newSong
+        }])
+    } catch (err) {
+        response.status(500).send([{
+            message: "Erro Interno ao Cadastrar"
+        }])
+    }
+}
+
 module.exports = {
     getAllSongs,
-    getMusic
+    getMusic,
+    getArtista,
+    addSong
+    // deleteSong,
+    // updatefavorited
 }
