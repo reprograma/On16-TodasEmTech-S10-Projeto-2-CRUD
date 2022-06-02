@@ -28,11 +28,15 @@ const getMusic = (request, response) => {
 };
 
 const getArtist = (request, response) => {
-  const artistsRequest = request.query.artists;
-  const artistsFilter = music.filter((music) =>
-    music.artists.includes(artistsRequest)
-  );
+  let artistsRequest = request.query.artists.toLowerCase();
 
+  let artistsFilter = music.filter((musica) => {
+    artistasLowerCase = musica.artists.map((artistasArray) =>
+      artistasArray.toLowerCase()
+    );
+    return artistasLowerCase.includes(artistsRequest);
+  });
+  console.log(artistsFilter);
   if (artistsFilter.length > 0) {
     response.status(200).send(artistsFilter);
   } else {
