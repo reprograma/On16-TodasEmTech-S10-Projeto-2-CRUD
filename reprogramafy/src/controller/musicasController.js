@@ -70,11 +70,25 @@ const addSong = (request, response) =>{
     }
 }
 
+const updateSong = (request, response) =>{
+    const idRequest = request.params.id
+    let atualizaRequest = request.body
+
+    let indexEncontrado = musicJson.find(musica => musica.id == idRequest)
+    musicJson.splice(indexEncontrado, 1, atualizaRequest)
+
+    response.status(200).json([{
+        message: "Música Atualizada",
+        musicJson
+    }])
+}
+
 module.exports = {
     getAllSongs,
     getMusic,
     getArtista,
-    addSong
+    addSong,
+    updateSong
     // deleteSong,
     // updatefavorited
 }
