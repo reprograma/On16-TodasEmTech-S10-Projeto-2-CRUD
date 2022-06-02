@@ -153,7 +153,7 @@ A interface é um CRUD, onde é possível listar as músicas/podcasts na base de
 * [Reprogramafy] (https://open.spotify.com/playlist/6F5yMuNt1jz33sBnRgWmSx?si=5avZgYKSTY-doIZ1Rj2NsA&utm_source=copy-link);
 * [Repro] (https://open.spotify.com/playlist/6F5yMuNt1jz33sBnRgWmSx?si=JuTMrldYQxefyHky6N0RFw&utm_source=native-share-menu);
     
- [Reprogramafy]((https://open.spotify.com/playlist/6F5yMuNt1jz33sBnRgWmSx?si=5avZgYKSTY-doIZ1Rj2NsA&utm_source=copy-link))
+ [Reprogramafy] (https://open.spotify.com/playlist/6F5yMuNt1jz33sBnRgWmSx?si=5avZgYKSTY-doIZ1Rj2NsA&utm_source=copy-link)
 
 </br>
 </br>
