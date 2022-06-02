@@ -72,9 +72,9 @@ Devemos criar na raíz do "reprogramafy" o arquivo *.gitignore* e escrever nele 
 
 ## 🎧 {Reprograma}fy Músicas
 
-- ✅ poder listar todas as músicas da playlist do usuário
-- ✅ poder listar apenas uma música específica
-- ✅ poder listar  músicas de um artista específico
+ ✅ poder listar todas as músicas da playlist do usuário
+<br> ✅ poder listar apenas uma música específica
+<br>✅ poder listar  músicas de um artista específico
 - ✅ poder adicionar uma nova música
 - ✅ poder remover uma música da lista
 - ✅ poder alterar informações da música
