@@ -147,13 +147,15 @@ A interface é um CRUD, onde é possível listar as músicas/podcasts na base de
 </br>
 </br>
 
-### Se você se interessou pela playlist de músicas do {Reprograma}fy só clicar na imagem:
+### Se você se interessou pela playlist de músicas do {Reprograma}fy só clicar no link:
 </br>
-<p align=center>
-* [Reprogramafy] (https://open.spotify.com/playlist/6F5yMuNt1jz33sBnRgWmSx?si=5avZgYKSTY-doIZ1Rj2NsA&utm_source=copy-link);
-* [Repro] (https://open.spotify.com/playlist/6F5yMuNt1jz33sBnRgWmSx?si=JuTMrldYQxefyHky6N0RFw&utm_source=native-share-menu);
-    
- [Reprogramafy] (https://open.spotify.com/playlist/6F5yMuNt1jz33sBnRgWmSx?si=5avZgYKSTY-doIZ1Rj2NsA&utm_source=copy-link)
+
+<img src="material/image/reprogramafy.png"  width="20%" height="20%" />
+
+
+#### [Reprogramafy](https://open.spotify.com/playlist/6F5yMuNt1jz33sBnRgWmSx?si=5avZgYKSTY-doIZ1Rj2NsA&utm_source=copy-link)
+
+
 
 </br>
 </br>
