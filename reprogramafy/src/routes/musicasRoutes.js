@@ -11,9 +11,9 @@ const router = express.Router()
 
 // router. metodo http (rota, funcao)
 
-router.get('/musics/', controller.getAllMusic)
-router.get('/musics/:id', controller.getMusicById)
+router.get('/musics', controller.getAllMusic)
 router.get('/musics/artists', controller.getMusicByArtist)
+router.get('/musics/:id', controller.getMusicById)
 router.post('/musics', controller.createMusic)
 router.put('/musics/:id', controller.updateMusic)
 router.delete('/musics/:id', controller.deleteMusicById)
