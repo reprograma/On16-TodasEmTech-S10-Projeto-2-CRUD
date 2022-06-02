@@ -21,159 +21,205 @@
     },
     {
         "id": 3,
-        "title": "Underere",
-        "launchYear": "2016",
+        "title": "No Son Of Mine",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Ines Brasil"
+            "Foo Fighters"
         ]
     },
     {
         "id": 4,
-        "title": "Parabens",
-        "launchYear": "2020",
+        "title": "Baby Come Home",
+        "launchYear": "2012",
         "favorited": true,
         "artists": [
-            "Pablo Vittar",
-            "Psirico"
+            "Scissor Sisters"
         ]
     },
     {
         "id": 5,
-        "title": "November Rain",
-        "launchYear": "1991",
+        "title": "Metalingus",
+        "launchYear": "2004",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Alter Bridge"
         ]
     },
     {
         "id": 6,
-        "title": "Na sua estante",
-        "launchYear": "2005",
+        "title": "I Am Here",
+        "launchYear": "2017",
         "favorited": true,
         "artists": [
-            "Pitty"
+            "Pink"
         ]
     },
     {
         "id": 7,
-        "title": "Bodak Yellow",
-        "launchYear": "2018",
+        "title": "Kissing Strangers",
+        "launchYear": "2017",
         "favorited": true,
         "artists": [
-            "Cardi B"
+            "DNCE",
+            "Nicki Minaj"
         ]
     },
     {
         "id": 8,
-        "title": "Nothing else matters",
-        "launchYear": "1991",
-        "favorited": true,
-        "artists": [
-            "Metallica"
-        ]
-    },
-    {
-        "id": 9,
-        "title": "Zero",
-        "launchYear": "2015",
-        "favorited": true,
-        "artists": [
-            "Liniker"
-        ]
-    },
-    {
-        "id": 10,
-        "title": "Peligrosa",
-        "launchYear": "2022",
-        "favorited": true,
-        "artists": [
-            "Urias"
-        ]
-    },
-    {
-        "id": 11,
-        "title": "Dangerous woman",
-        "launchYear": "2016",
+        "title": "God Is A Woman",
+        "launchYear": "2017",
         "favorited": true,
         "artists": [
             "Ariana Grande"
         ]
     },
     {
-        "id": 12,
-        "title": "Sorry",
+        "id": 9,
+        "title": "Watch Me Burn",
+        "launchYear": "2020",
+        "favorited": true,
+        "artists": [
+            "Michele Morrone"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Love Rears Its Ugly Head",
+        "launchYear": "1990",
+        "favorited": true,
+        "artists": [
+            "Living Colour"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Find Me",
         "launchYear": "2016",
         "favorited": true,
         "artists": [
-            "Beyonce"
+            "Kings of Leon"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Place Your Hands",
+        "launchYear": "1997",
+        "favorited": true,
+        "artists": [
+            "Reef"
         ]
     },
     {
         "id": 13,
-        "title": "Modo turbo",
-        "launchYear": "2021",
+        "title": "Guerrilla Radio",
+        "launchYear": "1999",
         "favorited": true,
         "artists": [
-            "Luisa Sonza",
-            "Anitta",
-            "Pablo Vittar"
+            "Rage Against The Machine"
         ]
     },
     {
         "id": 14,
-        "title": "Number one",
-        "launchYear": "2020",
+        "title": "Barbie",
+        "launchYear": "2022",
         "favorited": true,
         "artists": [
-            "Pablo Vittar"
+            "Rebecca",
+            "Lexa",
+            "Pocah",
+            "Danny Bond"
         ]
     },
     {
         "id": 15,
-        "title": "Patience",
-        "launchYear": "1991",
+        "title": "Dark Necessities",
+        "launchYear": "2016",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Red Hot Chili Peppers"
         ]
     },
     {
         "id": 16,
-        "title": "Varias queixas",
+        "title": "PA PA YA!!",
         "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Gilsons"
+            "Baby Metal",
+            "F.Hero"
         ]
     },
     {
         "id": 17,
-        "title": "Please me",
-        "launchYear": "2019",
+        "title": "Romantic Dreams",
+        "launchYear": "2012",
         "favorited": true,
         "artists": [
-            "Cardi B",
-            "Bruno Mars"
+            "Deftones"
         ]
     },
     {
         "id": 18,
-        "title": "Mel",
-        "launchYear": "2021",
+        "title": "Anna Molly",
+        "launchYear": "2006",
         "favorited": true,
         "artists": [
-            "Liniker"
+            "Incubus"
         ]
     },
     {
         "id": 19,
-        "title": "Tanto faz",
-        "launchYear": "2022",
+        "title": "Avalon",
+        "launchYear": "2010",
         "favorited": true,
         "artists": [
-            "Urias"
+            "Bad Religion"
+        ]
+    },
+    {
+        "id": 20,
+        "title": "Comply/Resist",
+        "launchYear": "2017",
+        "favorited": true,
+        "artists": [
+            "Propagandhi"
+        ]
+    },
+    {
+        "id": 21,
+        "title": "Animals",
+        "launchYear": "2012",
+        "favorited": true,
+        "artists": [
+            "Muse"
+        ]
+    },
+    {
+        "id": 22,
+        "title": "Sombras da Caverna",
+        "launchYear": "2019",
+        "favorited": true,
+        "artists": [
+            "Dead Fish"
+        ]
+    },
+    {
+        "id": 23,
+        "title": "911",
+        "launchYear": "2020",
+        "favorited": true,
+        "artists": [
+            "Lady Gaga"
+        ]
+    },
+    {
+        "id": 24,
+        "title": "Canned Heat",
+        "launchYear": "1999",
+        "favorited": true,
+        "artists": [
+            "Jamiroquai"
         ]
     }
 ]
