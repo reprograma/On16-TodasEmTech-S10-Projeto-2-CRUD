@@ -1,50 +1,49 @@
 [
     {
         "id": 1,
-        "title": "Boyfriend",
-        "launchYear": "2019",
+        "title": "Trago seu amor de volta",
+        "launchYear": "2018",
         "favorited": true,
         "artists": [
-            "Ariana Grande",
-            "Social House"
+            "Pabllo Vittar",
+            "Dilsinho"
         ]
     },
     {
         "id": 2,
-        "title": "Flawless",
-        "launchYear": "2014",
+        "title": "Night of the Swallow",
+        "launchYear": "1982",
         "favorited": true,
-        "artists": [
-            "Beyonce",
-            "Nicki Minaj"
-        ]
+        "artists":[
+            "Kate Bush"
+        ] 
     },
     {
         "id": 3,
-        "title": "Underere",
-        "launchYear": "2016",
+        "title": "Vienna",
+        "launchYear": "1977",
         "favorited": true,
         "artists": [
-            "Ines Brasil"
+            "Billy Joel"
         ]
     },
     {
         "id": 4,
-        "title": "Parabens",
+        "title": "Divino Amor",
         "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Pablo Vittar",
-            "Psirico"
+            "Fran",
+            "Caetano Veloso"
         ]
     },
     {
         "id": 5,
-        "title": "November Rain",
-        "launchYear": "1991",
+        "title": "Baby 95",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Liniker"
         ]
     },
     {
@@ -58,11 +57,11 @@
     },
     {
         "id": 7,
-        "title": "Bodak Yellow",
-        "launchYear": "2018",
+        "title": "Vermelho",
+        "launchYear": "2022",
         "favorited": true,
         "artists": [
-            "Cardi B"
+            "Gloria Groove"
         ]
     },
     {
@@ -76,38 +75,38 @@
     },
     {
         "id": 9,
-        "title": "Zero",
+        "title": "Love in the Dark",
         "launchYear": "2015",
         "favorited": true,
         "artists": [
-            "Liniker"
+            "Adele"
         ]
     },
     {
         "id": 10,
-        "title": "Peligrosa",
-        "launchYear": "2022",
+        "title": "Pretty When You Cry",
+        "launchYear": "2014",
         "favorited": true,
         "artists": [
-            "Urias"
+            "Lana del Rey"
         ]
     },
     {
         "id": 11,
-        "title": "Dangerous woman",
-        "launchYear": "2016",
+        "title": "Hostage",
+        "launchYear": "2017",
         "favorited": true,
         "artists": [
-            "Ariana Grande"
+            "Billie Eilish"
         ]
     },
     {
         "id": 12,
-        "title": "Sorry",
-        "launchYear": "2016",
+        "title": "Senhora",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Beyonce"
+            "Juh Fernandes"
         ]
     },
     {
@@ -123,20 +122,20 @@
     },
     {
         "id": 14,
-        "title": "Number one",
-        "launchYear": "2020",
+        "title": "Baby I'm Yours",
+        "launchYear": "2006",
         "favorited": true,
         "artists": [
-            "Pablo Vittar"
+            "Arctic Monkeys"
         ]
     },
     {
         "id": 15,
-        "title": "Patience",
-        "launchYear": "1991",
+        "title": "Disritmia",
+        "launchYear": "1974",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Martinho da Vila"
         ]
     },
     {
@@ -150,30 +149,30 @@
     },
     {
         "id": 17,
-        "title": "Please me",
-        "launchYear": "2019",
+        "title": "Bete Balanço",
+        "launchYear": "1984",
         "favorited": true,
         "artists": [
-            "Cardi B",
-            "Bruno Mars"
+            "Barão Vermelho"
         ]
     },
     {
         "id": 18,
-        "title": "Mel",
-        "launchYear": "2021",
+        "title": "Bebaça",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Liniker"
+            "Marília Mendonça",
+            "Maiara & Maraisa"
         ]
     },
     {
         "id": 19,
-        "title": "Tanto faz",
-        "launchYear": "2022",
+        "title": "Back to Black",
+        "launchYear": "2006",
         "favorited": true,
         "artists": [
-            "Urias"
+            "Amy Winehouse"
         ]
     }
 ]
