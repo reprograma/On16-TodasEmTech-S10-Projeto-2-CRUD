@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Boyfriend",
         "launchYear": "2019",
-        "favorited": true,
+        "favorited": false,
         "artists": [
             "Ariana Grande",
             "Social House"
@@ -23,7 +23,7 @@
         "id": 3,
         "title": "Underere",
         "launchYear": "2016",
-        "favorited": true,
+        "favorited": false,
         "artists": [
             "Ines Brasil"
         ]
@@ -105,7 +105,7 @@
         "id": 12,
         "title": "Sorry",
         "launchYear": "2016",
-        "favorited": true,
+        "favorited": false,
         "artists": [
             "Beyonce"
         ]
@@ -143,7 +143,7 @@
         "id": 16,
         "title": "Varias queixas",
         "launchYear": "2019",
-        "favorited": true,
+        "favorited": false,
         "artists": [
             "Gilsons"
         ]
