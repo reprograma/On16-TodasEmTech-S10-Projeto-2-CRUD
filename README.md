@@ -144,13 +144,13 @@ Sendo assim precisaremos criar 5 rotas para podcasts:
 
 ## Autora
 
-<p align="right">
+<p align="">
 <a>
  <img style="border-radius: 100%;" src="https://media-exp1.licdn.com/dms/image/C4E03AQFUFLABHg5xfA/profile-displayphoto-shrink_800_800/0/1646500768370?e=1659571200&v=beta&t=ZeyR8RdmYcjcC_Mfr83iTLwkrQT3MR74QzceWIdbWfI" width="100px;" alt="Foto de Perfil de Andreza"/>
  <br/>
 </a>
 
-Desenvolvido com 🪐 por [![Linkedin Badge](https://img.shields.io/badge/-Andrezapipolo-black?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andrezapipolo)](https://www.linkedin.com/in/andrezapipolo/) com o apoio da {reprograma}
+Desenvolvido com 🪐 por [![Linkedin Badge](https://img.shields.io/badge/-Andrezapipolo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/andrezapipolo)](https://www.linkedin.com/in/andrezapipolo/) com o apoio da {reprograma}
 
 
 
