@@ -5,13 +5,13 @@
 
 <!--ts-->
 - [〽️ {Reprograma}fy](#️-reprogramafy)
-- [📣 Instalações necessárias para os testes no Postman](#-instalações-necessárias-para-os-testes-no-postman)
+- [⚙️ Instalações necessárias para os testes no Postman](#️-instalações-necessárias-para-os-testes-no-postman)
   - [🧩 Iniciando a API Node.js](#-iniciando-a-api-nodejs)
   - [🧩 Instalando o Express](#-instalando-o-express)
   - [🧩 Instalando o Nodemon](#-instalando-o-nodemon)
   - [🧩 Scripts package.json](#-scripts-packagejson)
   - [🧩 Criando o arquivo .gitignore](#-criando-o-arquivo-gitignore)
-- [🧑‍🎤 {Reprograma}fy Músicas](#-reprogramafy-músicas)
+- [🎧 {Reprograma}fy Músicas](#-reprogramafy-músicas)
 - [📎 Postman {Reprograma}fy Música](#-postman-reprogramafy-música)
 - [🎤 {Reprograma}fy Podcast](#-reprogramafy-podcast)
 - [📎 Postman {Reprograma}fy Podcast](#-postman-reprogramafy-podcast)
@@ -31,7 +31,7 @@ Parabéns, você foi escolhida para testar um novo produto que deverá ser lanç
 <br>
 
 
-## 📣 Instalações necessárias para os testes no Postman
+## ⚙️ Instalações necessárias para os testes no Postman
 
 ### 🧩 Iniciando a API Node.js
 
@@ -68,7 +68,7 @@ Dessa forma para inicializar o servidor, basta digitar ```npm start``` no termin
 Devemos criar na raíz do "reprogramafy" o arquivo *.gitignore* e escrever nele ```node_modules/``` para o git nao trackear essa pasta para commit.
 
 
-## 🧑‍🎤 {Reprograma}fy Músicas
+## 🎧 {Reprograma}fy Músicas
 
 - ✅ poder listar todas as músicas da playlist do usuário
 - ✅ poder listar apenas uma música específica
