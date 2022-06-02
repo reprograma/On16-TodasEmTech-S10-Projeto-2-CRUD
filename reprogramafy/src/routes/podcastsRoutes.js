@@ -1,6 +1,6 @@
 // AS ROTAS E METODOS DE FILMES
 
-// chamar o controller de filmes
+// chamar o controller de podcasts:
 const controller = require('../controller/podcastsController')
 
 const express = require('express') // chamando express
