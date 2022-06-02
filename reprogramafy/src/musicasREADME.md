@@ -45,7 +45,7 @@
 - [x]  **`DELETE`** Rota remover uma música da lista | `localhost:1313/playlist/delete/16`;
 
 <p>
-  <img width="300" src="https://user-images.githubusercontent.com/84551213/171423793-f6f584fa-a61e-4618-92c6-827e5ce28c98.png" />
+  <img width="300" src="https://user-images.githubusercontent.com/84551213/171542813-f71644e8-9f8c-4219-8806-6057885a155f.png" />
 <br>
 
 - [x]  **`PATCH`** favoritar/desfavoritar uma música | `localhost:1313/playlist/update/2`;

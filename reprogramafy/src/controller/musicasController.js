@@ -34,11 +34,14 @@ const getJustOneMusic = (req, res) => {
 };
 
 const getMusicByArtist = (req, res) => {
-  const artistsRequest = req.query.artists;
+  const artistsRequest = req.query.artists.toLowerCase();
 
-  const artistsFilter = playMusics.filter((music) =>
-    music.artists.includes(artistsRequest)
-  );
+  const artistsFilter = playMusics.filter((music) => {
+    artistsLowerCase = music.artists.map((artistIdArray) =>
+      artistIdArray.toLowerCase()
+    );
+    return artistsLowerCase.includes(artistsRequest);
+  });
 
   if (artistsFilter.length > 0) {
     res.status(200).send([
@@ -61,7 +64,7 @@ const addMusic = (req, res) => {
     const favoritedRequest = req.body.favorited;
     const artistsRequest = req.body.artists;
 
-    let newMusic = {
+    const newMusic = {
       id: Math.floor(Math.random() * (30 - 19) + 20),
       title: titleRequest,
       launchYear: launchYearRequest,
@@ -110,7 +113,9 @@ const replaceMusic = (req, res) => {
 const deleteMusic = (req, res) => {
   const idRequest = req.params.id;
 
-  const indexFound = playMusics.findIndex((musica) => musica.id == idRequest);
+  const indexFound = playMusics.findIndex((music) => music.id == idRequest);
+
+  const idDeleted = playMusics.filter((music) => music.id == idRequest);
 
   playMusics.splice(indexFound, 1);
 
@@ -118,9 +123,10 @@ const deleteMusic = (req, res) => {
     res.status(200).json([
       {
         message: "Essa musica foi deletada!",
-        deletad: idRequest,
+        "Música deletada": idDeleted,
         playMusics: playMusics,
-      }]);
+      },
+    ]);
   } else {
     res.status(404).json([
       {

@@ -14,33 +14,34 @@ const getAllPods = (req, res) => {
 };
 
 const getPodByTopic = (req, res) => {
-  let topicRequest = req.query.topic;
+  const topicRequest = req.query.topic;
 
-  let topicFilter = podcasts.filter((musica) =>
-    musica.topic.includes(topicRequest)
+  const topicFilter = podcasts.filter((podcast) =>
+    podcast.topic.includes(topicRequest)
   );
 
   if (topicFilter.length > 0) {
-    topicRequest.topic = topicRequest;
     res.status(200).send([
       {
         message: "Tópico encontrado!",
-        Podcasts: podcasts,
+        Podcasts: topicFilter,
       },
     ]);
   } else {
-    res.status(404).send({ message: "Tópico não encontrado!" });
+    res.status(404).send({
+      message: "Tópico não encontrado!",
+    });
   }
 };
 
 const addPods = (req, res) => {
   try {
-    let nameReq = req.body.name;
-    let podReq = req.body.podcaster;
-    let topicReq = req.body.topic;
-    let starsReq = req.body.stars;
+    const nameReq = req.body.name;
+    const podReq = req.body.podcaster;
+    const topicReq = req.body.topic;
+    const starsReq = req.body.stars;
 
-    let newPodcast = {
+    const newPodcast = {
       id: Math.floor(Math.random() * (10 - 5) + 6),
       name: nameReq,
       podcaster: podReq,
@@ -69,13 +70,15 @@ const deletePodcast = (req, res) => {
 
   const indexFound = podcasts.findIndex((podcast) => podcast.id == idRequest);
 
-  podcasts.splice(indexFound, 1, idRequest);
+  const idDeleted = podcasts.filter((podcast) => podcast.id == idRequest);
+
+  podcasts.splice(indexFound, 1);
 
   if (indexFound > -1) {
     res.status(200).json([
       {
         message: "Esse podcast foi deletado!",
-        "Podcast deletado": idRequest,
+        "Podcast deletado": idDeleted,
         Podcasts: podcasts,
       },
     ]);

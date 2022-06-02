@@ -21,7 +21,7 @@
  - [x]  **`GET`** Rota listar os podcasts por tópico | `localhost:1313/podcast/library/topic?topic=tecnologia`;
 
 <p>
-  <img width="300" src="https://user-images.githubusercontent.com/84551213/171436972-e51c6c58-e16b-4489-8879-e7997528fe73.png" />
+  <img width="300" src="https://user-images.githubusercontent.com/84551213/171542497-32b3e37a-9882-4881-9f70-7d633efc4555.png" />
 <br>
  
 - [x]  **`POST`** Rota adicionar uma nova música | `localhost:1313/podcast/add`;
@@ -33,7 +33,7 @@
 - [x]  **`DELETE`** Rota remover uma música da lista | `localhost:1313/podcast/delete/2`;
 
 <p>
-  <img width="300" src="https://user-images.githubusercontent.com/84551213/171434408-b508349c-c8bc-409b-a57f-db0d2180f871.png" />
+  <img width="300" src="https://user-images.githubusercontent.com/84551213/171542651-2771e381-f30f-44eb-963c-4c0d75c5ccd4.png" />
 <br>
 
 - [x]  **`PATCH`** Rota favoritar/desfavoritar uma música | `localhost:1313/podcast/update/1`;
