@@ -1,100 +1,126 @@
-const pods = require('../models/podcasts.json')
+const podcasts = require('../models/podcasts.json')
 
-// retornando todas as musicas
-const getAllPods = (req, res) => {
-  try {
-    res.status(200).json([
-      {
-        Podcasts: pods,
-      },
-    ])
-  } catch (err) {
-    response.status(500).send({ message: 'Erro no server' })
-  }
-}
-
-// retornando pods por topico
-const getPodByTopic = (req, res) => {
-  try {
-    let topicRequest = req.query.topic
-
-    let topicFiltro = pods.filter((musica) =>
-      musica.topic.includes(topicRequest),
-    )
-
-    if (topicFiltro.length > 0) {
-      res.status(200).send(topicFiltro)
-    } else {
-      res.status(404).send({ message: 'Tópico não encontrado' })
-    }
-  } catch (err) {
-    response.status(500).send({ message: 'Erro no server' })
-  }
-}
-
-// cria musica
-const createPod = (req, res) => {
-  try {
-    let nameRequest = req.body.name
-    let podcasterRequest = req.body.podcaster
-    let topicRequest = req.body.topic
-    let starsRequest = req.body.stars
-
-    let novoPodcast = {
-      id: Math.floor(Date.now() * Math.random()).toString(36),
-      name: nameRequest,
-      podcaster: podcasterRequest,
-      topic: topicRequest,
-      stars: starsRequest,
+const getAllPods = (request, response) => {
+    try {
+        response.status(200).json([{
+            "Podcasts": podcasts
+        }])
+    } catch (err) {
+        response.status(500).send({ message: "Erro no server" })
     }
 
-    pods.push(novoPodcast)
-
-    res.status(201).json([
-      {
-        message: 'Podcast cadastrado',
-        novoPodcast,
-      },
-    ])
-  } catch (err) {
-    res.status(500).send({ message: 'Erro ao cadastrar' })
-  }
 }
 
-const updateStars = (req, res) => {
-  try {
-    const idRequest = req.params.id
-    const starsRequest = req.body.stars
+const getPodsByTopic = (request, response) => {
+    try {
+        let topicRequest = request.query.topic
+        let topicFilter = podcasts.filter(podcast => podcast.topic.includes(topicRequest))
 
-    starsFilter = pods.find((task) => task.id == idRequest)
+        if (topicFilter.length > 0) {
+            response.status(200).send(topicFilter);
+        } else {
+            response.status(404).send(
+                {
+                    message: 'NOT FOUND'
+                })
+        }
+    } catch (err) {
+        console.log(err)
+        response.status(500).send([
+            {
+                message: 'Erro interno.'
+            }
+        ])
+    }
+}
 
-    if (starsFilter) {
-      starsFilter.stars = starsRequest
+const postNewPod = (request, response) => {
 
-      res.status(200).json([
+    try {
+        let nameRequest = request.body.name
+        let podcasterRequest = request.body.podcaster
+        let topicRequest = request.body.topic
+        let starsRequest = request.body.stars
+
+        let newPodcast = {
+
+            id: Math.floor(Date.now() * Math.random()).toString(36), //cria um id com números e letras aleatórias
+            name: nameRequest,
+            podcaster: podcasterRequest,
+            topic: topicRequest,
+            stars: starsRequest
+        }
+
+        podcasts.push(newPodcast)
+
+        response.status(201).json([
+            {
+                message: 'Podcast adicionado à biblioteca.', 
+                newPodcast
+            }
+        ])
+
+    } catch(err) {
+        console.log(err)
+        response.status(500).send([ //erro dentro do código
+            {
+                message:'Erro interno ao cadastrar'
+            }
+        ])
+    }
+}
+
+
+const deletePodById = (request, response) => {
+
+    const idRequest = request.params.id
+
+    const indexPodcast = podcasts.findIndex(podcast => podcast.id == idRequest)
+
+    podcasts.splice(indexPodcast, 1)
+
+    response.status(200).json([
         {
-          mensagem: 'Sua avaliaçao foi alterada com sucesso!',
-          pods,
-        },
-      ])
-    } else {
-      res.status(404).json([
-        {
-          message: 'Sua avaliaçao não foi modificada!',
-        },
-      ])
-    }
-  } catch (err) {
-    res.status(500).send({ message: 'Erro ao cadastrar' })
-  }
+            message: 'Podcast deletado',
+            'deletado': idRequest,
+            podcasts
+
+        }
+    ])
 }
 
-// TODO const deletePod = (req, res) =>
+
+const updatePodStars = (request, response) => {
+
+    const idRequest = request.params.id
+
+    let newStars = request.body.stars
+
+    podcastFind = podcasts.find(podcast => podcast.id == idRequest)
+
+    if (podcastFind) {
+
+        podcastFind.stars == newStars
+        response.status(200).json([
+            {
+                message:"Nota atualizada com sucesso.",
+                podcasts
+            }
+        ])
+    } else {
+
+        response.status(404).json([
+            {
+                message: "Nota não atualizada."
+            }
+        ])
+    }
+}
 
 module.exports = {
-  getAllPods,
-  getPodByTopic,
-  createPod,
-  updateStars,
-  // TODO deletePod,
+    getAllPods,
+    getPodsByTopic,
+    postNewPod,
+    deletePodById,
+    updatePodStars
 }

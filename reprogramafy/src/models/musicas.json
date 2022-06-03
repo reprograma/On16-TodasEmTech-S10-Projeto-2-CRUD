@@ -1,12 +1,11 @@
 [
     {
         "id": 1,
-        "title": "Boyfriend",
+        "title": "Comfortable",
         "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Ariana Grande",
-            "Social House"
+            "H.E.R"
         ]
     },
     {
@@ -21,30 +20,29 @@
     },
     {
         "id": 3,
-        "title": "Underere",
-        "launchYear": "2016",
+        "title": "Watercolor Eyes",
+        "launchYear": "2022",
         "favorited": true,
         "artists": [
-            "Ines Brasil"
+            "Lana Del Rey"
         ]
     },
     {
         "id": 4,
-        "title": "Parabens",
-        "launchYear": "2020",
+        "title": "Joro",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Pablo Vittar",
-            "Psirico"
+            "WizKid"
         ]
     },
     {
         "id": 5,
-        "title": "November Rain",
-        "launchYear": "1991",
+        "title": "Ghetto Love",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "WizKid"
         ]
     },
     {
@@ -58,20 +56,23 @@
     },
     {
         "id": 7,
-        "title": "Bodak Yellow",
+        "title": "After the Storm",
         "launchYear": "2018",
         "favorited": true,
         "artists": [
-            "Cardi B"
+            "Kali Uchis",
+            "Tyler, The Creator",
+            "Bootsy Collins"
         ]
     },
     {
         "id": 8,
-        "title": "Nothing else matters",
-        "launchYear": "1991",
+        "title": "KEYS TO THE KINGDOM",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Metallica"
+            "Tiwa Savage",
+            "Mr. Eazi"
         ]
     },
     {
@@ -123,7 +124,7 @@
     },
     {
         "id": 14,
-        "title": "Number one",
+        "title": "Amor de que",
         "launchYear": "2020",
         "favorited": true,
         "artists": [
@@ -132,11 +133,12 @@
     },
     {
         "id": 15,
-        "title": "Patience",
-        "launchYear": "1991",
+        "title": "te pongo mal(prendelo)",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Kali Uchis",
+            "Jowell & Randy"
         ]
     },
     {
@@ -160,7 +162,7 @@
     },
     {
         "id": 18,
-        "title": "Mel",
+        "title": "Lili",
         "launchYear": "2021",
         "favorited": true,
         "artists": [
@@ -169,11 +171,11 @@
     },
     {
         "id": 19,
-        "title": "Tanto faz",
-        "launchYear": "2022",
+        "title": "Se Avexe Não",
+        "launchYear": "2016",
         "favorited": true,
         "artists": [
-            "Urias"
+            "Tassia Reis"
         ]
     }
 ]
