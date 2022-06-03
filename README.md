@@ -60,7 +60,7 @@ Uma API onde se encontra uma playlist de música, sendo viável favoritá-las. �
 
 > ## Podcasts :microphone:
 
-Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-los por tópico. Também pode inserir novos podcasts ou remover algum já existente, além de conseguir avaliá-lo.
+Uma API de podcasts, onde pode listar todos os podcasts e também filtra-los por tópico. Também pode inserir novos podcasts ou remover podcasts já existentes, além de conseguir avaliá-los.
 <br>
 
 ### 💻: `Dados`
@@ -94,7 +94,6 @@ Montas uma API de podcasts, onde pode listar todos os podcasts e também filtra-
 | DELETE | Remover podcast                        |
 | PATCH  | Alterar a nota de um podcast           |
 
-[Podcasts prints Postman | terminal](src/../reprogramafy/src/podcastsREADME.md)
 
 ----
 
