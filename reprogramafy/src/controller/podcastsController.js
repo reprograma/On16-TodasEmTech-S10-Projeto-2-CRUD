@@ -1,39 +1,19 @@
-//como já inserimos o express no app, não é preciso mais chamar o express
+//Não é preciso chamar o express. Já foi inserido no app 
 
-const { response } = require('express')
 const pods = require('../models/podcasts.json')
 
+//Retorna uma lista com todos os podcast.
 const getAllPods = (request, response) => {
-    response.status(200).json([{
-        "Podcasts": podcast
-    }])
+    try {
+        response.status(200).json([{
+            "Podcasts": pods
+        }])
+    } catch (err) {
+        response.status(500).send({ "message": "Erro no Server" }) //Como não se trata de um Json, mas de um catch, a palavra message não precisa de aspas
+    }
 }
 
-//Com mensagem de erro
-// const getAllPods = (request, response) => {
-//     try {
-//         response.status(200).json ([{
-//         "Podcasts": podcast
-//     }])
-//   } catch (err) { 
-//       response.status(500).send({message: "Erro no Server"}) //Como não se trata de um Json, mas de um catch, a palavra message não precisa de aspas
-//       
-//   }
-
-// }
-
-// const getTopics = (request, response) => {
-//     const topicoReq = request.query.topic
-//     const podFiltradro = podcast.filter(podcast => podcast.topic.includes(topicoReq))
-//     if (podFiltradro.lengh > 0) {
-//         response.status(200).send(podFiltradro)
-//     } else {
-//         response.status(404).send([{
-//             "message": "Tópico não encontrado"
-//         }])
-//     }
-// }
-
+//Filtra por tema (tópico). Retorna apenas podcats com o tema solicitado
 const getTopics = (request, response) => {
     const topicRequest = request.query.topic
     const topicFilter = pods.filter(pods => pods.topic.includes(topicRequest))
@@ -46,7 +26,7 @@ const getTopics = (request, response) => {
     }
 }
 
-
+//Adiciona um novo Podcast. Retorna o Podcast novo inserido.
 const addPods = (request, response) => {
     try {
         let nomeReq = request.body.name
@@ -60,9 +40,7 @@ const addPods = (request, response) => {
             podcaster: podReq,
             topic: topicReq,
             stars: starReq
-
         }
-
         pods.push(newPodCast)
         response.status(201).json([{
             "message": "Novo Podcast Cadastrado",
@@ -71,18 +49,54 @@ const addPods = (request, response) => {
     } catch (err) {
         console.log(err)
         response.status(500).send([{
-            "message": "Deu erro interno."
-
+            "message": "Erro interno no Servidor"
         }])
     }
 }
 
+//Atualiza stars do podcast. Avaliação das estrelas do podcast.
 const attPods = (request, response) => {
-    
+    const idReq = request.params.id
+    const starReq = request.body.stars
+    starEncontrado = pods.find((podcast) => podcast.id == idReq)
+
+    if (starEncontrado) {
+        starEncontrado.stars = starReq
+        response.status(200).json([{
+            "message": "Classificado com sucesso!",
+            pods
+        }])
+    } else {
+        response.status(404).json([{
+            "message": "Não foi possível modificar"
+        }])
+    }
 }
 
-    module.exports = {
-        getAllPods,
-        getTopics,
-        addPods
+//Deleta um podcast específico. Retorna a lista de podcast deletado
+const deletePods = (request, response) => {
+    try {
+        const idReq = request.params.id
+        const idEncontrado = pods.find(podcast => podcast.id == idReq)
+        pods.splice(idEncontrado, 1)
+
+        response.status(200).json([{
+            "message": "O Podcast foi deletado",
+            "deletado": idReq,
+            pods
+        }])
+    } catch (err) {
+        response.status(404).json([{
+            "message": "Não foi possível deletar"
+        }])
     }
+}
+
+//Exporta funções
+module.exports = {
+    getAllPods,
+    getTopics,
+    addPods,
+    attPods,
+    deletePods,
+}
