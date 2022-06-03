@@ -12,6 +12,7 @@ const router = express.Router()
 router.get("/musicoteca", controller.getAllMusics)
 router.get("/musicoteca/artistas", controller.getByArtists) 
 router.get("/musicoteca/buscar/:id", controller.getById)
-
+router.post("/musicoteca", controller.createMusic)
+router.patch("/musicoteca/:id/favorited", controller.updateFavorited)
 //exportar para ser usado no app.js
 module.exports = router
