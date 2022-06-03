@@ -15,7 +15,7 @@
 
 Uma API onde se encontra uma playlist de música, sendo viável favoritá-las. É possível inserir novas músicas ou removê-las. Podemos filtrar nossas músicas por artista ou id!
 
-![Design sem nome](https://user-images.githubusercontent.com/100438303/171868565-a9d78bf3-7b3d-489b-ba5c-a77687686a17.gif)
+![Design sem nome](https://user-images.githubusercontent.com/100438303/171868565-a9d78bf3-7b3d-489b-ba5c-a77687686a17.gif)width="500" height="500"/></h4><br>
 
 
 ### 💻: `Dados`
@@ -64,6 +64,9 @@ Uma API onde se encontra uma playlist de música, sendo viável favoritá-las. �
 
 Uma API de podcasts, onde pode listar todos os podcasts e também filtra-los por tópico. Também pode inserir novos podcasts ou remover podcasts já existentes, além de conseguir avaliá-los.
 <br>
+
+![Design sem nome (1)](https://user-images.githubusercontent.com/100438303/171869692-ab054f69-4dbd-464a-8f99-63864ae67b29.gif)width="500" height="500"/></h4><br>
+
 
 ### 💻: `Dados`
 
