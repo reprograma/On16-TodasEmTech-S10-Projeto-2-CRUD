@@ -1,6 +1,6 @@
 const pods = require('../models/podcasts.json')
 
-// retornando todas as musicas
+// retornando todos os podcasts
 const getAllPods = (req, res) => {
   try {
     res.status(200).json([
@@ -32,7 +32,7 @@ const getPodByTopic = (req, res) => {
   }
 }
 
-// cria musica
+// cria podcast
 const createPod = (req, res) => {
   try {
     let nameRequest = req.body.name

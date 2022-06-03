@@ -2,7 +2,7 @@
 // rota raiz
 const express = require("express") //importando o express
 
-//importe da continuacao das rotas de filmes
+//importe da continuacao das rotas 
 const musicasRoutes = require("./routes/musicasRoutes")
 const podcastsRoutes = require("./routes/podcastsRoutes")
 
