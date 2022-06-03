@@ -15,6 +15,9 @@
 
 Uma API onde se encontra uma playlist de música, sendo viável favoritá-las. É possível inserir novas músicas ou removê-las. Podemos filtrar nossas músicas por artista ou id!
 
+![Design sem nome](https://user-images.githubusercontent.com/100438303/171868565-a9d78bf3-7b3d-489b-ba5c-a77687686a17.gif)
+
+
 ### 💻: `Dados`
 
 ```
