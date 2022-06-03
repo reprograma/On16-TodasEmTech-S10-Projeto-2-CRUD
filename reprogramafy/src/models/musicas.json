@@ -1,179 +1,178 @@
 [
     {
         "id": 1,
-        "title": "Boyfriend",
-        "launchYear": "2019",
+        "title": "Beija eu",
+        "launchYear": "2016",
         "favorited": true,
         "artists": [
-            "Ariana Grande",
-            "Social House"
+            "Silva"
         ]
     },
     {
         "id": 2,
-        "title": "Flawless",
-        "launchYear": "2014",
+        "title": "Areia",
+        "launchYear": "2018",
         "favorited": true,
         "artists": [
-            "Beyonce",
-            "Nicki Minaj"
+            "Sandy",
+            "Lucas Lima"
         ]
     },
     {
         "id": 3,
-        "title": "Underere",
-        "launchYear": "2016",
+        "title": "Feeling good",
+        "launchYear": "1965",
         "favorited": true,
         "artists": [
-            "Ines Brasil"
+            "Nina Simone"
         ]
     },
     {
         "id": 4,
-        "title": "Parabens",
-        "launchYear": "2020",
+        "title": "La Belle de Jour",
+        "launchYear": "1992",
         "favorited": true,
         "artists": [
-            "Pablo Vittar",
-            "Psirico"
+            "Alceu Valença"  
         ]
     },
     {
         "id": 5,
-        "title": "November Rain",
-        "launchYear": "1991",
+        "title": "Dengo",
+        "launchYear": "2022",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "João Gomes"
         ]
     },
     {
         "id": 6,
-        "title": "Na sua estante",
-        "launchYear": "2005",
+        "title": "Hackearam me",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Pitty"
+            "Tierry",
+            "Marília Mendonça"
         ]
     },
     {
         "id": 7,
-        "title": "Bodak Yellow",
-        "launchYear": "2018",
+        "title": "Flutua",
+        "launchYear": "2017",
         "favorited": true,
         "artists": [
-            "Cardi B"
+            "Johnny Hooker",
+            "Liniker"
         ]
     },
     {
         "id": 8,
-        "title": "Nothing else matters",
-        "launchYear": "1991",
+        "title": "Ranking",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Metallica"
+            "Jorge e Mateus"
         ]
     },
     {
         "id": 9,
-        "title": "Zero",
-        "launchYear": "2015",
+        "title": "Propaganda",
+        "launchYear": "2018",
         "favorited": true,
         "artists": [
-            "Liniker"
+            "Jorge e Mateus"
         ]
     },
     {
         "id": 10,
-        "title": "Peligrosa",
-        "launchYear": "2022",
+        "title": "Grito mudo",
+        "launchYear": "2018",
         "favorited": true,
         "artists": [
-            "Urias"
+            "Sandy",
+            "Mateus Asato"
         ]
     },
     {
         "id": 11,
-        "title": "Dangerous woman",
-        "launchYear": "2016",
+        "title": "Fotografia",
+        "launchYear": "1993",
         "favorited": true,
         "artists": [
-            "Ariana Grande"
+            "Leoni"
         ]
     },
     {
         "id": 12,
-        "title": "Sorry",
-        "launchYear": "2016",
+        "title": "Better Together",
+        "launchYear": "2005",
         "favorited": true,
         "artists": [
-            "Beyonce"
+            "Jack Johnson"
         ]
     },
     {
         "id": 13,
-        "title": "Modo turbo",
-        "launchYear": "2021",
+        "title": "The Scientist",
+        "launchYear": "2002",
         "favorited": true,
         "artists": [
-            "Luisa Sonza",
-            "Anitta",
-            "Pablo Vittar"
+            "Coldplay"
         ]
     },
     {
         "id": 14,
-        "title": "Number one",
-        "launchYear": "2020",
+        "title": "Valerie",
+        "launchYear": "2007",
         "favorited": true,
         "artists": [
-            "Pablo Vittar"
+            "Amy Winehouse"
         ]
     },
     {
         "id": 15,
-        "title": "Patience",
-        "launchYear": "1991",
+        "title": "My girl",
+        "launchYear": "1965",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "The Temptations"
         ]
     },
     {
         "id": 16,
-        "title": "Varias queixas",
-        "launchYear": "2019",
+        "title": "Feliz e ponto",
+        "launchYear": "2015",
         "favorited": true,
         "artists": [
-            "Gilsons"
+            "Silva"
         ]
     },
     {
         "id": 17,
-        "title": "Please me",
-        "launchYear": "2019",
+        "title": "Quando você passa",
+        "launchYear": "2001",
         "favorited": true,
         "artists": [
-            "Cardi B",
-            "Bruno Mars"
+            "Sandy e Júnior"
         ]
     },
     {
         "id": 18,
-        "title": "Mel",
-        "launchYear": "2021",
+        "title": "Um amor puro",
+        "launchYear": "2018",
         "favorited": true,
         "artists": [
-            "Liniker"
+            "Iza",
+            "Maria Gadú"
         ]
     },
     {
         "id": 19,
-        "title": "Tanto faz",
-        "launchYear": "2022",
+        "title": "Pra sonhar",
+        "launchYear": "2010",
         "favorited": true,
         "artists": [
-            "Urias"
+            "Marcelo Jeneci"
         ]
     }
 ]
