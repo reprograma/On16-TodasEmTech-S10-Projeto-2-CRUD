@@ -52,7 +52,6 @@ Uma API onde se encontra uma playlist de música, sendo viável favoritá-las. �
 | DELETE | Remover música                         |
 | PATCH  | Favoritar/desfavoritar música          |
 
-[Musics prints Postman | terminal](src/../reprogramafy/src/musicasREADME.md)
 
 ----
 
