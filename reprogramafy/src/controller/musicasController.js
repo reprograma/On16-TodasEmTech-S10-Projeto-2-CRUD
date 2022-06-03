@@ -1,7 +1,7 @@
 const musics = require("../models/musicas.json");
 
 const express = require("express");
-const { request, response } = require("../app");
+
 const app = express();
 
 app.use(express.json());
@@ -12,15 +12,15 @@ const allMusics = (request, response) => {
   try {
     response.status(200).json([
       {
-        playlist: musics,
+        Playlist: musics,
       },
     ]);
   } catch (err) {
-    response.status(500).send({ message: "Error searching all songs." });
+    response.status(500).send({ message: "Server error." });
   }
 };
 
-// To List a specific music - GET
+// To list a specific music - GET
 
 const musicByTitle = (request, response) => {
   try {
@@ -42,19 +42,23 @@ const musicByTitle = (request, response) => {
 // To list music by artist - GET
 
 const musicByArtist = (request, response) => {
-  const artistsRequest = request.query.artists;
+  try {
+    const artistsRequest = request.query.artists;
 
-  const filteredMusic = musics.filter((music) => {
-    const hasArtist = music.artists.filter((artist) => {
-      return artist.toLowerCase().includes(artistsRequest.toLowerCase());
+    const filteredMusic = musics.filter((music) => {
+      const hasArtist = music.artists.filter((artist) => {
+        return artist.toLowerCase().includes(artistsRequest.toLowerCase());
+      });
+      return hasArtist.length;
     });
-    return hasArtist.length;
-  });
 
-  if (filteredMusic.length > 0) {
-    response.status(200).send(filteredMusic);
-  } else {
-    response.status(404).send({ message: "Artist not found." });
+    if (filteredMusic.length > 0) {
+      response.status(200).send(filteredMusic);
+    } else {
+      response.status(404).send({ message: "Artist not found." });
+    }
+  } catch (err) {
+    response.status(500).send({ message: "Server Error." });
   }
 };
 
@@ -78,7 +82,7 @@ const addMusic = (request, response) => {
       musics,
     });
   } catch (err) {
-    response.status(500).send({ message: "Error adding new music." });
+    response.status(500).send({ message: "Server Error." });
   }
 };
 
