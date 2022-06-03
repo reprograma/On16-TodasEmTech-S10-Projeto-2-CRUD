@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.get("/playlist", controller.getAllMusic)
 router.get("/musica", controller.getMusic)
-// router.get("/musica/artista", contoller.getArtist)
+router.get("/musica/artista", controller.getArtist)
 // router.post("/cadastar", controller.cadastro)
 // router.put('/atulizar/:id', controler.update)
 // router.delete('/delete', controller.deleteMusic)
