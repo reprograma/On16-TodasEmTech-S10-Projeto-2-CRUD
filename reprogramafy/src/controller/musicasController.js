@@ -80,7 +80,7 @@ const registerNewMusic = (request, response) => {
         ])
     } catch(err) {
         console.log(err)
-        response.status(500).send([ //erro dentro do código
+        response.status(500).send([ 
             {
                 message:'Erro interno ao cadastrar'
             }
@@ -108,7 +108,7 @@ const updateMusicById = (request, response) => {
         ])
     } catch (err) {
         console.log(err)
-        response.status(500).send([ //erro dentro do código
+        response.status(500).send([ 
             {
                 message: 'Erro interno ao cadastrar'
             }
@@ -145,15 +145,17 @@ const deleteMusicById = (request, response) => {
 const updateFav = (request, response) => {
 
     const idRequest = request.params.id
+    const favRequest = request.body.favorited
 
     favFind = musics.find(music => music.id == idRequest)
 
     if(favFind) {
-        favFind.favorited == true
+        favFind.favorited == favRequest
         response.status(200).json([
             {
                 message:"Música favoritada com sucesso.",
-                favFind
+                favFind,
+                musics
             }
         ])
     } else {
@@ -163,9 +165,7 @@ const updateFav = (request, response) => {
             }
         ])
     }
-
-
-} //rever código
+} 
 
 
 module.exports = {
