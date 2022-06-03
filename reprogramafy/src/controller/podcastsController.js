@@ -1,100 +1,119 @@
-const pods = require('../models/podcasts.json')
+const podcasts = require("../models/podcasts.json");
 
-// retornando todas as musicas
-const getAllPods = (req, res) => {
+const express = require("express");
+const app = express();
+
+app.use(express.json());
+
+// To list all podcasts - GET
+
+const getAllPods = (request, response) => {
   try {
-    res.status(200).json([
+    response.status(200).json([
       {
-        Podcasts: pods,
+        Podcasts: podcasts,
       },
-    ])
+    ]);
   } catch (err) {
-    response.status(500).send({ message: 'Erro no server' })
+    response.status(500).send({ message: "Server error." });
   }
-}
+};
 
-// retornando pods por topico
-const getPodByTopic = (req, res) => {
+// To list podcasts by topic - GET
+const getPodByTopic = (request, response) => {
   try {
-    let topicRequest = req.query.topic
+    const topicRequest = request.query.topic;
 
-    let topicFiltro = pods.filter((musica) =>
-      musica.topic.includes(topicRequest),
-    )
+    const topicFilter = podcasts.filter((pods) =>
+      pods.topic.includes(topicRequest)
+    );
 
-    if (topicFiltro.length > 0) {
-      res.status(200).send(topicFiltro)
+    if (topicFilter.length > 0) {
+      response.status(200).send(topicFilter);
     } else {
-      res.status(404).send({ message: 'Tópico não encontrado' })
+      response.status(404).send({ message: "Topic not found." });
     }
   } catch (err) {
-    response.status(500).send({ message: 'Erro no server' })
+    response.status(500).send({ message: "Server error." });
   }
-}
+};
 
-// cria musica
-const createPod = (req, res) => {
+// To add a new podcast - CREATE
+
+const createPod = (request, response) => {
   try {
-    let nameRequest = req.body.name
-    let podcasterRequest = req.body.podcaster
-    let topicRequest = req.body.topic
-    let starsRequest = req.body.stars
+    let newPodcast = {
+      id: podcasts.length + 1,
+      name: request.body.name,
+      podcaster: request.body.podcaster,
+      topic: request.body.topic,
+      starts: request.body.stars,
+    };
 
-    let novoPodcast = {
-      id: Math.floor(Date.now() * Math.random()).toString(36),
-      name: nameRequest,
-      podcaster: podcasterRequest,
-      topic: topicRequest,
-      stars: starsRequest,
-    }
+    podcasts.push(newPodcast);
 
-    pods.push(novoPodcast)
+    response.status(201).send({
+      message: "New Podcast added!",
+      newPodcast,
+      podcasts,
+    });
+  } catch (err) {
+    response.status(500).send({ message: "Server Error." });
+  }
+};
 
-    res.status(201).json([
+// To change the stars - PATCH
+
+const updateStars = (request, response) => {
+  try {
+    const idRequest = request.params.id;
+    const starsRequest = request.body.stars;
+
+    const foundPod = podcasts.find((pod) => pod.id === parseInt(idRequest));
+
+    foundPod.stars = starsRequest
+    
+
+    response.status(200).json([
       {
-        message: 'Podcast cadastrado',
-        novoPodcast,
+        message: "Rating update.",
+        foundPod,
+        podcasts,
       },
-    ])
+    ]);
   } catch (err) {
-    res.status(500).send({ message: 'Erro ao cadastrar' })
+    response.status(404).send({ message: "Podcast not found." });
   }
-}
+};
 
-const updateStars = (req, res) => {
+// To delete a podcast - DELETE
+
+const deletePod = (request, response) => {
   try {
-    const idRequest = req.params.id
-    const starsRequest = req.body.stars
+    const idRequest = request.params.id;
 
-    starsFilter = pods.find((task) => task.id == idRequest)
+    const foundIndex = podcasts.findIndex(
+      (pod) => pod.id === parseInt(idRequest)
+    );
 
-    if (starsFilter) {
-      starsFilter.stars = starsRequest
+    podcasts.splice(foundIndex, 1);
 
-      res.status(200).json([
-        {
-          mensagem: 'Sua avaliaçao foi alterada com sucesso!',
-          pods,
-        },
-      ])
-    } else {
-      res.status(404).json([
-        {
-          message: 'Sua avaliaçao não foi modificada!',
-        },
-      ])
-    }
+    response.status(200).json([
+      {
+        message: `Podcast ${idRequest} deleted.`,
+        deletePod,
+        podcasts,
+      },
+    ]);
   } catch (err) {
-    res.status(500).send({ message: 'Erro ao cadastrar' })
+    response.status(404).send({ message: "Podcast not found." });
   }
-}
-
-// TODO const deletePod = (req, res) =>
+};
 
 module.exports = {
   getAllPods,
   getPodByTopic,
   createPod,
   updateStars,
-  // TODO deletePod,
-}
+  deletePod,
+};
