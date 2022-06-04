@@ -69,7 +69,7 @@ const createMusic = (request, response) => {
     }
 }
 
-//Atualiza favoritos
+//Atualiza favoritos (patch)
 const updateFavorited = (request, response) => {
     try{
         const idRequest = request.params.id
@@ -97,11 +97,55 @@ const updateFavorited = (request, response) => {
     }
 }
 
+//deleta música pelo id (delete)
+const deleteById = (request, response) => {
+    const idRequest = request.params.id
+    let musicId = musicas.findIndex((musicas) => musicas.id == idRequest)
+    idDeletado = musicas.filter(musicas => musicas.id == idRequest)
+
+    musicas.splice(musicId, 1)
+
+    if (musicId > -1) {
+        response.status(200).json([{
+            "mensagem": "música deletada",
+            idDeletado,
+            musicas
+        },
+    ])
+    }else {
+        response.status(404).send([{ mensagem: "A música não foi deletada"}])
+    }
+}
+
+//Atualiza a música pelo id (put)
+const updateById = (request, response) => {
+
+    const idRequest = request.params.id
+    let atualizaRequest = request.body
+    let atualizaFilter = musicas.findIndex((musicas)=> musicas.id == idRequest)
+
+    musicas.splice(atualizaFilter, 1, atualizaRequest)
+
+    if (atualizaFilter > -1) {
+        response.status(200).json([
+            {
+                mensagem: "Música atualizada com sucesso",
+                musicas,
+
+            },
+        ])
+    } else{
+        response.status(404).send([{ mensagem: "A música não foi modificada"}])
+    }
+}
+
 
 module.exports = {
     getAllMusics,
     getByArtists,
     getById,
     createMusic,
-    updateFavorited
+    updateFavorited,
+    deleteById,
+    updateById
 }
