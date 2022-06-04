@@ -69,6 +69,33 @@ const createMusic = (request, response) => {
     }
 }
 
+//Atualiza favoritos
+const updateFavorited = (request, response) => {
+    try{
+        const idRequest = request.params.id
+        const favoritedRequest = request.body.favorited
+        favoritedFilter = musicoteca.find((task) => task.id == idRequest)
+
+        if (favoritedFilter) {
+            favoritedFilter.favorited = favoritedRequest
+
+            response.status(200).json([
+                {
+                mensagem: "Favoritos alterados com sucesso",
+                musicoteca,
+            },
+        ])
+        } else {
+            response.status(404).json([
+                {
+                    mensagem: "Seus favoritos não foram modificados",
+                },
+            ])
+        }
+    } catch (err) {
+        response.status(500).send({mensagem: "Erro ao cadastrar"})
+    }
+}
 
 
 module.exports = {
