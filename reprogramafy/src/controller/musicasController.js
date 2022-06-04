@@ -1,7 +1,6 @@
-const { response } = require('../app')
 const listaMusicas = require('../models/musicas.json')
 
-const getAllMusics = (req, res) => {
+const getSongs = (req, res) => {
     res.status(200).json({
         'message': "Essas são todas as músicas cadastradas.",
         listaMusicas
@@ -55,9 +54,8 @@ const addMusic = (req, res) => {
         message: 'Sua música foi cadastrada com sucesso!',
         newMusic
 
-})    
-    
-
+    })
+}
 
 const atualizarMusic = (req, res) => {
 
@@ -67,11 +65,11 @@ const atualizarMusic = (req, res) => {
     let artistUpdate = req.body.artists
 
     let updateMusic = {
-    
+
         title: titleUpdate,
         launchYear: yearUpdate,
         favorited: rateUpdate,
-        artists: artistUpdate        
+        artists: artistUpdate
     }
 
     res.status(200).json({
@@ -80,59 +78,60 @@ const atualizarMusic = (req, res) => {
     })
 }
 
-const  deleteMusic = (req, res) => {
-   
+const deleteMusic = (req, res) => {
+
     const deleteRequest = request.params.id
     const deleteFilter = listaMusicas.findIndex((musica) => musica.id == deleteRequest)
-        
-        if (deleteFilter) {
-            deleteFilter == deleteRequest
-            listaMusicas.splice(deleteFilter, 1)
 
-            response.status(200).json({
-                "mensagem": "O podcast foi deletado",
-                "deletado": deleteRequest,
-                listaMusicas
-            })
+    if (deleteFilter) {
+        deleteFilter == deleteRequest
+        listaMusicas.splice(deleteFilter, 1)
 
-        } else {
-            response.status(500).send({
-                "menssage": "Música requisitada não encontrado."
-            })
+        response.status(200).json({
+            "mensagem": "O podcast foi deletado",
+            "deletado": deleteRequest,
+            listaMusicas
+        })
 
-        }
+    } else {
+        response.status(500).send({
+            "menssage": "Música requisitada não encontrado."
+        })
+
+    }
 }
 
 const rateMusic = (req, res) => {
     let idRequest = req.params.id
     let rateRequest = req.body.favorited
 
-   let rateFilter = listaMusicas.find((musica) => musica.id == idRequest)
+    let rateFilter = listaMusicas.find((musica) => musica.id == idRequest)
 
     if (rateFilter) {
         rateFilter.favorited = rateRequest
         res.status(200).json({
             "message": "Classificação atualizada com sucesso.",
             rateRequest
-        
-         })
+
+        })
 
     } else {
         res.status(404).json({
             "message": "Erro no servidor."
         })
 
-}}
+    }
+}
+
 
 module.exports = {
-
-        getAllMusics,
-        getMusic,
-        getMusicByArtist,
-        addMusic,
-        atualizarMusic,
-        deleteMusic,
-        rateMusic
+    getSongs,
+    getMusic,
+    getMusicByArtist,
+    addMusic,
+    atualizarMusic,
+    deleteMusic,
+    rateMusic
 }
 
-}
+

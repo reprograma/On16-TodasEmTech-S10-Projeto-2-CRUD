@@ -1,14 +1,14 @@
-const controller = require ('../controller/musicasController.js')
+const controller = require('../controller/musicasController.js')
 const express = require('express')
 
-const router = express.Router()
+const routerMusica = express.Router()
 
-router.get('/musics', controller.getAllMusics) //retorna todas as músicas
-router.get('/musics/:id', controller.getMusic)// retorna música por id
-router.get('/musics/artist', controller.getMusicByArtist) // retorna músicas dos artistas
-router.post('/add/music', controller.addMusic) //
-router.put('/update/:id', controller.atualizarMusic)
-router.delete('/musics/:id', controller.deleteMusic)
-router.patch('/musics/:id/favorited', controller.rateMusic)
+routerMusica.get('/songs', controller.getSongs)
+routerMusica.get('/songs/:id', controller.getMusic)
+routerMusica.get('/songs/artist', controller.getMusicByArtist)
+routerMusica.post('/add/song', controller.addMusic)
+routerMusica.put('/update/:id', controller.atualizarMusic)
+routerMusica.delete('/songs/:id', controller.deleteMusic)
+routerMusica.patch('/songs/:id/favorited', controller.rateMusic)
 
-module.exports = router
+module.exports = routerMusica

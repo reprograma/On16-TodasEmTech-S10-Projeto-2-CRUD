@@ -3,10 +3,10 @@ const app = express()//executo o express
 
 app.use(express.json())//faço o body parser
 
-const podRotas = require('./routes/podcastsRoutes')//estabeleço o caminho para rotas de podcast
-const musicRotas = require ('./routes/musicasRoutes')//estabeleci o caminhos para as rotas de músicas
+const musicRotas = require('./routes/musicasRoutes.js')//estabeleci o caminho para as rotas de músicas
+const podRotas = require('./routes/podcastsRoutes.js')//estabeleço o caminho para rotas de podcast
 
 app.use('/podcast', podRotas)// essa é minha rota raiz para os Podcasts
-app.use('/musica', musicRotas)
+app.use('/reprogramafy', musicRotas)
 
 module.exports = app
