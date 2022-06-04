@@ -4,8 +4,12 @@ const app = express () // executa o express
 
 app.use (express.json ()) // usa o body parser para definir o formato do que for recebido no body para Json
 
-const podRotas = require ('./routes/podcastsRoutes') //guardando na const as demais rotas que serão configuradas
 
+const podRotas = require ('./routes/podcastsRoutes') //guardando na const as demais rotas que serão configuradas
 app.use ('/podcast', podRotas) //rota raíz
+
+const musicasRotas = require ('./routes/musicasRoutes') 
+app.use ('/playlist', musicasRotas)
+
 
 module.exports = app

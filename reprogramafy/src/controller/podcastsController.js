@@ -8,10 +8,9 @@ const getAllPods = (request, response) => {
         }])
     } catch (err) {
         response.status(500).send({
-            message: "Erro no server"
+            "retorno": "Erro no server"
         })
     }
-
 }
 
 //localhost:3000/podcast/biblioteca/tema?topic=tecnologia
@@ -28,7 +27,7 @@ const getTopics = (req, res) => {
 
     } else {
         res.status(404).send([{
-            "message": "topico não encontrado"
+            "retorno": "topico não encontrado"
         }])
     }
 }
@@ -63,13 +62,13 @@ const addPodcasts = (req, res) => {
         podcasts.push(novoPodcast)
         //quando cria algo é 201
         res.status(201).json([{
-            "message": "Podcast cadastrado",
+            "retorno": "Podcast cadastrado",
             novoPodcast
         }])
     } catch (err) {
         console.log(err)
         res.status(500).send([{
-            "message": "Erro interno ao cadastrar"
+            "retorno": "Erro interno ao cadastrar"
         }])
     }
 }
@@ -77,29 +76,49 @@ const addPodcasts = (req, res) => {
 //PATCH > localhost:3000/podcast/atualizar/1
 // Body > raw > Json e no body muda uma categoria só
 
-const atualizarPods = (request, response) => {
+const atualizarPods = (req, res) => {
     const idRequest = request.params.id
     const starsRequest = request.body.stars
-    starsFilter = pods.find((podcast) => podcast.id == idRequest)
-    
+    starsFilter = podcasts.find((podcasts) => podcasts.id == idRequest)
+
     if (starsFilter) {
         starsFilter.stars = starsRequest
-        response.status(200).json([{
-            message: "Classificação atualizada com sucesso", 
-            pods
+        res.status(200).json([{
+            message: "Classificação atualizada com sucesso",
+            podcasts
         }])
-    }else{
-        response.status(404).json([{
-            message: "Não foi modificado"
+    } else {
+        res.status(404).json([{
+            "retorno": "Não foi modificado"
         }])
     }
 }
 
 
+const deletePods = (req, res) => {
+    const idRequest = request.params.id;
+    const indicePods = podcasts.findIndex((podcasts) => podcasts.id == idRequest);
+
+    podcasts.splice(indicePods, 1);
+
+    if (indicePods) {
+        res.status(200).json([{
+            message: "O podcast selecionado foi deletado",
+            "podcast deletado": idRequest,
+            podcasts,
+        }]);
+    } else {
+        res.status(404).send([{
+            message: "Podcast não deletado",
+        }, ]);
+    }
+};
+
 
 module.exports = {
     getAllPods,
     getTopics,
-    addPods,
+    deletePods,
+    addPodcasts,
     atualizarPods
 }

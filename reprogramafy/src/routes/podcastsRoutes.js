@@ -9,10 +9,9 @@ const router = express.Router()
 //rota para retornar todos os podcasts
 //localhost:1313/podcast/biblioteca
 router.get('/biblioteca', controller.getAllPods)
-
 router.get('biblioteca/tema', controller.getTopics)
 router.get("/biblioteca/tema", controller.getTopics)
-router.post("/adicionar", controller.addPods)
+router.post("/adicionar", controller.addPodcasts)
 router.delete("/delete/:id", controller.deletePods)
 router.patch("/atualizar/:id", controller.atualizarPods)
 
