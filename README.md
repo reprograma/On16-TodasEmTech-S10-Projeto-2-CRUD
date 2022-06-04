@@ -58,13 +58,13 @@ Na confuguração das rotas para manipular a lista de podcasts temos a seguinte 
 | Verbo  | Rota                                                    | Descrição da Rota                     |
 | ------ | --------------------------------------------------------|---------------------------------------|
 | GET    | http://localhost:1313/podcast/biblioteca                | Listar podcasts                       |
-| GET    | localhost:3000/podcast/biblioteca/tema?topic=tecnologia | Listar podcast por tópico             |  
+| GET    | http://localhost:3000/podcast/biblioteca/tema?topic=tecnologia | Listar podcast por tópico             |  
 | POST   | http://localhost:1313/podcast/biblioteca                | adicionar uma nova música             |
 | DELET  | http://localhost:1313/podcast//delete/:id               | remover podcast                       |
 | PATCH  | http://localhost:1313/podcast//atualizar/:id            | alterar a classificação de um podcast |  
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3ZlJ144Hrnl6kC2TSwB7ec?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
+[![Spotify](https://spotify-github-readme.vercel.app/api/spotify)]([https://open.spotify.com/collection/tracks](https://open.spotify.com/embed/playlist/3ZlJ144Hrnl6kC2TSwB7ec?utm_source=generator))
 
 ___
 <h6 align="center">
