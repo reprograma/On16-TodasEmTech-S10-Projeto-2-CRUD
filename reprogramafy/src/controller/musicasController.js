@@ -38,12 +38,11 @@ const getMusicId = (request, response) => {
 }
 
 // Lógica da rota 03 de GET para nos retornar músicas de artistas especificos
-// ERRO no POSTMAN = revisar e testar novamente
 
 const getMusicArtist = (request, response) => {
     const artistRequest = request.query.artists
     let artistsFilter = musicsJson.filter(musics => musics.artists.includes(artistRequest))
-    if (artistsFilter.length > 0) {
+    if (artistsFilter.length >= 0) {
         response.status(200).send(artistsFilter)
     } else {
         response.status(404).send([{
