@@ -50,6 +50,8 @@ Na confuguração das rotas para manipular a playist de músicas temos a seguint
 | PATCH  | localhost:1313/playlist/atualizar/:id       | favoritar/desfavoritar uma música              |
 
 
+<a href="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator"><img src="reprogramafy/img/banner-playlist.gif" class="media-object  img-responsive img-thumbnail"></a>
+
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
