@@ -14,7 +14,7 @@ Neste processo conseguimos entender o uso dos principais métodos HTTP executand
 
 
 ### 📏 Arquitetura MVC
-Além disso adotamos o padrão MVC como base para padronizar o projeto, deste modo temos a seguinte arquitetura:
+Além disso adotamos o padrão MVC como base para organizar o projeto, deste modo temos a seguinte arquitetura:
 
 ```
 📂 reprogramafy
@@ -38,23 +38,23 @@ Além disso adotamos o padrão MVC como base para padronizar o projeto, deste mo
 
 
 ### 🎧 Configurando rotas para playlist de músicas
-<a href="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator"><img src="reprogramafy/img/banner-playlist.gif" width="79%" class="media-object  img-responsive img-thumbnail"></a>
+<a href="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator"><img src="reprogramafy/img/banner-playlist.gif" width="100%" class="media-object  img-responsive img-thumbnail"></a>
 
 Na configuração das rotas para manipular a playist de músicas temos a seguinte estrutura disponível:
 
-| Verbo  | Rota                                        | Descrição da Rota                              | 
-| :----: | :------------------------------------------:|:----------------------------------------------:|
-| GET    | localhost:1313/playlist/musicas             | listar todas as músicas da playlist do usuário | 
-| GET    | localhost:1313/playlist//musicas/buscar/:id | listar apenas uma música específica            |
-| GET    | localhost:1313/playlist/musicas/artista     | listar  músicas de um artista específico       |
-| POST   | localhost:1313/playlist/musicas             | adicionar uma nova música                      |
-| DELET  | localhost:1313/playlist//delete/:id         | remover uma música da lista                    |
-| PUT    | lcalhost:1313/playlist/alterar/:id          | alterar informações da música                  |
-| PATCH  | localhost:1313/playlist/atualizar/:id       | favoritar/desfavoritar uma música              |
+| Verbo  | Rota                                                    | Descrição da Rota                             | 
+| :----: | :------------------------------------------------------:|:---------------------------------------------:|
+| GET    | localhost:1313/playlist/musicas                         | listar todas as músicas da playlist do usuário| 
+| GET    | localhost:1313/playlist//musicas/buscar/:id             | listar apenas uma música específica           |
+| GET    | localhost:1313/playlist/musicas/artista?artist=beyonce  | listar  músicas de um artista específico      |
+| POST   | localhost:1313/playlist/musicas                         | adicionar uma nova música                     |
+| DELET  | localhost:1313/playlist//delete/:id                     | remover uma música da lista                   |
+| PUT    | lcalhost:1313/playlist/alterar/:id                      | alterar informações da música                 |
+| PATCH  | localhost:1313/playlist/atualizar/:id                   | favoritar/desfavoritar uma música             |
 
 
 ### 🎤 Configurando rotas para lista de podcasts
-<a href="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator"><img src="reprogramafy/img/banner-podcast.gif" width="79%" class="media-object  img-responsive img-thumbnail"></a>
+<a href="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator"><img src="reprogramafy/img/banner-podcast.gif" width="100%" class="media-object  img-responsive img-thumbnail"></a>
 
     
 Na confuguração das rotas para manipular a lista de podcasts temos a seguinte estrutura disponível:
