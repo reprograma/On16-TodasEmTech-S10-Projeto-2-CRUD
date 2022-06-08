@@ -1,6 +1,6 @@
 const pods = require('../models/podcasts.json')
 
-// retornando todas as musicas
+// retornando todas os podcasts
 const getAllPods = (req, res) => {
   try {
     res.status(200).json([
@@ -18,8 +18,8 @@ const getPodByTopic = (req, res) => {
   try {
     let topicRequest = req.query.topic
 
-    let topicFiltro = pods.filter((musica) =>
-      musica.topic.includes(topicRequest),
+    let topicFiltro = pods.filter((podcast) =>
+      podcast.topic.includes(topicRequest),
     )
 
     if (topicFiltro.length > 0) {
@@ -32,7 +32,7 @@ const getPodByTopic = (req, res) => {
   }
 }
 
-// cria musica
+// cria podcast
 const createPod = (req, res) => {
   try {
     let nameRequest = req.body.name
@@ -73,8 +73,8 @@ const updateStars = (req, res) => {
 
       res.status(200).json([
         {
-          mensagem: 'Sua avaliaçao foi alterada com sucesso!',
-          pods,
+          mensagem: 'Sua música foi alterada com sucesso!',
+          musics,
         },
       ])
     } else {
@@ -88,13 +88,32 @@ const updateStars = (req, res) => {
     res.status(500).send({ message: 'Erro ao cadastrar' })
   }
 }
+// deletar podcast por id
 
-// TODO const deletePod = (req, res) =>
+const deletePod = (request, response) => {
+
+
+  const idRequest = request.params.id
+
+
+  const indicePods = podcastsJson.findIndex(pods => pods.id == idRequest)
+
+
+  podcastsJson.splice(indicePods, 1)
+
+  response.status(200).json([{
+    "message": "podcast deletado",
+    "deletado": idRequest,
+    podcastsJson
+  }])
+
+}
+
 
 module.exports = {
   getAllPods,
   getPodByTopic,
   createPod,
   updateStars,
-  // TODO deletePod,
+  deletePod
 }

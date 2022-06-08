@@ -1,179 +1,176 @@
 [
     {
         "id": 1,
-        "title": "Boyfriend",
+        "title": "Home",
         "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Ariana Grande",
-            "Social House"
+            "BTS"
         ]
     },
     {
         "id": 2,
-        "title": "Flawless",
-        "launchYear": "2014",
+        "title": "Answer: Love Myself",
+        "launchYear": "2018",
         "favorited": true,
         "artists": [
-            "Beyonce",
-            "Nicki Minaj"
+            "BTS"
         ]
     },
     {
         "id": 3,
-        "title": "Underere",
-        "launchYear": "2016",
+        "title": "Mikrokosmos",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Ines Brasil"
+            "BTS"
         ]
     },
     {
         "id": 4,
-        "title": "Parabens",
-        "launchYear": "2020",
+        "title": "Vienna",
+        "launchYear": "1977",
         "favorited": true,
         "artists": [
-            "Pablo Vittar",
-            "Psirico"
+            "Billy Joel"
         ]
     },
     {
         "id": 5,
-        "title": "November Rain",
-        "launchYear": "1991",
+        "title": "brutal",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Olivia Rodrigo"
         ]
     },
     {
         "id": 6,
-        "title": "Na sua estante",
-        "launchYear": "2005",
+        "title": "People",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Pitty"
+            "Agust D"
         ]
     },
     {
         "id": 7,
-        "title": "Bodak Yellow",
-        "launchYear": "2018",
+        "title": "Christmas Tree",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Cardi B"
+            "V"
         ]
     },
     {
         "id": 8,
-        "title": "Nothing else matters",
-        "launchYear": "1991",
+        "title": "At My Worst",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Metallica"
+            "Pink Sweat$"
         ]
     },
     {
         "id": 9,
-        "title": "Zero",
-        "launchYear": "2015",
+        "title": "Por Supuesto",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Liniker"
+            "Marina Sena"
         ]
     },
     {
         "id": 10,
-        "title": "Peligrosa",
-        "launchYear": "2022",
+        "title": "Louder Than Words",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Urias"
+            "Andrew Garfield",
+            "Vanessa Hudgens",
+            "Joshua Henry"
         ]
     },
     {
         "id": 11,
-        "title": "Dangerous woman",
-        "launchYear": "2016",
+        "title": "Barcelona",
+        "launchYear": "2017",
         "favorited": true,
         "artists": [
-            "Ariana Grande"
+            "Ed Sheeran"
         ]
     },
     {
         "id": 12,
-        "title": "Sorry",
-        "launchYear": "2016",
-        "favorited": true,
+        "title": "nothing else i could do",
+        "launchYear": "2020",
+        "favorited": false,
         "artists": [
-            "Beyonce"
+            "ella jane"
         ]
     },
     {
         "id": 13,
-        "title": "Modo turbo",
-        "launchYear": "2021",
+        "title": "Two",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Luisa Sonza",
-            "Anitta",
-            "Pablo Vittar"
+            "Sleeping At Last"
         ]
     },
     {
         "id": 14,
-        "title": "Number one",
-        "launchYear": "2020",
+        "title": "Bossa Nova",
+        "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Pablo Vittar"
+            "Manu Gavassi"
         ]
     },
     {
         "id": 15,
-        "title": "Patience",
-        "launchYear": "1991",
+        "title": "soulmate",
+        "launchYear": "2019",
         "favorited": true,
         "artists": [
-            "Guns n roses"
+            "Lizzo"
         ]
     },
     {
         "id": 16,
-        "title": "Varias queixas",
-        "launchYear": "2019",
+        "title": "People I Don't Like",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Gilsons"
+            "UPSAHL"
         ]
     },
     {
         "id": 17,
-        "title": "Please me",
-        "launchYear": "2019",
+        "title": "Life Goes On",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Cardi B",
-            "Bruno Mars"
+            "BTS"
         ]
     },
     {
         "id": 18,
-        "title": "Mel",
+        "title": "Middle Ground",
         "launchYear": "2021",
         "favorited": true,
         "artists": [
-            "Liniker"
+            "Alessia Cara",
+            "CHIKA"
         ]
     },
     {
         "id": 19,
-        "title": "Tanto faz",
-        "launchYear": "2022",
+        "title": "Stay Gold",
+        "launchYear": "2020",
         "favorited": true,
         "artists": [
-            "Urias"
+            "BTS"
         ]
     }
 ]
