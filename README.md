@@ -38,7 +38,7 @@ Além disso adotamos o padrão MVC como base para organizar o projeto, deste mod
 
 
 ### 🎧 Configurando rotas para playlist de músicas
-<a href="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator"><img src="reprogramafy/img/banner-playlist.gif" width="100%" class="media-object  img-responsive img-thumbnail"></a>
+<a href="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator"><img src="reprogramafy/img/banner-playlist.gif" width="100%"></a>
 
 Na configuração das rotas para manipular a playist de músicas temos a seguinte estrutura disponível:
 
