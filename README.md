@@ -12,6 +12,8 @@
 Neste projeto guiado denominado "Reprogramafy" criamos uma API em NodeJs para manuseio de listas de músicas e podcasts.
 Neste processo conseguimos entender o uso dos principais métodos HTTP executando as rotas via Postman e inserindo alguns métodos como recursos do Express e Javascript para manuseios especificos, tais como os métodos de busca ```includes```, ```find```, ```findInex```, ```filter```, o ```math.floor``` para gerar id aleatório quando utilizamos o método POST, além do método ```splice``` usado na inserção de novo elemento da Array de músicas e podcasts. Também configuramos tratamentos de erro utilizando ````try/catch```` e ```if/else```.
 
+
+### 📏 Arquitetura MVC
 Além disso adotamos o padrão MVC como base para padronizar o projeto, deste modo temos a seguinte arquitetura:
 
 ```
@@ -35,9 +37,10 @@ Além disso adotamos o padrão MVC como base para padronizar o projeto, deste mo
 ```
 
 
-### 🎧 Playlist de Músicas
+### 🎧 Configurando rotas para playlist de músicas
+<a href="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator"><img src="reprogramafy/img/banner-playlist.gif" width="79%" class="media-object  img-responsive img-thumbnail"></a>
 
-Na confuguração das rotas para manipular a playist de músicas temos a seguinte estrutura disponível:
+Na configuração das rotas para manipular a playist de músicas temos a seguinte estrutura disponível:
 
 | Verbo  | Rota                                        | Descrição da Rota                              | 
 | :----: | :------------------------------------------:|:----------------------------------------------:|
@@ -50,14 +53,10 @@ Na confuguração das rotas para manipular a playist de músicas temos a seguint
 | PATCH  | localhost:1313/playlist/atualizar/:id       | favoritar/desfavoritar uma música              |
 
 
-<a href="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator"><img src="reprogramafy/img/banner-playlist.gif" class="media-object  img-responsive img-thumbnail"></a>
+### 🎤 Configurando rotas para lista de podcasts
+<a href="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator"><img src="reprogramafy/img/banner-podcast.gif" width="79%" class="media-object  img-responsive img-thumbnail"></a>
 
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6kNTCwrdqGXgEF4ZRFOvyc?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
-
-### 🎤 Lista de Podcasts
-
+    
 Na confuguração das rotas para manipular a lista de podcasts temos a seguinte estrutura disponível:
 
 | Verbo  | Rota                                                    | Descrição da Rota                      |
@@ -68,8 +67,6 @@ Na confuguração das rotas para manipular a lista de podcasts temos a seguinte 
 | DELET  | localhost:1313/podcast//delete/:id                      | remover podcast                        |
 | PATCH  | localhost:1313/podcast//atualizar/:id                   | alterar a classificação de um podcast  |  
 
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3ZlJ144Hrnl6kC2TSwB7ec?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 ___
 <h6 align="center">
