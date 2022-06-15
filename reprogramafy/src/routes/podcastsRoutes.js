@@ -1,19 +1,26 @@
-// AS ROTAS E METODOS DE FILMES
-
-// chamar o controller de filmes
 const controller = require('../controller/podcastsController')
+
 
 const express = require('express') // chamando express
 
-// funcao de rotas do express
+
 const router = express.Router()
 
-// router. metodo http (rota, funcao)
-router.get('/pods', controller.getAllPods)
-router.get('/pods/topic', controller.getPodByTopic)
-router.post('/pods', controller.createPod)
-router.patch('/pods/:id/stars', controller.updateStars)
-// TODO router.delete("/pods/:id", controller.deletePod)
 
-//exportando para ser usado no app.js
+
+
+
+
+router.get('/podcasts', controller.getAllPods)
+router.get('/topic', controller.getPodByTopic)
+router.post('/add', controller.createPod)
+router.patch('/podcasts/:id/stars', controller.updateStars)
+router.delete('/:id', controller.deletePod)
+
+
+
+
+
+
+
 module.exports = router
