@@ -1,12 +1,12 @@
-const pods = require('../models/podcasts.json')
+const podcasts = require('../models/podcasts.json')
 
 // retornando todas as musicas
 const getAllPods = (req, res) => {
   try {
     res.status(200).json([
       {
-        Podcasts: pods,
-      },
+        Podcasts: podcasts
+      }
     ])
   } catch (err) {
     response.status(500).send({ message: 'Erro no server' })

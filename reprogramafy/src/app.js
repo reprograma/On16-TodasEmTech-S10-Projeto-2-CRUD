@@ -13,7 +13,7 @@ const podRotas = require("./routes/podcastsRoutes")// para guardar o podRotas pa
 // criar uma rota raiz
 
 app.use("/podcast", podRotas) // passo 5
-
+// o barra podcast eu vou usar no postman = caminho
 
 // exportando para usar o server.js passo 6
 module.exports = app
