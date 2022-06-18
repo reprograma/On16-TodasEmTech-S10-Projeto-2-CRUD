@@ -1,9 +1,38 @@
+# PROJETO GUIADO DA REPROGRAMA
+
+<img src="img/playlist.gif" alt="logo reprogramafy" width="500">
+
+
+# AULA MINISTRADA POR Mayhhara Moraes
+
+# O que este projeto vai entregar? <img src="img/lapis.gif" alt="logo reprogramafy" width="50">
+
+Este projeto trata-se de uma construção de uma API para playlist e podcasts. Neste API será possivel obter os seguintes serviços:
+ * Retornar todas as músicas 🎶;
+ * Retornar apenas uma música específica 🎵;
+ * Retornar música de um artista específico 👩‍🎤;
+ * Cadastrar nova música ✍️;
+ * Atualizar uma música específica - EXCETO o 🆔;
+ * Deletar uma música especifica 🔥;
+ * Favoritar ❤️ e desfavoritar 💔 uma música.
+
+
+#### Verbos Utilizados:
+* GET - PUT - POST -DELETE E PATCH
+
+
+
 <h1 align="center">
     <br>
     <p align="center">Reprograma - Semana 10 (Projeto Guiado)<p>
 </h1>
 
 Olaaaaaaa! Sejam bem-vindas a Semana 10 de projetinho! Meu nome é Mayhhara Morais e vou acompanhar vocês nesse projeto.
+
+
+### Ferramentas e tecnologias utilizadas:
+
+
 
 # Vamos começar!
 
