@@ -1,11 +1,11 @@
-const podcasts = require('../models/podcasts.json')
+const pods = require('../models/podcasts.json')
 
-// retornando todas as musicas
-const getAllPods = (req, res) => {
+// retornando todas os podcasts
+const getAllPods = (require, response) => {
   try {
-    res.status(200).json([
+    response.status(200).json([
       {
-        Podcasts: podcasts
+        Podcasts: pods
       }
     ])
   } catch (err) {
@@ -13,32 +13,31 @@ const getAllPods = (req, res) => {
   }
 }
 
-// retornando pods por topico
-const getPodByTopic = (req, res) => {
+// retornando busca por topico
+const getTopics = (request, response) => {
   try {
-    let topicRequest = req.query.topic
+    const topicRequest = request.query.topic
 
-    let topicFiltro = pods.filter((musica) =>
-      musica.topic.includes(topicRequest),
-    )
+    const topicFilter = pods.filter(podcasts  =>
+      podcasts.topic.includes(topicRequest))
 
-    if (topicFiltro.length > 0) {
-      res.status(200).send(topicFiltro)
+    if (topicFilter.length > 0) {
+      response.status(200).send(topicFilter)
     } else {
-      res.status(404).send({ message: 'Tópico não encontrado' })
+      response.status(404).send({ message: 'Tópico não encontrado' })
     }
   } catch (err) {
-    response.status(500).send({ message: 'Erro no server' })
+    responseponse.status(500).send({ message: 'Erro no server' })
   }
 }
 
 // cria musica
-const createPod = (req, res) => {
+const createPod = (require, response) => {
   try {
-    let nameRequest = req.body.name
-    let podcasterRequest = req.body.podcaster
-    let topicRequest = req.body.topic
-    let starsRequest = req.body.stars
+    let nameRequest = require.body.name
+    let podcasterRequest = require.body.podcaster
+    let topicRequest = require.body.topic
+    let starsRequest = require.body.stars
 
     let novoPodcast = {
       id: Math.floor(Date.now() * Math.random()).toString(36),
@@ -48,52 +47,52 @@ const createPod = (req, res) => {
       stars: starsRequest,
     }
 
-    pods.push(novoPodcast)
+    podcasts.push(novoPodcast)
 
-    res.status(201).json([
+    response.status(201).json([
       {
         message: 'Podcast cadastrado',
         novoPodcast,
       },
     ])
   } catch (err) {
-    res.status(500).send({ message: 'Erro ao cadastrar' })
+    response.status(500).send({ message: 'Erro ao cadastrar' })
   }
 }
 
-const updateStars = (req, res) => {
+const updateStars = (require, response) => {
   try {
-    const idRequest = req.params.id
-    const starsRequest = req.body.stars
+    const idRequest = require.params.id
+    const starsRequest = require.body.stars
 
-    starsFilter = pods.find((task) => task.id == idRequest)
+    starsFilter = podcasts.find((task) => task.id == idRequest)
 
     if (starsFilter) {
       starsFilter.stars = starsRequest
 
-      res.status(200).json([
+      response.status(200).json([
         {
           mensagem: 'Sua avaliaçao foi alterada com sucesso!',
           pods,
         },
       ])
     } else {
-      res.status(404).json([
+      response.status(404).json([
         {
           message: 'Sua avaliaçao não foi modificada!',
         },
       ])
     }
   } catch (err) {
-    res.status(500).send({ message: 'Erro ao cadastrar' })
+    response.status(500).send({ message: 'Erro ao cadastrar' })
   }
 }
 
-// TODO const deletePod = (req, res) =>
+// TODO const deletePod = (require, response) =>
 
 module.exports = {
   getAllPods,
-  getPodByTopic,
+  getTopics,
   createPod,
   updateStars,
   // TODO deletePod,
