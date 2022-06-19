@@ -1,12 +1,12 @@
 
-const podcasts = require("../models/podcasts.json");
+const playMusic = require("../model/musicas.json");
 
-// retornando todas os podcasts
-const getAllPods = (request, response) => {
+// retornando todas as musicas
+const getAllMusic = (request, response) => {
   try {
     response.status(200).json([
       {
-        Podcasts: podcasts,
+        "Musicsplay": playMusic,
       },
     ]);
   } catch (err) {
@@ -14,11 +14,12 @@ const getAllPods = (request, response) => {
       message: "Deu ruim o  Servidor está com Erro",
     });
   }
-};
+}
 
 /* retornando busca por topico 
 request.query usado para filtrar um dado p.ex: ano, tipo, diretor, star etc.. */
-const getTopics = (request, response) => {
+
+/*const getTopics = (request, response) => {
   try {
     const topicRequest = request.query.topic;
     const topicFilter = podcasts.filter((podcasts) =>
@@ -43,7 +44,7 @@ const getTopics = (request, response) => {
 // CADASTRAR, ADICIONAR,  NOVO PODCASTS
 // USOU let porque as variáveis sempre poderá mudar
 /* no try usou o body porque no POSTMAN irá passar as informações que irá cadastrar ou adicionar, verifique no BD(podcasts.json dentro do models) ex: id, name, etc.. */
-const addPods = (request, response) => {
+/*const addPods = (request, response) => {
   try {
     let nameRequest = request.body.name;
     let podcasterRequest = request.body.podcaster;
@@ -83,6 +84,7 @@ const updateStars = (request, response) => {
     const starsRequest = request.body.stars; //body será passado as informações durante o uso do POSTMAN
     starsFilter = podcasts.find((podcast) => podcast.id == idRequest);
     /*se encontar o starsFilter.stars será igual ao starsRequest o valor que foi enviado no body quando foi testar no POSTMAN*/
+    /*
     if (starsFilter) {
       starsFilter.stars = starsRequest;
       response.status(200).json([
@@ -122,11 +124,11 @@ const deletePodcasts = (request, response) => {
     },
   ]);
 };
-
+*/
 module.exports = {
-  getAllPods,
-  getTopics,
+    getAllMusic,
+  /*getTopics,
   addPods,
   updateStars,
-  deletePodcasts
+  deletePodcasts*/
 }
