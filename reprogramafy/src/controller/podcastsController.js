@@ -1,15 +1,16 @@
-const pods = require('../models/podcasts.json')
+const podcasts = require('../models/podcasts.json')
 
 // retornando todas os podcasts
-const getAllPods = (require, response) => {
+const getAllPods = (request, response) => {
   try {
     response.status(200).json([
       {
-        Podcasts: pods
+        Podcasts: podcasts
       }
     ])
   } catch (err) {
-    response.status(500).send({ message: 'Erro no server' })
+    response.status(500).send({ 
+      "message": "Deu ruim o  Servidor está com Erro" })
   }
 }
 
@@ -17,22 +18,23 @@ const getAllPods = (require, response) => {
 const getTopics = (request, response) => {
   try {
     const topicRequest = request.query.topic
-
-    const topicFilter = pods.filter(podcasts  =>
+    const topicFilter = podcasts.filter(podcasts  =>
       podcasts.topic.includes(topicRequest))
-
     if (topicFilter.length > 0) {
       response.status(200).send(topicFilter)
-    } else {
-      response.status(404).send({ message: 'Tópico não encontrado' })
+    }else{
+      response.status(404).send([{ 
+        "message": "Tópico não foi encontrado"
+      }])
     }
   } catch (err) {
-    responseponse.status(500).send({ message: 'Erro no server' })
+    response.status(500).send({ 
+      "message": "Erro no server" })
   }
 }
 
-// cria musica
-const createPod = (require, response) => {
+/*
+const addPods = (require, response) => {
   try {
     let nameRequest = require.body.name
     let podcasterRequest = require.body.podcaster
@@ -59,7 +61,7 @@ const createPod = (require, response) => {
     response.status(500).send({ message: 'Erro ao cadastrar' })
   }
 }
-
+//
 const updateStars = (require, response) => {
   try {
     const idRequest = require.params.id
@@ -89,11 +91,11 @@ const updateStars = (require, response) => {
 }
 
 // TODO const deletePod = (require, response) =>
-
+*/
 module.exports = {
   getAllPods,
   getTopics,
-  createPod,
-  updateStars,
+  //addPods,
+  //updateStars,
   // TODO deletePod,
 }
