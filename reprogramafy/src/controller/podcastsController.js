@@ -33,35 +33,38 @@ const getTopics = (request, response) => {
   }
 }
 
-/*
+// CADASTRAR, ADICIONAR,  NOVO PODCASTS
+// USOU let porque as variáveis sempre poderá mudar
+/* no try usou o body porque no POSTMAN irá passar as informações que irá cadastrar ou adicionar, verifique no BD(podcasts.json dentro do models) ex: id, name, etc.. */
 const addPods = (require, response) => {
   try {
     let nameRequest = require.body.name
     let podcasterRequest = require.body.podcaster
     let topicRequest = require.body.topic
     let starsRequest = require.body.stars
-
+// Math.floor ... é o codigo que gera id radomico no javascript
     let novoPodcast = {
       id: Math.floor(Date.now() * Math.random()).toString(36),
       name: nameRequest,
       podcaster: podcasterRequest,
       topic: topicRequest,
-      stars: starsRequest,
+      stars: starsRequest
     }
 
-    podcasts.push(novoPodcast)
+    podcasts.push(novoPodcast)// empurrar o novo podcasts para o json(bando de dados que está na pasta models, arquivo podcasts.json)
 
     response.status(201).json([
       {
-        message: 'Podcast cadastrado',
-        novoPodcast,
-      },
-    ])
+        "message": "Podcast cadastrado",
+        novoPodcast
+      }])
   } catch (err) {
-    response.status(500).send({ message: 'Erro ao cadastrar' })
+    response.status(500).send([{ 
+      "message" : "Atenção!!! Erro ao cadastrar"
+    }])
   }
 }
-//
+/*
 const updateStars = (require, response) => {
   try {
     const idRequest = require.params.id
@@ -95,7 +98,7 @@ const updateStars = (require, response) => {
 module.exports = {
   getAllPods,
   getTopics,
-  //addPods,
+  addPods,
   //updateStars,
   // TODO deletePod,
 }
