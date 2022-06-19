@@ -10,7 +10,7 @@ router.get('/biblioteca', controller.getAllPods)
 router.get('/biblioteca/tema', controller.getTopics)
 router.post('/adicionar', controller.addPods)
 router.patch('/atualizar/:id', controller.updateStars)
-/*router.delete("/pods/:id", controller.deletePod)
-*/
+router.delete("/delete/:id", controller.deletePodcasts)
+
 //exportando para ser usado no app.js
 module.exports = router

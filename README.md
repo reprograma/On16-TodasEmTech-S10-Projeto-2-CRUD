@@ -20,6 +20,35 @@ Este projeto trata-se de uma construção de uma API para playlist e podcasts. N
 #### Verbos Utilizados:
 * GET - PUT - POST -DELETE E PATCH
 
+#### TRY CATCH
+* try  é uma declaração que marca um bloco e especifica uma resposta, quando uma exceção é lançada. Há três forma de utilizar o try sendo elas:
+
+try catch: Uma cláusula catch contém declarações que especificam o que fazer caso uma exceção seja lançada no bloco try. Ou seja, se você quer que o bloco try tenha êxito, e caso não tenha, você quer que o controle passe para o bloco catch. Caso qualquer declaração dentro do bloco try  (ou em uma função chamada no interior do bloco try) lançar uma exceção o controle imediatamente muda para a cláusula catch. Se nenhuma exceção for lançada no bloco try a cláusula catch é ignorada.
+
+try finally: A cláusula finally é executada após a excecução do bloco try e da(s) cláusula(s) catch porém antes das declarações seguintes ao try. Ela sempre é executada, independente se uma exceção for lançada ou capturada.
+
+try catch finally  trata-se de uma composição aninhada.
+fonte: Mozilla
+
+OBS: o assunto try não se esgota por aqui, porém o projeto foi utilizado o try catch.
+
+#### FIND E FINDINDEX
+* Find:
+
+* FindIndex:
+
+#### 
+
+
+
+
+
+
+
+
+
+
+
 
 
 <h1 align="center">
