@@ -9,8 +9,8 @@ const router = express.Router()// funcao de rotas do express
 router.get('/biblioteca', controller.getAllPods)
 router.get('/biblioteca/tema', controller.getTopics)
 router.post('/adicionar', controller.addPods)
-/*router.patch('/adicionar/:id', controller.updateStars)
-router.delete("/pods/:id", controller.deletePod)
+router.patch('/atualizar/:id', controller.updateStars)
+/*router.delete("/pods/:id", controller.deletePod)
 */
 //exportando para ser usado no app.js
 module.exports = router

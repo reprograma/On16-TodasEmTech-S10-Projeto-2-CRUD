@@ -64,41 +64,41 @@ const addPods = (require, response) => {
     }])
   }
 }
-/*
-const updateStars = (require, response) => {
-  try {
-    const idRequest = require.params.id
-    const starsRequest = require.body.stars
+// ALTERAR A NOTA(STARS) DOS PODCASTS
+/* find esta sendo usado porque so vai modificar um item
 
-    starsFilter = podcasts.find((task) => task.id == idRequest)
-
+*/
+const updateStars = (request, response) => {
+ try {
+    const idRequest = request.params.id
+    const starsRequest = request.body.stars//body será passado as informações durante o uso do POSTMAN 
+    starsFilter = podcasts.find((podcast) => podcast.id == idRequest)
+/*se encontar o starsFilter.stars será igual ao  starsRequest o valor que foi enviado no body quando foi testar no POSTMAN*/
     if (starsFilter) {
       starsFilter.stars = starsRequest
-
-      response.status(200).json([
-        {
-          mensagem: 'Sua avaliaçao foi alterada com sucesso!',
-          pods,
-        },
-      ])
+      response.status(200).json([{
+          "mensagem": "Sua avaliaçao foi alterada com sucesso!",
+          podcasts
+        }])
     } else {
-      response.status(404).json([
-        {
-          message: 'Sua avaliaçao não foi modificada!',
-        },
-      ])
-    }
-  } catch (err) {
-    response.status(500).send({ message: 'Erro ao cadastrar' })
+        response.status(404).json([{
+          "message": "Sua avaliaçao não foi modificada!"
+        }])
+    
+  }
+}catch (err) {
+    response.status(500).send([{
+         "message": "Erro ao cadastrar"
+      }])
   }
 }
-
+/*
 // TODO const deletePod = (require, response) =>
 */
 module.exports = {
   getAllPods,
   getTopics,
   addPods,
-  //updateStars,
+  updateStars,
   // TODO deletePod,
 }
