@@ -6,9 +6,11 @@ const router = express.Router()
 
 // router. metodo http (rota, funcao)
 router.get('/todas', controller.getAllMusic)
-
-/*router.get('/biblioteca/tema', controller.getTopics)
-router.post('/adicionar', controller.addPods)
+/*router.get('/buscar/:id', controller.getIdMusic)
+router.get('/)
+router.post('/adicionar', controller.addMusic)
+router.get('/biblioteca/tema', controller.getTopics)
+router.post('/adicionar', controller.addMusic)
 router.patch('/atualizar/:id', controller.updateStars)
 router.delete("/delete/:id", controller.deletePodcasts)
 */
