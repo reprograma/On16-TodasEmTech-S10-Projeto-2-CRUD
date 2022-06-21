@@ -1,8 +1,6 @@
-const app = require("./src/app"); //chamando o arquivo app
+const app = require('./src/app')
 
-const PORT = 3000; //PORTA
-
-//iniciando o servidor
-app.listen(PORT, () => {
-  console.log(`Servidor da PLAYLIST está rodando na porta ${PORT}`);
-});
+const PORT = 3000
+app.listen(PORT , ()=>{
+    console.log(`Servidor do Playlist foi iniciado com suscesso na porta ${PORT}`)
+})
