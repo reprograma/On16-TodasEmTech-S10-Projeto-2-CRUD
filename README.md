@@ -5,9 +5,9 @@
 
 # AULA MINISTRADA POR Mayhhara Moraes
 
-# O que este projeto? <img src="img/lapis.gif" alt="logo reprogramafy" width="50">
+# O que é este projeto? <img src="img/lapis.gif" alt="logo reprogramafy" width="50">
 
-Este projeto trata-se de uma construção de uma API para playlist e podcasts. Neste API será entregue os seguintes serviços:
+Este projeto trata-se de uma construção de uma API para playlist e podcasts o qual faz parte do projeto de construção de API's e tem como intuito entregar ao usuário os seguintes serviços:
  * Retornar todas as músicas 🎶;
  * Retornar apenas uma música específica 🎵;
  * Retornar música de um artista específico 👩‍🎤;
@@ -31,25 +31,14 @@ try finally: A cláusula finally é executada após a excecução do bloco try e
 try catch finally  trata-se de uma composição aninhada.
 fonte: Mozilla
 
-OBS: o assunto try não se esgota por aqui, porém o projeto foi utilizado o try catch.
+OBS: o assunto sobre o emprego do try não se esgota por aqui, porém neste projeto foi utilizado somente o try catch.
 
 #### FIND E FINDINDEX
-* Find:
+* Find: Retornará o primeiro ELEMENTO que foi passado, mas quando não encontra o ELEMENTO retornará como  resposta o UNDEFINED (não está definido)
 
-* FindIndex:
+* FindIndex: Retornará o ELEMENTO especifico que foi passado, mas, quando não encontra o elemento retornará -1 
 
-#### ROUTER
-
-
-
-
-
-
-
-
-
-
-
+===============================
 
 
 <h1 align="center">
