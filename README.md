@@ -1,9 +1,57 @@
+# PROJETO GUIADO DA REPROGRAMA
+
+<img src="img/playlist.gif" alt="logo reprogramafy" width="500">
+
+
+# AULA MINISTRADA POR Mayhhara Moraes
+
+# O que é este projeto? <img src="img/lapis.gif" alt="logo reprogramafy" width="50">
+
+Este projeto trata-se de uma construção de uma API para playlist e podcasts o qual faz parte do projeto de construção de API's e tem como intuito entregar ao usuário os seguintes serviços:
+ * Retornar todas as músicas 🎶;
+ * Retornar apenas uma música específica 🎵;
+ * Retornar música de um artista específico 👩‍🎤;
+ * Cadastrar nova música ✍️;
+ * Atualizar uma música específica - EXCETO o 🆔;
+ * Deletar uma música especifica 🔥;
+ * Favoritar ❤️ e desfavoritar 💔 uma música.
+
+
+#### Verbos Utilizados:
+* GET - PUT - POST -DELETE E PATCH
+
+# Mão na massa utilizei:
+#### TRY CATCH
+* try  é uma declaração que marca um bloco e especifica uma resposta, quando uma exceção é lançada. Há três forma de utilizar o try sendo elas:
+
+try catch: Uma cláusula catch contém declarações que especificam o que fazer caso uma exceção seja lançada no bloco try. Ou seja, se você quer que o bloco try tenha êxito, e caso não tenha, você quer que o controle passe para o bloco catch. Caso qualquer declaração dentro do bloco try  (ou em uma função chamada no interior do bloco try) lançar uma exceção o controle imediatamente muda para a cláusula catch. Se nenhuma exceção for lançada no bloco try a cláusula catch é ignorada.
+
+try finally: A cláusula finally é executada após a excecução do bloco try e da(s) cláusula(s) catch porém antes das declarações seguintes ao try. Ela sempre é executada, independente se uma exceção for lançada ou capturada.
+
+try catch finally  trata-se de uma composição aninhada.
+fonte: Mozilla
+
+OBS: o assunto sobre o emprego do try não se esgota por aqui, porém neste projeto foi utilizado somente o try catch.
+
+#### FIND E FINDINDEX
+* Find: Retornará o primeiro ELEMENTO que foi passado, mas quando não encontra o ELEMENTO retornará como  resposta o UNDEFINED (não está definido)
+
+* FindIndex: Retornará o ELEMENTO especifico que foi passado, mas, quando não encontra o elemento retornará -1 
+
+===============================
+
+
 <h1 align="center">
     <br>
     <p align="center">Reprograma - Semana 10 (Projeto Guiado)<p>
 </h1>
 
 Olaaaaaaa! Sejam bem-vindas a Semana 10 de projetinho! Meu nome é Mayhhara Morais e vou acompanhar vocês nesse projeto.
+
+
+### Ferramentas e tecnologias utilizadas:
+
+
 
 # Vamos começar!
 
