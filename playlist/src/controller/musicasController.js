@@ -19,7 +19,7 @@ const getIdMusics = (request, response) => {
   let foundMusic = musicJson.find((musica) => musica.id == idRequest);
   response.status(200).send(foundMusic);
 };
-/* GET - RETORNA UM ARTISTA percorrendo um array
+ //GET - RETORNA UM ARTISTA percorrendo um array
 const getArtist = (request, response) => {
   
   let artistsRequest = request.query.artists.toLowerCase();
@@ -42,7 +42,7 @@ const getArtist = (request, response) => {
   }
 
 };
-*/
+
 
 // POST CADASTRAR NOVA MÚSICA
 const postAddMusic = (request, response) => {
@@ -141,7 +141,7 @@ const deleteMusics = (request, response) => {
 module.exports = {
   getAllMusics,
   getIdMusics,
-  //getArtist,
+  getArtist,
   postAddMusic,
   putUpdateMusics,
   patchUpdate,
