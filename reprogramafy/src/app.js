@@ -13,3 +13,4 @@ app.use('/podcasts', podRotas);
 
 //exportando pra usar o server.js
 module.exports = app
+

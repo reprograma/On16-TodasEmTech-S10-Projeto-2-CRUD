@@ -9,6 +9,8 @@ Olaaaaaaa! Sejam bem-vindas a Semana 10 de projetinho! Meu nome é Mayhhara Mora
 
 # Projeto API Nodejs "{reprograma}fy"
 
+<img src="img/capa-projeto.png" alt="logo reprogramafy" width="500">
+
 Parabéns, você foi escolhida para desenvolver um novo produto que deverá ser lançado em breve. Que tal montarmos nossa própria playlist de músicas? Na nossa playlist poderemos favoritar nossas músicas e ver quais artistas tocam a música. Além disso, poderemos inserir novas músicas ou remover da nossa playlist as que não queremos mais. Não curte músicas? Tem espaço pra podcast também!! No nosso {reprograma}fy você poderá listar todos os podcasts e também filtra-los por tópico. Somado a isso, pode também inserir novos podcasts ou remover algum já existente, além de conseguir avaliá-lo.
 <br>
 
