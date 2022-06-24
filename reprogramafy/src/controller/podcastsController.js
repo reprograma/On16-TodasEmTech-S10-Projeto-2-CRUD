@@ -1,100 +1,93 @@
-const pods = require('../models/podcasts.json')
+const podcasts = require('../models/podcasts.json')
 
-// retornando todas as musicas
-const getAllPods = (req, res) => {
-  try {
-    res.status(200).json([
-      {
-        Podcasts: pods,
-      },
-    ])
-  } catch (err) {
-    response.status(500).send({ message: 'Erro no server' })
-  }
-}
+// retorna todos os pods
+const getAllPods = (request, response) => {
+    try {
+        response.status(200).json([{
+            "Podcasts": podcasts
+        }])
+    } catch (err) {
+        response.status(500).send({ message: "Erro no server" })
+    }
+};
 
-// retornando pods por topico
-const getPodByTopic = (req, res) => {
-  try {
-    let topicRequest = req.query.topic
-
-    let topicFiltro = pods.filter((musica) =>
-      musica.topic.includes(topicRequest),
-    )
-
-    if (topicFiltro.length > 0) {
-      res.status(200).send(topicFiltro)
+const getTopics = (req, res) => {
+    let topicRequest = req.query.topic;
+    let topicFilter = podcasts.filter(podcasts => podcasts.topic.includes(topicRequest));
+    if (topicFilter.length > 0){
+        res.status(200).send(topicFilter)
     } else {
-      res.status(404).send({ message: 'Tópico não encontrado' })
+        res.status(404).send({
+            message: "tópico nao encontrado"
+        })
     }
-  } catch (err) {
-    response.status(500).send({ message: 'Erro no server' })
-  }
-}
+};
 
-// cria musica
-const createPod = (req, res) => {
-  try {
-    let nameRequest = req.body.name
-    let podcasterRequest = req.body.podcaster
-    let topicRequest = req.body.topic
-    let starsRequest = req.body.stars
+const addPodcast = (req, res) => {
+    try{
+    let nameRequest = req.body.name;
+    let podcasterRequest = req.body.podcaster;
+    let topicRequest = req.body.topic;
+    let starRequest = req.body.stars;
 
-    let novoPodcast = {
-      id: Math.floor(Date.now() * Math.random()).toString(36),
-      name: nameRequest,
-      podcaster: podcasterRequest,
-      topic: topicRequest,
-      stars: starsRequest,
+    let newPodcast = {
+        id: Math.floor(Date.now() * Math.random()).toString(36),
+        name: nameRequest,
+        podcaster: podcasterRequest,
+        topic: topicRequest,
+        stars: starRequest
     }
+    podcasts.push(newPodcast)
 
-    pods.push(novoPodcast)
-
-    res.status(201).json([
-      {
-        message: 'Podcast cadastrado',
-        novoPodcast,
-      },
-    ])
-  } catch (err) {
-    res.status(500).send({ message: 'Erro ao cadastrar' })
-  }
+    res.status(201).json([{
+        message: "Podcast cadastrado!",
+        newPodcast
+    }])
+} catch(err){
+    console.log(err);
+    res.status(500).send({
+        message: "Erro interno ao cadastrar."
+    })
 }
+};
 
-const updateStars = (req, res) => {
-  try {
-    const idRequest = req.params.id
-    const starsRequest = req.body.stars
+const attPodcast = (req, res) => {
+    let idRequest = req.params.id;
+    let starRequest = req.body.stars;
+    starsFilter = podcasts.find((podcast) => podcast.id == idRequest)
 
-    starsFilter = pods.find((task) => task.id == idRequest)
-
-    if (starsFilter) {
-      starsFilter.stars = starsRequest
-
-      res.status(200).json([
-        {
-          mensagem: 'Sua avaliaçao foi alterada com sucesso!',
-          pods,
-        },
-      ])
+    if(starsFilter) {
+        starsFilter.stars = starRequest
+        res.status(200).json([{
+            message: "Classificação atualizada",
+            podcasts
+        }])
     } else {
-      res.status(404).json([
-        {
-          message: 'Sua avaliaçao não foi modificada!',
-        },
-      ])
+        res.status(404).json([{
+            message: "Não deu pra modificar"
+        }])
     }
-  } catch (err) {
-    res.status(500).send({ message: 'Erro ao cadastrar' })
-  }
-}
+};
 
-// TODO const deletePod = (req, res) =>
+const deletePodcast = (request, response ) => {
+
+    const idRequest = request.params.id
+
+    const indexPods = podcasts.findIndex( podcast => podcast.id == idRequest)
+
+    podcasts.splice(indexPods, 1) 
+
+    response.status(200).json([{
+        "mensagem" : "O podcast foi deletado",
+        "deletado" : idRequest,
+        podcasts
+    }])
+};
 
 module.exports = {
   getAllPods,
-  getPodByTopic,
-  createPod,
-  updateStars,
-  // TODO deletePod,
-}
+  getTopics,
+  addPodcast,
+  attPodcast,
+  deletePodcast
+};

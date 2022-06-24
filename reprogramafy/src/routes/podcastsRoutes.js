@@ -1,19 +1,13 @@
-// AS ROTAS E METODOS DE FILMES
+const controller = require('../controller/podcastsController');
 
-// chamar o controller de filmes
-const controller = require('../controller/podcastsController')
+const express = require('express'); //chamando express
 
-const express = require('express') // chamando express
+const router = express.Router(); //funcao de rotas de express
 
-// funcao de rotas do express
-const router = express.Router()
+router.get("/biblioteca", controller.getAllPods); // router.metodo htpp (rota, funcao)
+router.get("/biblioteca/tema", controller.getTopics);
+router.post("/adicionar", controller.addPodcast);
+router.patch("/atualizar/:id", controller.attPodcast);
+router.delete("/deletar/:id", controller.deletePodcast)
 
-// router. metodo http (rota, funcao)
-router.get('/pods', controller.getAllPods)
-router.get('/pods/topic', controller.getPodByTopic)
-router.post('/pods', controller.createPod)
-router.patch('/pods/:id/stars', controller.updateStars)
-// TODO router.delete("/pods/:id", controller.deletePod)
-
-//exportando para ser usado no app.js
-module.exports = router
+module.exports = router; //exportar para ser usado no app.js
