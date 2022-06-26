@@ -125,11 +125,39 @@ const deleteMusica = (req, res ) => {
     }])
 }
 
+const updateFavorited = (req, res) => {
+    try {
+      const idRequest = req.params.id
+  
+      musicFilter = musicas.find((musica) => musica.id == idRequest)
+  
+      if (musicFilter) {
+        musicFilter.favorited = !musicFilter.favorited
+  
+        res.status(200).json([
+          {
+            mensagem: 'A música foi alterada com sucesso!',
+            musicFilter,
+          },
+        ])
+      } else {
+        res.status(404).json([
+          {
+            message: 'A música não foi modificada!',
+          },
+        ])
+      }
+    } catch (err) {
+      res.status(500).send({ message: 'Erro ao cadastrar' })
+    }
+}
+
 module.exports = {
     getAllMusics,
     getMusicsById,
     getMusicsByArtists,
     createMusic,
     updateMusica,
-    deleteMusica
+    deleteMusica,
+    updateFavorited
   }

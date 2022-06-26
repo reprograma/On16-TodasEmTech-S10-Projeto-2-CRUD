@@ -18,4 +18,6 @@ router.put('/musics/:id', controller.updateMusica)
 
 router.delete('/musics/:id', controller.deleteMusica)
 
+router.patch('/musics/:id/favorited', controller.updateFavorited)
+
 module.exports = router
