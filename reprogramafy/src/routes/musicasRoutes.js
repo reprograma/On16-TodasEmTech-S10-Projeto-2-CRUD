@@ -8,4 +8,6 @@ const router = express.Router()
 // router. metodo http (rota, funcao)
 router.get('/musics', controller.getAllMusics)
 
+router.get('/musics/:id', controller.getMusicsById)
+
 module.exports = router
