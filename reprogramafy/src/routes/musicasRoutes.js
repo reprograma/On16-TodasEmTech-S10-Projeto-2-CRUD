@@ -16,4 +16,6 @@ router.post('/musics', controller.createMusic)
 
 router.put('/musics/:id', controller.updateMusica)
 
+router.delete('/musics/:id', controller.deleteMusica)
+
 module.exports = router

@@ -110,10 +110,26 @@ const updateMusica = (req, res) => {
     }
 }
 
+const deleteMusica = (req, res ) => {
+
+    const idRequest = req.params.id
+
+    const musica = musicas.findIndex( musica => musica.id == idRequest)
+    
+    musicas.splice(musica, 1) 
+
+    res.status(200).json([{
+        "mensagem" : "a música foi deletada",
+        "deletado" : idRequest,
+        musicas
+    }])
+}
+
 module.exports = {
     getAllMusics,
     getMusicsById,
     getMusicsByArtists,
     createMusic,
-    updateMusica
+    updateMusica,
+    deleteMusica
   }
