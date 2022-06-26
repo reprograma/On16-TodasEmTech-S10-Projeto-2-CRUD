@@ -14,4 +14,6 @@ router.get('/musics/:artists', controller.getMusicsByArtists)
 
 router.post('/musics', controller.createMusic)
 
+router.put('/musics/:id', controller.updateMusica)
+
 module.exports = router

@@ -74,11 +74,46 @@ const createMusic = (req, res) => {
     } catch (err) {
       res.status(500).send({ message: 'Erro ao cadastrar' })
     }
-  }
+}
+
+const updateMusica = (req, res) => {
+    try {
+      const idRequest = req.params.id
+      let titleRequest = req.body.title
+      let launchYearRequest = req.body.launchYear
+      let favoritedRequest = req.body.favorited
+      let artistsRequest = req.body.artists
+  
+      musicFilter = musicas.find((musica) => musica.id == idRequest)
+  
+      if (musicFilter) {
+        musicFilter.title = titleRequest
+        musicFilter.launchYear = launchYearRequest
+        musicFilter.favorited = favoritedRequest
+        musicFilter.artists = artistsRequest
+  
+        res.status(200).json([
+          {
+            mensagem: 'A música foi alterada com sucesso!',
+            musicFilter,
+          },
+        ])
+      } else {
+        res.status(404).json([
+          {
+            message: 'A música não foi modificada!',
+          },
+        ])
+      }
+    } catch (err) {
+      res.status(500).send({ message: 'Erro ao cadastrar' })
+    }
+}
 
 module.exports = {
     getAllMusics,
     getMusicsById,
     getMusicsByArtists,
-    createMusic
+    createMusic,
+    updateMusica
   }
