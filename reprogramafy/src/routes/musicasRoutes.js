@@ -10,4 +10,8 @@ router.get('/musics', controller.getAllMusics)
 
 router.get('/musics/:id', controller.getMusicsById)
 
+router.get('/musics/:artists', controller.getMusicsByArtists)
+
+router.post('/musics', controller.createMusic)
+
 module.exports = router
